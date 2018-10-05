@@ -1,0 +1,15 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>3</Version>
+    <Device id="GW1N-4" package="LQFP144" speed="6"/>
+    <FileList>
+        <File type="file.verilog" enable="1" path="src/SSD1306.v"/>
+        <File type="file.verilog" enable="1" path="src/SSD1306_ROM_cfg_mod.v"/>
+        <File type="file.other" enable="1" path="src/SSD1306_ROM_script.mem"/>
+        <File type="file.verilog" enable="1" path="src/SSD1306_ROM_cfg_mod_header.v"/>
+        <File type="file.verilog" enable="1" path="src/spi_master.v"/>
+        <File type="file.cst" enable="1" path="src/oled_ssd1306.cst"/>
+    </FileList>
+</Project>
