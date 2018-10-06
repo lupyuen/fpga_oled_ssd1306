@@ -119,29 +119,16 @@ spi0(
 /* Synchronous lath to out commands directly from ROM except when is a repeat count load. */
 always @ (posedge clk)
 begin
-	if(btnc)
-	begin
-		oled_vdd <= 1'b1;
-		oled_vbat <= 1'b1;
-		oled_res <= 1'b0;
-		oled_dc <= 1'b0;
-		wr_spi <= 1'b0;
-		rd_spi <= 1'b0;
-		wait_spi <= 1'b0;
-	end
-	else
-	begin
-		if(!rom_bus[7])
-		begin
-			oled_vdd <= rom_bus[6];
-			oled_vbat <= rom_bus[5];
-			oled_res <= rom_bus[4];
-			oled_dc <= rom_bus[3];
-			wr_spi <= rom_bus[2];
-			rd_spi <= rom_bus[1];
-			wait_spi <= rom_bus[0];
-		end
-	end
+    if(!rom_bus[7])
+    begin
+        oled_vdd <= rom_bus[6];
+        oled_vbat <= rom_bus[5];
+        oled_res <= rom_bus[4];
+        oled_dc <= rom_bus[3];
+        wr_spi <= rom_bus[2];
+        rd_spi <= rom_bus[1];
+        wait_spi <= rom_bus[0];
+    end
 end
 
 reg internal_state_machine;
@@ -149,74 +136,70 @@ reg [14:0]repeat_count;
 
 always @ (posedge clk)
 begin
-	if(btnc)
-	begin
+/*
 		time_count <= 28'h0000000;
 		time_count_back <= 28'h0000000;
 		state_machine_count <= `BLOCK_ROM_INIT_ADDR_WIDTH'h00;
 		internal_state_machine <= 1'b0;
 		repeat_count <= 15'h0000;
-	end
-	else
-	begin
-		if(rom_bus[39:16] == time_count)
-		begin
-			case(internal_state_machine)
-				1'b0 : begin
-					if(rom_bus[7])
-					begin
-						repeat_count <= {rom_bus[6:0], rom_bus[15:8]};
-						time_count_back <= time_count + 1;
-					end
-					else 
-						if(repeat_count && rom_bus[46:44] > 1)
-							repeat_count <= repeat_count - 15'h0001;  
-					internal_state_machine <= 1'b1;
-				end
-				1'b1 : begin
-					if(wait_spi)
-					begin
-						if(charreceived)
-						begin
-							internal_state_machine <= 1'b0;
-							if(repeat_count)
-							begin
-								time_count <= time_count_back;
-								if(rom_bus[47])
-									state_machine_count <= state_machine_count + ~rom_bus[46:44];
-								else
-									state_machine_count <= state_machine_count + rom_bus[46:44];
-							end
-							else
-							begin
-								time_count <= time_count + 1;
-								state_machine_count <= state_machine_count + `BLOCK_ROM_INIT_ADDR_WIDTH'h01;
-							end
-						end
-					end
-					else
-					begin
-						internal_state_machine <= 1'b0;
-						if(repeat_count)
-						begin
-							time_count <= time_count_back;
-							if(rom_bus[47])
-								state_machine_count <= state_machine_count + ~rom_bus[46:44];
-							else
-								state_machine_count <= state_machine_count + rom_bus[46:44];
-						end
-						else
-						begin
-							time_count <= time_count + 1;
-							state_machine_count <= state_machine_count + `BLOCK_ROM_INIT_ADDR_WIDTH'h1;
-						end
-					end
-				end
-			endcase
-		end
-		else
-			time_count <= time_count + 1;
-	end
+*/
+    if(rom_bus[39:16] == time_count)
+    begin
+        case(internal_state_machine)
+            1'b0 : begin
+                if(rom_bus[7])
+                begin
+                    repeat_count <= {rom_bus[6:0], rom_bus[15:8]};
+                    time_count_back <= time_count + 1;
+                end
+                else 
+                    if(repeat_count && rom_bus[46:44] > 1)
+                        repeat_count <= repeat_count - 15'h0001;  
+                internal_state_machine <= 1'b1;
+            end
+            1'b1 : begin
+                if(wait_spi)
+                begin
+                    if(charreceived)
+                    begin
+                        internal_state_machine <= 1'b0;
+                        if(repeat_count)
+                        begin
+                            time_count <= time_count_back;
+                            if(rom_bus[47])
+                                state_machine_count <= state_machine_count + ~rom_bus[46:44];
+                            else
+                                state_machine_count <= state_machine_count + rom_bus[46:44];
+                        end
+                        else
+                        begin
+                            time_count <= time_count + 1;
+                            state_machine_count <= state_machine_count + `BLOCK_ROM_INIT_ADDR_WIDTH'h01;
+                        end
+                    end
+                end
+                else
+                begin
+                    internal_state_machine <= 1'b0;
+                    if(repeat_count)
+                    begin
+                        time_count <= time_count_back;
+                        if(rom_bus[47])
+                            state_machine_count <= state_machine_count + ~rom_bus[46:44];
+                        else
+                            state_machine_count <= state_machine_count + rom_bus[46:44];
+                    end
+                    else
+                    begin
+                        time_count <= time_count + 1;
+                        state_machine_count <= state_machine_count + `BLOCK_ROM_INIT_ADDR_WIDTH'h1;
+                    end
+                end
+            end
+        endcase
+    end
+    else
+        time_count <= time_count + 1;
 end
 
 endmodule
