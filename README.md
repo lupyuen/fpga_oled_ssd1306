@@ -9,18 +9,18 @@ https://git.morgothdisk.com/VERILOG/VERILOG-UTIL-IP/blob/master/spi_master.v
 
 ## LED Connections
 
-| OLED Pin | Function | Description |
-|----------|----------|-------------|
-| Gnd      | Ground   | Common return path |
-| VCC      | 3.3 to 5.0 volts | Supply voltage (up to 20 mA) |
-| D0 (or SCK) | SCK   | SPI system clock |
-| D1 (or SDA) | SDIN  | SPI MOSI (system data in for OLED) |
-| RES      | Reset    | Reset signal (active low) |
-| DC       | Data / Command | Data (high), Command (low) |
-| CS       | ChipSelect     | Chip select (active low) |
+|  FPGA Pin (J8) | FPGA Function | OLED Pin | Function | Description |
+|----------------|---------------|----------|----------|-------------|
+| 1 |           | VCC         | 3.3 to 5.0 volts | Supply voltage (up to 20 mA) |
+| 2 |           | Gnd         | Ground           | Common return path |
+| 3 | oled_dc   | DC          | Data / Command   | Data (high), Command (low) |
+| 4 | oled_res  | RES         | Reset            | Reset signal (active low) |
+| 5 | oled_sclk | D0 (or SCK) | SCK              | SPI system clock |
+| 6 | oled_sdin | D1 (or SDA) | SDIN             | SPI MOSI (system data in for OLED) |
+| 7 |           | CS          | ChipSelect       | Chip select (active low) |
 
 Excerpt From: Warren Gay. “Beginning STM32.” iBooks. 
-
+  
 ## VDD, VCC, VBAT
 
 >>>VDD is the 3.3V logic power. This must be 3 or 3.3V
