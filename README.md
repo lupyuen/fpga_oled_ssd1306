@@ -9,37 +9,15 @@ https://git.morgothdisk.com/VERILOG/VERILOG-UTIL-IP/blob/master/spi_master.v
 
 ## LED Connections
 
-OLED Pin
-Function
-Description
-
-Gnd
-Ground
-Common return path
-
-VCC
-3.3 to 5.0 volts
-Supply voltage (up to 20 mA)
-
-D0 (or SCK)
-SCK
-SPI system clock
-
-D1 (or SDA)
-SDIN
-SPI MOSI (system data in for OLED)
-
-RES
-Reset
-Reset signal (active low)
-
-DC
-Data / Command
-Data (high), Command (low)
-
-CS
-ChipSelect
-Chip select (active low)
+| OLED Pin | Function | Description |
+|----------|----------|-------------|
+| Gnd      | Ground   | Common return path |
+| VCC      | 3.3 to 5.0 volts | Supply voltage (up to 20 mA) |
+| D0 (or SCK) | SCK   | SPI system clock |
+| D1 (or SDA) | SDIN  | SPI MOSI (system data in for OLED) |
+| RES      | Reset    | Reset signal (active low) |
+| DC       | Data / Command | Data (high), Command (low) |
+| CS       | ChipSelect     | Chip select (active low) |
 
 Excerpt From: Warren Gay. “Beginning STM32.” iBooks. 
 
