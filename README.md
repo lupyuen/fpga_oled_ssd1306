@@ -43,7 +43,7 @@ The Done indicator lights up to denote that the download has been
 successful.
 Note!
 The mode is independent of the values of MODE0 and MODE1.
-2. Internal Flash:
+>>>2. Internal Flash:
 Power on to download. After downloading the data stream file
 successfully, power down to reset and load the bit file from the internal
 Flash, and when the Done indicator lights up to denote that the download
