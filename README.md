@@ -30,3 +30,24 @@ For most users, we suggest connecting VDD and VBAT together to 3.3V and then lea
 
 https://learn.adafruit.com/monochrome-oled-breakouts?view=all
 
+## FPGA Power
+
+>>>Input DC5V power supply via USB port or socket. Input via socket if the
+SW1 switch is pressed; input via USB port if the SW1 switch pops up.
+
+## Internal Flash
+
+>>>1. SRAM:
+Scan the device and download the bit file after powering the device on.
+The Done indicator lights up to denote that the download has been
+successful.
+Note!
+The mode is independent of the values of MODE0 and MODE1.
+2. Internal Flash:
+Power on to download. After downloading the data stream file
+successfully, power down to reset and load the bit file from the internal
+Flash, and when the Done indicator lights up to denote that the download
+has been successful.
+Note!
+Before downloading the bit file, MODE0 and MODE1 need to set to
+"00".
