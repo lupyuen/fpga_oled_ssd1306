@@ -1,2 +1,2 @@
-@E: CL172 :"C:\fpga_oled_ssd1306\src\SSD1306.v":34:12:34:18|Only one always block can assign a given variable oled_dc
+@E: CL123 :"C:\fpga_oled_ssd1306\src\SSD1306.v":97:0:97:5|Logic for cnt[24:0] does not match a standard flip-flop
 

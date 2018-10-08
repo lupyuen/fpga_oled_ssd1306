@@ -3,17 +3,21 @@ Resource Usage Report for SSD1306
 
 Mapping to part: gw1n_4lqfp144-6
 Cell usage:
-ALU             36 uses
+ALU             101 uses
 DFF             4 uses
-DFFC            28 uses
+DFFC            25 uses
 DFFCE           1 use
-DFFRE           4 uses
-DFFS            2 uses
+DFFE            31 uses
+DFFR            7 uses
+DFFRE           62 uses
+DFFSE           3 uses
 GSR             1 use
-INV             7 uses
-LUT2            3 uses
-LUT3            1 use
-LUT4            28 uses
+INV             13 uses
+MUX2_LUT5       8 uses
+MUX2_LUT6       2 uses
+LUT2            44 uses
+LUT3            35 uses
+LUT4            80 uses
 
 I/O ports: 12
 I/O primitives: 12
@@ -21,8 +25,8 @@ IBUF           2 uses
 OBUF           10 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   39 of 3456 (1%)
+Register bits not including I/Os:   133 of 3456 (3%)
 
 @S |Mapping Summary:
-Total  LUTs: 32 (0%)
+Total  LUTs: 159 (3%)
 

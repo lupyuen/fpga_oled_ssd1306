@@ -1,14 +1,24 @@
-@P:  Worst Slack : 2.158
-@P:  SSD1306|clk_50M - Estimated Frequency : 127.5 MHz
+@P:  Worst Slack : -0.690
+@P:  SSD1306|clk_50M - Estimated Frequency : 121.2 MHz
 @P:  SSD1306|clk_50M - Requested Frequency : 100.0 MHz
-@P:  SSD1306|clk_50M - Estimated Period : 7.842
+@P:  SSD1306|clk_50M - Estimated Period : 8.253
 @P:  SSD1306|clk_50M - Requested Period : 10.000
-@P:  SSD1306|clk_50M - Slack : 2.158
-@P:  SSD1306|clk_ssd1306_derived_clock - Estimated Frequency : 478.8 MHz
+@P:  SSD1306|clk_50M - Slack : 1.747
+@P:  SSD1306|clk_ssd1306_derived_clock - Estimated Frequency : 93.5 MHz
 @P:  SSD1306|clk_ssd1306_derived_clock - Requested Frequency : 100.0 MHz
-@P:  SSD1306|clk_ssd1306_derived_clock - Estimated Period : 2.088
+@P:  SSD1306|clk_ssd1306_derived_clock - Estimated Period : 10.690
 @P:  SSD1306|clk_ssd1306_derived_clock - Requested Period : 10.000
-@P:  SSD1306|clk_ssd1306_derived_clock - Slack : 15.823
+@P:  SSD1306|clk_ssd1306_derived_clock - Slack : -0.497
+@P:  SSD1306|rd_spi_derived_clock - Estimated Frequency : 93.5 MHz
+@P:  SSD1306|rd_spi_derived_clock - Requested Frequency : 100.0 MHz
+@P:  SSD1306|rd_spi_derived_clock - Estimated Period : 10.690
+@P:  SSD1306|rd_spi_derived_clock - Requested Period : 10.000
+@P:  SSD1306|rd_spi_derived_clock - Slack : -0.690
+@P:  SSD1306|wr_spi_derived_clock - Estimated Frequency : 156.1 MHz
+@P:  SSD1306|wr_spi_derived_clock - Requested Frequency : 100.0 MHz
+@P:  SSD1306|wr_spi_derived_clock - Estimated Period : 6.404
+@P:  SSD1306|wr_spi_derived_clock - Requested Period : 10.000
+@P:  SSD1306|wr_spi_derived_clock - Slack : 4.306
 @P:  System - Estimated Frequency : 866.6 MHz
 @P:  System - Requested Frequency : 100.0 MHz
 @P:  System - Estimated Period : 1.154
@@ -17,6 +27,6 @@
 @P: SSD1306 Part : gw1n_4lqfp144-6
 @P: SSD1306 I/O primitives : 12
 @P: SSD1306 I/O Register bits : 0
-@P: SSD1306 Register bits (Non I/O) : 39 (1%)
-@P: SSD1306 Total Luts : 32 of 800 (0%)
+@P: SSD1306 Register bits (Non I/O) : 133 (3%)
+@P: SSD1306 Total Luts : 159 of 800 (3%)
 @P:  CPU Time : 0h:00m:03s

@@ -40,16 +40,6 @@ module	SSD1306(
     output  reg[3:0] led  //  LED is actually 4 discrete LEDs at 4 Output signals. Each LED Output is 1 bit.
 );
 
-reg wait_spi;
-reg rd_spi;
-reg wr_spi;
-				
-wire buffempty;
-wire charreceived;
-
-reg[27:0] elapsed_time;
-reg[27:0] saved_elapsed_time;
-
 //  The step ID that we are now executing: 0, 1, 2, ...
 reg[`BLOCK_ROM_INIT_ADDR_WIDTH-1:0] step_id;
 //  The step details, encoded in 48 bits.  This will be refetched whenever step_id changes.
@@ -77,12 +67,18 @@ wire step_wr_spi = encoded_step[2];
 wire step_rd_spi = encoded_step[1];
 wire step_wait_spi = encoded_step[0];
 
+reg wait_spi;
+reg rd_spi;
+reg wr_spi;				
+wire buffempty;
+wire charreceived;
+reg[27:0] elapsed_time;
+reg[27:0] saved_elapsed_time;
 reg internal_state_machine;
-reg [14:0]repeat_count;
-
+reg[14:0] repeat_count;
 reg clk_ssd1306;
-reg [7:0]data_tmp;
-reg [24:0]cnt;
+reg[7:0] data_tmp;
+reg[24:0] cnt;
 
 /*
     reg [3:0]clk_div;
@@ -178,7 +174,7 @@ begin
 		internal_state_machine <= 1'b0;
 		repeat_count <= 15'h0000;
     end
-    led <= { ~step_id[3], ~step_id[2], ~step_id[1], ~step_id[0] };  //  Show the state machine step ID in LED.
+    led <= { ~step_id[0], ~step_id[1], ~step_id[2], ~step_id[3] };  //  Show the state machine step ID in LED.
 
     //  If the start time is up and the step is ready to execute...
     if (elapsed_time >= step_time) begin

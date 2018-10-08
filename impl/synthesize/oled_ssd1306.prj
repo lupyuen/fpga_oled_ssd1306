@@ -29,7 +29,7 @@ set_option -compiler_compatible 0
 set_option -multi_file_compilation_unit 1
 set_option -looplimit 2000
 set_option -fix_gated_and_generated_clocks 1
-set_option -include_path {C:\Gowin\oled_ssd1306\src}
+set_option -include_path {C:\fpga_oled_ssd1306\src}
 
 # set result format/file
 project -result_file "oled_ssd1306.vm"

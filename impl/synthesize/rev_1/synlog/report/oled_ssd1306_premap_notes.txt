@@ -3,15 +3,6 @@
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 @N: MH105 |UMR3 is only supported for HAPS-80.
 @N: MH105 |UMR3 is only supported for HAPS-80.
-@N: MO111 :"c:\fpga_oled_ssd1306\src\spi_master.v":248:19:248:57|Tristate driver data_out_1[7] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[7] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\fpga_oled_ssd1306\src\spi_master.v":248:19:248:57|Tristate driver data_out_1[6] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[6] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\fpga_oled_ssd1306\src\spi_master.v":248:19:248:57|Tristate driver data_out_1[5] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[5] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\fpga_oled_ssd1306\src\spi_master.v":248:19:248:57|Tristate driver data_out_1[4] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[4] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\fpga_oled_ssd1306\src\spi_master.v":248:19:248:57|Tristate driver data_out_1[3] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[3] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\fpga_oled_ssd1306\src\spi_master.v":248:19:248:57|Tristate driver data_out_1[2] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[2] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\fpga_oled_ssd1306\src\spi_master.v":248:19:248:57|Tristate driver data_out_1[1] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[1] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\fpga_oled_ssd1306\src\spi_master.v":248:19:248:57|Tristate driver data_out_1[0] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[0] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N: BN115 :"c:\fpga_oled_ssd1306\src\ssd1306.v":58:20:58:32|Removing instance oled_rom_init (in view: work.SSD1306(verilog)) of type view:work.SSD1306_ROM_cfg_mod(verilog) because it does not drive other instances.
 @N: BN362 :"c:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Removing sequential instance senderr (in view: work.spi_master_8s_8s_0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"c:\fpga_oled_ssd1306\src\spi_master.v":139:0:139:5|Removing sequential instance output_buffer[7:0] (in view: work.spi_master_8s_8s_0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.

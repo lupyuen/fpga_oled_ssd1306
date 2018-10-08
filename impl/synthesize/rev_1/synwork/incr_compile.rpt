@@ -16,28 +16,29 @@ Synopsys HDL compiler and linker, Version comp2018q1p1, Build 118R, Built May 15
 
 Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
-5        C:\fpga_oled_ssd1306\src\SSD1306.v (2018-10-08 21:12:20, 2018-10-08 21:14:18)
+5        C:\fpga_oled_ssd1306\src\SSD1306.v (2018-10-08 21:52:39, 2018-10-08 22:02:17)
 
 *******************************************************************
 Modules that may have changed as a result of file changes: 3
 MID:  lib.cell.view
 1        work.SSD1306.verilog may have changed because the following files changed:
-                        C:\fpga_oled_ssd1306\src\SSD1306.v (2018-10-08 21:12:20, 2018-10-08 21:14:18) <-- (module definition)
+                        C:\fpga_oled_ssd1306\src\SSD1306.v (2018-10-08 21:52:39, 2018-10-08 22:02:17) <-- (module definition)
 0        work.SSD1306_ROM_cfg_mod.verilog may have changed because the following files changed:
-                        C:\fpga_oled_ssd1306\src\SSD1306.v (2018-10-08 21:12:20, 2018-10-08 21:14:18) <-- (may instantiate this module)
+                        C:\fpga_oled_ssd1306\src\SSD1306.v (2018-10-08 21:52:39, 2018-10-08 22:02:17) <-- (may instantiate this module)
 2        work.spi_master.verilog may have changed because the following files changed:
-                        C:\fpga_oled_ssd1306\src\SSD1306.v (2018-10-08 21:12:20, 2018-10-08 21:14:18) <-- (may instantiate this module)
+                        C:\fpga_oled_ssd1306\src\SSD1306.v (2018-10-08 21:52:39, 2018-10-08 22:02:17) <-- (may instantiate this module)
 
 *******************************************************************
-Unmodified files: 8
+Unmodified files: 9
 FID:  path (timestamp)
 0        C:\Gowin\1.8\SynplifyPro\lib\generic\gw1n.v (2018-05-16 00:54:32)
 1        C:\Gowin\1.8\SynplifyPro\lib\vlog\hypermods.v (2018-05-16 00:08:32)
 2        C:\Gowin\1.8\SynplifyPro\lib\vlog\scemi_objects.v (2018-05-16 00:08:32)
 3        C:\Gowin\1.8\SynplifyPro\lib\vlog\scemi_pipes.svh (2018-05-16 00:08:32)
 4        C:\Gowin\1.8\SynplifyPro\lib\vlog\umr_capim.v (2018-05-16 00:08:32)
-6        C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v (2018-10-05 12:34:35)
+6        C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v (2018-10-08 21:47:05)
 7        C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod_header.v (2018-10-05 12:13:28)
+9        C:\fpga_oled_ssd1306\src\SSD1306_ROM_script.mem (2018-10-05 12:12:54)
 8        C:\fpga_oled_ssd1306\src\spi_master.v (2018-10-08 11:37:52)
 
 *******************************************************************

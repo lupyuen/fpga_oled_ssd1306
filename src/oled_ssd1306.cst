@@ -1,7 +1,7 @@
 /***********************************************************************
  Physical Constraint file 
  Version:1.8.0.02Beta
- Created Time:   Mon Oct 08 11:39:48 2018
+ Created Time:   Mon Oct 08 22:05:21 2018
  Device:         GW1N-4
  Package:        LQFP144
 ************************************************************************/
@@ -16,3 +16,4 @@ IO_LOC "oled_sclk" 133;
 IO_LOC "oled_sdin" 134;
 IO_LOC "oled_vbat" 135;
 IO_LOC "oled_vdd" 136;
+IO_LOC "rst_n" 92;
