@@ -1,4 +1,4 @@
-# Mon Oct  8 22:33:55 2018
+# Tue Oct  9 01:16:14 2018
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -77,10 +77,10 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CP
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 192MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 192MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 192MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 192MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 192MB)
 
 @N: MO106 :"c:\fpga_oled_ssd1306\src\ssd1306_rom_cfg_mod.v":32:14:32:23|Found ROM oled_rom_init.dout_1[47:0] (in view: work.SSD1306(verilog)) with 128 words by 48 bits.
 
@@ -91,7 +91,7 @@ Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		     2.84ns		 256 /       133
+   1		0h:00m:01s		     2.84ns		 257 /       133
 
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 197MB peak: 200MB)
 
@@ -117,7 +117,7 @@ Writing scf file... (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; 
 Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 196MB peak: 200MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 197MB peak: 200MB)
+Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 197MB peak: 200MB)
 
 @W: MT420 |Found inferred clock SSD1306|clk_50M with period 10.00ns. Please declare a user-defined clock on port clk_50M.
 @N: MT615 |Found clock SSD1306|clk_ssd1306_derived_clock with period 10.00ns 
@@ -126,7 +126,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Oct  8 22:33:59 2018
+# Timing Report written on Tue Oct  9 01:16:18 2018
 #
 
 
@@ -1789,10 +1789,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 198MB peak: 200MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 198MB peak: 200MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 198MB peak: 200MB)
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 198MB peak: 200MB)
 
 ---------------------------------------
 Resource Usage Report for SSD1306 
@@ -1811,7 +1811,7 @@ DFFSE           3 uses
 GSR             1 use
 INV             12 uses
 MUX2_LUT5       6 uses
-LUT2            34 uses
+LUT2            35 uses
 LUT3            34 uses
 LUT4            91 uses
 
@@ -1829,13 +1829,13 @@ Total load per clock:
    SSD1306|wr_spi_derived_clock: 3
 
 @S |Mapping Summary:
-Total  LUTs: 159 (3%)
+Total  LUTs: 160 (3%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 39MB peak: 200MB)
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 39MB peak: 200MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Mon Oct  8 22:33:59 2018
+Process took 0h:00m:04s realtime, 0h:00m:04s cputime
+# Tue Oct  9 01:16:18 2018
 
 ###########################################################]

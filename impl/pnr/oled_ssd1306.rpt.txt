@@ -30,7 +30,7 @@ Table of Contents
   <Physical Constraint File>: C:\fpga_oled_ssd1306\src\oled_ssd1306.cst
   <Timing Constraint File>: ---
   <PnR Report File>: C:\fpga_oled_ssd1306\impl\pnr\oled_ssd1306.rpt.txt
-  <Created Time>: Mon Oct 08 22:29:58 2018
+  <Created Time>: Tue Oct 09 01:16:33 2018
   <Command Line>: C:\Gowin\1.8\Pnr\bin\gowin.exe -do C:\fpga_oled_ssd1306\impl\pnr\cmd.do 
   <Legal Announcement>: Copyright ©2014-2018 Gowin Semiconductor Corporation. All rights reserved.
 
@@ -38,11 +38,11 @@ Table of Contents
 2. Placer
 
   Starting Placer:
-    Placement Phase 0 ...   REAL time: 1.9e-005 secs
-    Placement Phase 1 ...   REAL time: 9.4e-005 secs
-    Placement Phase 2 ...   REAL time: 3.3e-005 secs
-    Placement Phase 3 ...   REAL time: 0.001118 secs
-  Total REAL time to Placement completion: 1.264 secs.
+    Placement Phase 0 ...   REAL time: 2.1e-005 secs
+    Placement Phase 1 ...   REAL time: 0.000101 secs
+    Placement Phase 2 ...   REAL time: 3.4e-005 secs
+    Placement Phase 3 ...   REAL time: 0.001166 secs
+  Total REAL time to Placement completion: 1.322 secs.
 
 
 3. Resource Usage Summary
@@ -50,16 +50,16 @@ Table of Contents
   ----------------------------------------------------------
   Resources            | Usage
   ----------------------------------------------------------
-  CFU Logics           | 260(159 LUTs, 101 ALUs)/4608  5%
+  CFU Logics           | 261(160 LUTs, 101 ALUs)/4608  5%
   Registers            | 133/3556  3%
     --Logic Registers  | 125/3456  3%
     --I/O Registers    | 8/100  8%
-  CLSs(ideal)          | 139/2304  6%
+  CLSs(ideal)          | 140/2304  6%
   CLSs(used)           | 167/2304  7%
-  I/O Ports            | 12
-  I/O Bufs             | 12/104  11%
+  I/O Ports            | 13
+  I/O Bufs             | 13/104  12%
     --Input Bufs       | 2
-    --Output Bufs      | 10
+    --Output Bufs      | 11
     --Inout Bufs       | 0
   Iologics             | 8/312  2%
   BSRAMs               | 0/10  0%
@@ -79,7 +79,7 @@ Table of Contents
   -----------------------
   I/O Bank  | Usage       
   -----------------------
-  bank 0   | 7/33(21%)   
+  bank 0   | 8/33(24%)   
   bank 1   | 0/24(0%)    
   bank 2   | 4/38(10%)   
   bank 3   | 1/25(4%)    
@@ -89,10 +89,10 @@ Table of Contents
 5. Router
 
   Starting Router:
-    Route Phase 0: 532 unrouted; REAL time: 0 secs
-    Route Phase 1: 272 unrouted; REAL time: 0.082 secs
-    Route Phase 2: 0  unrouted; REAL time: 0.064 secs
-  Total REAL time to Router completion: 0.146 secs.
+    Route Phase 0: 534 unrouted; REAL time: 0 secs
+    Route Phase 1: 273 unrouted; REAL time: 0.093 secs
+    Route Phase 2: 0  unrouted; REAL time: 0.098 secs
+  Total REAL time to Router completion: 0.191 secs.
 
 
 6. Global Clock Usage Summary
@@ -126,13 +126,14 @@ Table of Contents
 Port Name  | Loc./Bank  | Dir.  | Site     | IO Type    | Drive      | Pull Mode  | Slew Rate  | Clamp      | OpenDrain  | VREF       | BankVccio 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 clk_50M    | 6/3        | in    | IOL3[B]  | LVCMOS18   | NA         | UP         | NA         | NA         | NA         | NA         | 1.2       
-rst_n      | 130/0      | in    | IOT16[A] | LVCMOS18   | NA         | UP         | NA         | NA         | NA         | NA         | 1.8       
-oled_dc    | 131/0      | out   | IOT14[B] | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
-oled_res   | 132/0      | out   | IOT14[A] | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
-oled_sclk  | 133/0      | out   | IOT12[B] | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
-oled_sdin  | 134/0      | out   | IOT12[A] | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
-oled_vbat  | 135/0      | out   | IOT9[B]  | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
-oled_vdd   | 136/0      | out   | IOT9[A]  | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
+rst_n      | 130/0      | in    | IOT16[A] | LVCMOS18   | NA         | UP         | NA         | NA         | NA         | NA         | 3.3       
+oled_dc    | 131/0      | out   | IOT14[B] | LVCMOS33   | 8          | UP         | FAST       | NA         | OFF        | NA         | 3.3       
+oled_res   | 132/0      | out   | IOT14[A] | LVCMOS33   | 8          | UP         | FAST       | NA         | OFF        | NA         | 3.3       
+oled_sclk  | 133/0      | out   | IOT12[B] | LVCMOS33   | 8          | UP         | FAST       | NA         | OFF        | NA         | 3.3       
+oled_sdin  | 134/0      | out   | IOT12[A] | LVCMOS33   | 8          | UP         | FAST       | NA         | OFF        | NA         | 3.3       
+oled_vbat  | 136/0      | out   | IOT9[A]  | LVCMOS33   | 8          | UP         | FAST       | NA         | OFF        | NA         | 3.3       
+oled_vdd   | 137/0      | out   | IOT7[B]  | LVCMOS33   | 8          | UP         | FAST       | NA         | OFF        | NA         | 3.3       
+ss         | 135/0      | out   | IOT9[B]  | LVCMOS33   | 8          | UP         | FAST       | NA         | OFF        | NA         | 3.3       
 led[0]     | 47/2       | out   | IOB11[B] | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
 led[1]     | 57/2       | out   | IOB19[B] | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
 led[2]     | 60/2       | out   | IOB21[A] | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
@@ -154,13 +155,13 @@ Loc./Bank| Signal     | Dir.  | Site     | IO Type  | Pull Mode | Hysteresis | D
 140/0    | UNUSED     | -     | IOT6[A]  | -        | -         | -          | -            | -             
 139/0    | UNUSED     | -     | IOT6[B]  | -        | -         | -          | -            | -             
 138/0    | UNUSED     | -     | IOT7[A]  | -        | -         | -          | -            | -             
-137/0    | UNUSED     | -     | IOT7[B]  | -        | -         | -          | -            | -             
-136/0    | oled_vdd   | out   | IOT9[A]  | LVCMOS18 | UP        | NA         | NA           | NA            
-135/0    | oled_vbat  | out   | IOT9[B]  | LVCMOS18 | UP        | NA         | NA           | NA            
-134/0    | oled_sdin  | out   | IOT12[A] | LVCMOS18 | UP        | NA         | NA           | NA            
-133/0    | oled_sclk  | out   | IOT12[B] | LVCMOS18 | UP        | NA         | NA           | NA            
-132/0    | oled_res   | out   | IOT14[A] | LVCMOS18 | UP        | NA         | NA           | NA            
-131/0    | oled_dc    | out   | IOT14[B] | LVCMOS18 | UP        | NA         | NA           | NA            
+137/0    | oled_vdd   | out   | IOT7[B]  | LVCMOS33 | UP        | NA         | NA           | NA            
+136/0    | oled_vbat  | out   | IOT9[A]  | LVCMOS33 | UP        | NA         | NA           | NA            
+135/0    | ss         | out   | IOT9[B]  | LVCMOS33 | UP        | NA         | NA           | NA            
+134/0    | oled_sdin  | out   | IOT12[A] | LVCMOS33 | UP        | NA         | NA           | NA            
+133/0    | oled_sclk  | out   | IOT12[B] | LVCMOS33 | UP        | NA         | NA           | NA            
+132/0    | oled_res   | out   | IOT14[A] | LVCMOS33 | UP        | NA         | NA           | NA            
+131/0    | oled_dc    | out   | IOT14[B] | LVCMOS33 | UP        | NA         | NA           | NA            
 130/0    | rst_n      | in    | IOT16[A] | LVCMOS18 | UP        | NONE       | NA           | NA            
 129/0    | UNUSED     | -     | IOT16[B] | -        | -         | -          | -            | -             
 128/0    | UNUSED     | -     | IOT17[A] | -        | -         | -          | -            | -             

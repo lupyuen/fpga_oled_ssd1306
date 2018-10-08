@@ -28,5 +28,5 @@
 @P: SSD1306 I/O primitives : 13
 @P: SSD1306 I/O Register bits : 0
 @P: SSD1306 Register bits (Non I/O) : 133 (3%)
-@P: SSD1306 Total Luts : 159 of 800 (3%)
-@P:  CPU Time : 0h:00m:03s
+@P: SSD1306 Total Luts : 160 of 800 (3%)
+@P:  CPU Time : 0h:00m:04s

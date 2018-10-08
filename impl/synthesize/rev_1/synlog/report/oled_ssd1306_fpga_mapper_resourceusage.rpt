@@ -15,7 +15,7 @@ DFFSE           3 uses
 GSR             1 use
 INV             12 uses
 MUX2_LUT5       6 uses
-LUT2            34 uses
+LUT2            35 uses
 LUT3            34 uses
 LUT4            91 uses
 
@@ -28,5 +28,5 @@ I/O Register bits:                  0
 Register bits not including I/Os:   133 of 3456 (3%)
 
 @S |Mapping Summary:
-Total  LUTs: 159 (3%)
+Total  LUTs: 160 (3%)
 

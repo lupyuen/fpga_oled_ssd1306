@@ -2,7 +2,7 @@
 // Written by Synplify Pro 
 // Product Version "N-2018.03G-Beta6"
 // Program "Synplify Pro", Mapper "mapgw, Build 1086R"
-// Mon Oct  8 22:33:58 2018
+// Tue Oct  9 01:16:17 2018
 //
 // Source file index table:
 // Object locations will have the form <file>:<line>
@@ -2062,7 +2062,7 @@ wire [6:0] step_id;
 wire [24:0] cnt;
 wire [0:0] repeat_count;
 wire [27:0] elapsed_time;
-wire [17:4] cnt_3;
+wire [21:5] cnt_3;
 wire [27:0] saved_elapsed_time;
 wire [3:0] led_c;
 wire [47:0] encoded_step;
@@ -2359,12 +2359,33 @@ defparam wr_spi_0_0.INIT=16'hE020;
 );
 defparam rd_spi_0_0.INIT=16'hE200;
 // @5:108
-  LUT2 \cnt_3_cZ[4]  (
-	.I0(un3_cnt_cry_4_0_SUM),
+  LUT2 \cnt_3_cZ[5]  (
+	.I0(un3_cnt_cry_5_0_SUM),
 	.I1(clk_ssd13063),
-	.F(cnt_3[4])
+	.F(cnt_3[5])
 );
-defparam \cnt_3_cZ[4] .INIT=4'h2;
+defparam \cnt_3_cZ[5] .INIT=4'h2;
+// @5:108
+  LUT2 \cnt_3_cZ[10]  (
+	.I0(un3_cnt_cry_10_0_SUM),
+	.I1(clk_ssd13063),
+	.F(cnt_3[10])
+);
+defparam \cnt_3_cZ[10] .INIT=4'h2;
+// @5:108
+  LUT2 \cnt_3_cZ[13]  (
+	.I0(un3_cnt_cry_13_0_SUM),
+	.I1(clk_ssd13063),
+	.F(cnt_3[13])
+);
+defparam \cnt_3_cZ[13] .INIT=4'h2;
+// @5:108
+  LUT2 \cnt_3_cZ[21]  (
+	.I0(un3_cnt_cry_21_0_SUM),
+	.I1(clk_ssd13063),
+	.F(cnt_3[21])
+);
+defparam \cnt_3_cZ[21] .INIT=4'h2;
 // @5:108
   LUT2 \cnt_3_cZ[7]  (
 	.I0(un3_cnt_cry_7_0_SUM),
@@ -2373,33 +2394,12 @@ defparam \cnt_3_cZ[4] .INIT=4'h2;
 );
 defparam \cnt_3_cZ[7] .INIT=4'h2;
 // @5:108
-  LUT2 \cnt_3_cZ[12]  (
-	.I0(un3_cnt_cry_12_0_SUM),
+  LUT2 \cnt_3_cZ[8]  (
+	.I0(un3_cnt_cry_8_0_SUM),
 	.I1(clk_ssd13063),
-	.F(cnt_3[12])
+	.F(cnt_3[8])
 );
-defparam \cnt_3_cZ[12] .INIT=4'h2;
-// @5:108
-  LUT2 \cnt_3_cZ[14]  (
-	.I0(un3_cnt_cry_14_0_SUM),
-	.I1(clk_ssd13063),
-	.F(cnt_3[14])
-);
-defparam \cnt_3_cZ[14] .INIT=4'h2;
-// @5:108
-  LUT2 \cnt_3_cZ[15]  (
-	.I0(un3_cnt_cry_15_0_SUM),
-	.I1(clk_ssd13063),
-	.F(cnt_3[15])
-);
-defparam \cnt_3_cZ[15] .INIT=4'h2;
-// @5:108
-  LUT2 \cnt_3_cZ[16]  (
-	.I0(un3_cnt_cry_16_0_SUM),
-	.I1(clk_ssd13063),
-	.F(cnt_3[16])
-);
-defparam \cnt_3_cZ[16] .INIT=4'h2;
+defparam \cnt_3_cZ[8] .INIT=4'h2;
 // @5:108
   LUT2 \cnt_3_cZ[17]  (
 	.I0(un3_cnt_cry_17_0_SUM),
@@ -2407,6 +2407,13 @@ defparam \cnt_3_cZ[16] .INIT=4'h2;
 	.F(cnt_3[17])
 );
 defparam \cnt_3_cZ[17] .INIT=4'h2;
+// @5:108
+  LUT2 \cnt_3_cZ[18]  (
+	.I0(un3_cnt_cry_18_0_SUM),
+	.I1(clk_ssd13063),
+	.F(cnt_3[18])
+);
+defparam \cnt_3_cZ[18] .INIT=4'h2;
 // @5:108
   LUT4 clk_ssd13063_22_cZ (
 	.I0(clk_ssd13063_13),
@@ -2420,44 +2427,44 @@ defparam clk_ssd13063_22_cZ.INIT=16'h8000;
   LUT4 clk_ssd13063_13_cZ (
 	.I0(cnt[2]),
 	.I1(cnt[3]),
-	.I2(cnt[7]),
-	.I3(cnt[12]),
+	.I2(cnt[4]),
+	.I3(cnt[7]),
 	.F(clk_ssd13063_13)
 );
 defparam clk_ssd13063_13_cZ.INIT=16'h8000;
 // @5:108
   LUT4 clk_ssd13063_14_cZ (
-	.I0(cnt[14]),
-	.I1(cnt[15]),
-	.I2(cnt[16]),
+	.I0(cnt[8]),
+	.I1(cnt[10]),
+	.I2(cnt[13]),
 	.I3(cnt[17]),
 	.F(clk_ssd13063_14)
 );
 defparam clk_ssd13063_14_cZ.INIT=16'h8000;
 // @5:108
   LUT4 clk_ssd13063_15_cZ (
-	.I0(cnt[4]),
-	.I1(cnt[5]),
-	.I2(cnt[6]),
-	.I3(cnt[8]),
+	.I0(cnt[5]),
+	.I1(cnt[6]),
+	.I2(cnt[18]),
+	.I3(cnt[21]),
 	.F(clk_ssd13063_15)
 );
-defparam clk_ssd13063_15_cZ.INIT=16'h0001;
+defparam clk_ssd13063_15_cZ.INIT=16'h1000;
 // @5:108
   LUT4 clk_ssd13063_16_cZ (
 	.I0(cnt[9]),
-	.I1(cnt[10]),
-	.I2(cnt[11]),
-	.I3(cnt[13]),
+	.I1(cnt[11]),
+	.I2(cnt[12]),
+	.I3(cnt[14]),
 	.F(clk_ssd13063_16)
 );
 defparam clk_ssd13063_16_cZ.INIT=16'h0001;
 // @5:108
   LUT4 clk_ssd13063_17_cZ (
-	.I0(cnt[18]),
-	.I1(cnt[19]),
-	.I2(cnt[20]),
-	.I3(cnt[21]),
+	.I0(cnt[15]),
+	.I1(cnt[16]),
+	.I2(cnt[19]),
+	.I3(cnt[20]),
 	.F(clk_ssd13063_17)
 );
 defparam clk_ssd13063_17_cZ.INIT=16'h0001;
@@ -3075,9 +3082,16 @@ defparam un1_step_id_1_axb_6_cZ.INIT=16'hBF40;
 	.CE(N_96)
 );
 // @5:98
+  DFFC \cnt_Z[9]  (
+	.Q(cnt[9]),
+	.D(un3_cnt_cry_9_0_SUM),
+	.CLK(clk_50M_c),
+	.CLEAR(N_12_0)
+);
+// @5:98
   DFFC \cnt_Z[8]  (
 	.Q(cnt[8]),
-	.D(un3_cnt_cry_8_0_SUM),
+	.D(cnt_3[8]),
 	.CLK(clk_50M_c),
 	.CLEAR(N_12_0)
 );
@@ -3098,14 +3112,14 @@ defparam un1_step_id_1_axb_6_cZ.INIT=16'hBF40;
 // @5:98
   DFFC \cnt_Z[5]  (
 	.Q(cnt[5]),
-	.D(un3_cnt_cry_5_0_SUM),
+	.D(cnt_3[5]),
 	.CLK(clk_50M_c),
 	.CLEAR(N_12_0)
 );
 // @5:98
   DFFC \cnt_Z[4]  (
 	.Q(cnt[4]),
-	.D(cnt_3[4]),
+	.D(un3_cnt_cry_4_0_SUM),
 	.CLK(clk_50M_c),
 	.CLEAR(N_12_0)
 );
@@ -3138,6 +3152,13 @@ defparam un1_step_id_1_axb_6_cZ.INIT=16'hBF40;
 	.CLEAR(N_12_0)
 );
 // @5:98
+  DFFC \cnt_Z[24]  (
+	.Q(cnt[24]),
+	.D(un3_cnt_s_24_0_SUM),
+	.CLK(clk_50M_c),
+	.CLEAR(N_12_0)
+);
+// @5:98
   DFFC \cnt_Z[23]  (
 	.Q(cnt[23]),
 	.D(un3_cnt_cry_23_0_SUM),
@@ -3154,7 +3175,7 @@ defparam un1_step_id_1_axb_6_cZ.INIT=16'hBF40;
 // @5:98
   DFFC \cnt_Z[21]  (
 	.Q(cnt[21]),
-	.D(un3_cnt_cry_21_0_SUM),
+	.D(cnt_3[21]),
 	.CLK(clk_50M_c),
 	.CLEAR(N_12_0)
 );
@@ -3175,7 +3196,7 @@ defparam un1_step_id_1_axb_6_cZ.INIT=16'hBF40;
 // @5:98
   DFFC \cnt_Z[18]  (
 	.Q(cnt[18]),
-	.D(un3_cnt_cry_18_0_SUM),
+	.D(cnt_3[18]),
 	.CLK(clk_50M_c),
 	.CLEAR(N_12_0)
 );
@@ -3189,35 +3210,35 @@ defparam un1_step_id_1_axb_6_cZ.INIT=16'hBF40;
 // @5:98
   DFFC \cnt_Z[16]  (
 	.Q(cnt[16]),
-	.D(cnt_3[16]),
+	.D(un3_cnt_cry_16_0_SUM),
 	.CLK(clk_50M_c),
 	.CLEAR(N_12_0)
 );
 // @5:98
   DFFC \cnt_Z[15]  (
 	.Q(cnt[15]),
-	.D(cnt_3[15]),
+	.D(un3_cnt_cry_15_0_SUM),
 	.CLK(clk_50M_c),
 	.CLEAR(N_12_0)
 );
 // @5:98
   DFFC \cnt_Z[14]  (
 	.Q(cnt[14]),
-	.D(cnt_3[14]),
+	.D(un3_cnt_cry_14_0_SUM),
 	.CLK(clk_50M_c),
 	.CLEAR(N_12_0)
 );
 // @5:98
   DFFC \cnt_Z[13]  (
 	.Q(cnt[13]),
-	.D(un3_cnt_cry_13_0_SUM),
+	.D(cnt_3[13]),
 	.CLK(clk_50M_c),
 	.CLEAR(N_12_0)
 );
 // @5:98
   DFFC \cnt_Z[12]  (
 	.Q(cnt[12]),
-	.D(cnt_3[12]),
+	.D(un3_cnt_cry_12_0_SUM),
 	.CLK(clk_50M_c),
 	.CLEAR(N_12_0)
 );
@@ -3231,14 +3252,7 @@ defparam un1_step_id_1_axb_6_cZ.INIT=16'hBF40;
 // @5:98
   DFFC \cnt_Z[10]  (
 	.Q(cnt[10]),
-	.D(un3_cnt_cry_10_0_SUM),
-	.CLK(clk_50M_c),
-	.CLEAR(N_12_0)
-);
-// @5:98
-  DFFC \cnt_Z[9]  (
-	.Q(cnt[9]),
-	.D(un3_cnt_cry_9_0_SUM),
+	.D(cnt_3[10]),
 	.CLK(clk_50M_c),
 	.CLEAR(N_12_0)
 );
@@ -3265,13 +3279,6 @@ defparam un1_step_id_1_axb_6_cZ.INIT=16'hBF40;
 	.Q(led_c[0]),
 	.D(step_id_i[3]),
 	.CLK(clk_ssd1306)
-);
-// @5:98
-  DFFC \cnt_Z[24]  (
-	.Q(cnt[24]),
-	.D(un3_cnt_s_24_0_SUM),
-	.CLK(clk_50M_c),
-	.CLEAR(N_12_0)
 );
 // @5:98
   DFFCE clk_ssd1306_Z (

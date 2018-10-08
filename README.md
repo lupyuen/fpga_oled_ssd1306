@@ -17,7 +17,7 @@ https://git.morgothdisk.com/VERILOG/VERILOG-UTIL-IP/blob/master/spi_master.v
 | 4 (Yellow)      | oled_res      | RES         | Reset            | Reset signal (active low) |
 | 5 (Orange)      | oled_sclk     | D0 (or SCK) | SCK              | SPI system clock |
 | 6 (Brown/White) | oled_sdin     | D1 (or SDA) | SDIN             | SPI MOSI (system data in for OLED) |
-| 7               |               | CS          | ChipSelect       | Chip select (active low) |
+| 7               | ss            | CS          | ChipSelect       | Chip select (active low) |
 
 Excerpt From: Warren Gay. “Beginning STM32.” iBooks. 
   
