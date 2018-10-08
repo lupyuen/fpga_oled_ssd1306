@@ -1,0 +1,33 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\fpga_oled_ssd1306\\impl\\synthesize\\rev_1\\synwork\\oled_ssd1306_comp.srs|-prodtype|synplify_pro|-primux|-fixsmult|-sdff_counter|-nram|-divnmod|-nostructver|-infer_seqShift|-I|C:\\Gowin\\oled_ssd1306\\src|-I|C:\\fpga_oled_ssd1306\\impl\\synthesize\\|-I|C:\\Gowin\\1.8\\SynplifyPro\\lib|-sysv|-devicelib|C:\\Gowin\\1.8\\SynplifyPro\\lib\\generic\\gw1n.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Gowin\\1.8\\SynplifyPro\\bin64\\c_ver.exe":1526401174
+#CUR:"C:\\Gowin\\1.8\\SynplifyPro\\lib\\generic\\gw1n.v":1526403272
+#CUR:"C:\\Gowin\\1.8\\SynplifyPro\\lib\\vlog\\hypermods.v":1526400512
+#CUR:"C:\\Gowin\\1.8\\SynplifyPro\\lib\\vlog\\umr_capim.v":1526400512
+#CUR:"C:\\Gowin\\1.8\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1526400512
+#CUR:"C:\\Gowin\\1.8\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1526400512
+#CUR:"C:\\fpga_oled_ssd1306\\src\\SSD1306.v":1538985308
+#CUR:"C:\\fpga_oled_ssd1306\\src\\SSD1306_ROM_cfg_mod_header.v":1538712808
+#CUR:"C:\\fpga_oled_ssd1306\\src\\SSD1306_ROM_cfg_mod.v":1538714075
+#CUR:"C:\\fpga_oled_ssd1306\\src\\SSD1306_ROM_cfg_mod_header.v":1538712808
+#CUR:"C:\\fpga_oled_ssd1306\\src\\SSD1306_ROM_cfg_mod_header.v":1538712808
+#CUR:"C:\\fpga_oled_ssd1306\\src\\spi_master.v":1538969872
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"C:\fpga_oled_ssd1306\src\SSD1306.v" verilog
+1		*	"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod_header.v" verilog
+2			"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v" verilog
+3			"C:\fpga_oled_ssd1306\src\spi_master.v" verilog
+#Dependency Lists(Uses List)
+0 1 2 3
+1 -1
+2 1
+3 -1
+#Dependency Lists(Users Of)
+0 -1
+1 0 2
+2 0
+3 0
+#Design Unit to File Association
+module work SSD1306_ROM_cfg_mod 2
+module work spi_master 3
+module work SSD1306 0

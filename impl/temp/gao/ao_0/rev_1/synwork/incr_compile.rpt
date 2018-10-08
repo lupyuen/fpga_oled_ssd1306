@@ -1,0 +1,45 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03G-Beta6
+Install: C:\Gowin\1.8\SynplifyPro
+OS: Windows 6.2
+
+Hostname: BEACONDEV3
+
+Implementation : rev_1
+Synopsys HDL compiler and linker, Version comp2018q1p1, Build 118R, Built May 15 2018 09:18:11
+
+Modified Files: 10
+FID:  path (prevtimestamp, timestamp)
+0        C:\Gowin\1.8\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_define.v (N/A, 2018-02-05 11:32:52)
+1        C:\Gowin\1.8\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_mem_ctrl.v (N/A, 2018-02-05 11:32:52)
+2        C:\Gowin\1.8\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v (N/A, 2018-02-05 11:32:52)
+3        C:\Gowin\1.8\SynplifyPro\lib\generic\gw1n.v (N/A, 2018-05-16 00:54:32)
+4        C:\Gowin\1.8\SynplifyPro\lib\vlog\hypermods.v (N/A, 2018-05-16 00:08:32)
+5        C:\Gowin\1.8\SynplifyPro\lib\vlog\scemi_objects.v (N/A, 2018-05-16 00:08:32)
+6        C:\Gowin\1.8\SynplifyPro\lib\vlog\scemi_pipes.svh (N/A, 2018-05-16 00:08:32)
+7        C:\Gowin\1.8\SynplifyPro\lib\vlog\umr_capim.v (N/A, 2018-05-16 00:08:32)
+8        C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\gw_ao_parameter.v (N/A, 2018-10-08 02:53:39)
+9        C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\gw_ao_top_define.v (N/A, 2018-10-08 02:53:39)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 2
+MID:  lib.cell.view
+0        work.ao_mem_ctrl.verilog may have changed because the following files changed:
+                        C:\Gowin\1.8\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_mem_ctrl.v (N/A, 2018-02-05 11:32:52) <-- (module definition)
+                        C:\Gowin\1.8\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v (N/A, 2018-02-05 11:32:52) <-- (may instantiate this module)
+1        work.ao_top.verilog may have changed because the following files changed:
+                        C:\Gowin\1.8\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v (N/A, 2018-02-05 11:32:52) <-- (module definition)
+
+*******************************************************************
+Unmodified files: 0
+FID:  path (timestamp)
+
+*******************************************************************
+Unchanged modules: 0
+MID:  lib.cell.view

@@ -1,0 +1,2 @@
+@W: MT420 |Found inferred clock ao_top|clk_i with period 4.39ns. Please declare a user-defined clock on port clk_i.
+@W: MT420 |Found inferred clock ao_top|control[0] with period 9.49ns. Please declare a user-defined clock on port control[0].

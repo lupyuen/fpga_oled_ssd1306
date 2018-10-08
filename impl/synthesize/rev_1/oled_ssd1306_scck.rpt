@@ -1,0 +1,49 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03G-Beta6
+Install: C:\Gowin\1.8\SynplifyPro
+OS: Windows 6.2
+
+Hostname: BEACONDEV3
+
+Implementation : rev_1
+
+# Written on Mon Oct  8 17:33:02 2018
+
+##### FILES SYNTAX CHECKED ##############################################
+Constraint File(s):      (none)
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+*************
+
+          Start                                   Requested     Requested     Clock                              Clock                     Clock
+Level     Clock                                   Frequency     Period        Type                               Group                     Load 
+------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       SSD1306|clk_50M                         252.8 MHz     3.955         inferred                           Autoconstr_clkgroup_0     26   
+1 .         SSD1306|clk_ssd1306_derived_clock     252.8 MHz     3.955         derived (from SSD1306|clk_50M)     Autoconstr_clkgroup_0     83   
+================================================================================================================================================
+
+
+Clock Load Summary
+******************
+
+                                      Clock     Source                      Clock Pin         Non-clock Pin     Non-clock Pin
+Clock                                 Load      Pin                         Seq Example       Seq Example       Comb Example 
+-----------------------------------------------------------------------------------------------------------------------------
+SSD1306|clk_50M                       26        clk_50M(port)               clk_ssd1306.C     -                 -            
+SSD1306|clk_ssd1306_derived_clock     83        clk_ssd1306.Q[0](dffre)     led[3:0].C        -                 -            
+=============================================================================================================================

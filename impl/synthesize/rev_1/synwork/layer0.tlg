@@ -1,0 +1,16 @@
+Selecting top level module SSD1306
+@N: CG364 :"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v":23:7:23:25|Synthesizing module SSD1306_ROM_cfg_mod in library work.
+@W: CG371 :"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v":31:8:31:16|Cannot find data file SSD1306_ROM_script.mem for task $readmemh
+@W: CG532 :"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v":31:0:31:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@N: CG364 :"C:\fpga_oled_ssd1306\src\spi_master.v":18:7:18:16|Synthesizing module spi_master in library work.
+
+	WORD_LEN=32'b00000000000000000000000000001000
+	PRESCALLER_SIZE=32'b00000000000000000000000000001000
+	state_idle=1'b0
+	state_busy=1'b1
+   Generated name = spi_master_8s_8s_0_1
+@W: CL113 :"C:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Feedback mux created for signal prescallerbuff[2:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL113 :"C:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Feedback mux created for signal inbufffullp. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@N: CG364 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Synthesizing module SSD1306 in library work.
+@W: CL156 :"C:\fpga_oled_ssd1306\src\SSD1306.v":107:6:107:9|*Input btnc to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@N: CL159 :"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v":24:43:24:46|Input addr is unused.

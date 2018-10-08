@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synlog\oled_ssd1306_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>SSD1306|clk_50M</data>
+<data>100.0 MHz</data>
+<data>127.5 MHz</data>
+<data>2.158</data>
+</row>
+<row>
+<data>SSD1306|clk_ssd1306_derived_clock</data>
+<data>100.0 MHz</data>
+<data>258.1 MHz</data>
+<data>12.252</data>
+</row>
+<row>
+<data>System</data>
+<data>100.0 MHz</data>
+<data>866.6 MHz</data>
+<data>8.846</data>
+</row>
+</report_table>

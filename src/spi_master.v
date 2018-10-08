@@ -23,7 +23,7 @@ module spi_master #(
         input clk,/* Peripheral clock/not necessary to be core clock, the core clock can be different (input) */
         ////inout [WORD_LEN - 1:0]bus,/* In/Out data(bidirectional) */  ////TODO
         input [WORD_LEN - 1:0]data_in, //// In data
-        input [WORD_LEN - 1:0]data_out, //// Out data
+        output [WORD_LEN - 1:0]data_out, //// Out data
         input wr,/* Send data, asynchronus with 'clk' , active on posedge or negedge(input) */
         input rd,/* Read data, , asynchronus with 'clk' , active on posedge or negedge (input) */
         output buffempty,/* '1' if transmit buffer is empty (output) */

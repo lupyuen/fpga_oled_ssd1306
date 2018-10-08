@@ -1,0 +1,6 @@
+@W: CG371 :"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v":31:8:31:16|Cannot find data file SSD1306_ROM_script.mem for task $readmemh
+@W: CG532 :"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v":31:0:31:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CL113 :"C:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Feedback mux created for signal prescallerbuff[2:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL113 :"C:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Feedback mux created for signal inbufffullp. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL156 :"C:\fpga_oled_ssd1306\src\SSD1306.v":107:6:107:9|*Input btnc to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+

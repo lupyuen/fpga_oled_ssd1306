@@ -1,0 +1,25 @@
+---------------------------------------
+Resource Usage Report for gw_con_top 
+
+Mapping to part: gw1n_4lqfp144-6
+Cell usage:
+DFFC            1 use
+DFFCE           9 uses
+DFFNC           4 uses
+GSR             1 use
+INV             1 use
+LUT2            3 uses
+LUT3            6 uses
+LUT4            5 uses
+
+I/O ports: 17
+I/O primitives: 17
+IBUF           8 uses
+OBUF           9 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   14 of 3456 (0%)
+
+@S |Mapping Summary:
+Total  LUTs: 14 (0%)
+

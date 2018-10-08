@@ -1,23 +1,5 @@
-`timescale 10ns / 10ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: Iulian Gheorghiu
-// 
-// Create Date: 03/30/2017 05:33:52 PM
-// Design Name: 
-// Module Name: SSD1306
-// Project Name: SSD1306 cfg library
-// Target Devices: Artix-7
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+//  Based on https://github.com/MorgothCreator/Verilog_SSD1306_CFG_IP
+//  and https://git.morgothdisk.com/VERILOG/VERILOG-UTIL-IP/blob/master/spi_master.
 `include "SSD1306_ROM_cfg_mod_header.v"
 
 // Commands for SSD1306
@@ -47,14 +29,15 @@
 `define SSD1306_SWITCHCAPVCC			02
 
 module	SSD1306(
-	input	CLK100MHZ,    ////  TODO: Onboard clock is actually 50MHz
-	input	btnc,
+    input   clk_50M,  //  Onboard clock is 50MHz.
+    input   rst_n,    //  Reset pin is also an Input, triggered by board restart or reset button.
 	output	reg oled_dc,
 	output	reg oled_res,
 	output	oled_sclk,
 	output	oled_sdin,
 	output	reg oled_vbat,
-	output	reg oled_vdd
+	output	reg oled_vdd,
+    output  reg[3:0] led  //  LED is actually 4 discrete LEDs at 4 Output signals. Each LED Output is 1 bit.
 );
 
 reg wait_spi;
@@ -69,20 +52,45 @@ reg [27:0]time_count_back;
 reg [`BLOCK_ROM_INIT_ADDR_WIDTH-1:0]state_machine_count;
 wire [`BLOCK_ROM_INIT_DATA_WIDTH-1:0]rom_bus;
 
-reg [3:0]clk_div;
+reg internal_state_machine;
+reg [14:0]repeat_count;
 
-////
+reg clk_ssd1306;
 reg [7:0]data_tmp;
+reg [24:0]cnt;
 
+/*
+reg [3:0]clk_div;
 wire clk;
-assign clk = (rom_bus[46:44]) ? clk_div[3]:1'b0;
+assign clk = (rom_bus[46:44]) ? clk_div[3] : 1'b0;
 
-always @ (posedge CLK100MHZ)
+always @ (posedge clk_ssd1306)
 begin
 	//if(btnc)
 		//clk_div <= 4'h0;
 	//else
 		clk_div <= clk_div + 1;
+end
+*/
+
+always@(                //  Code below is always triggered when these conditions are true...
+    posedge clk_50M or  //  When the clock signal transitions from low to high (positive edge) OR
+    negedge rst_n       //  When the reset signal transitions from high to low (negative edge) which
+    ) begin             //  happens when the board restarts or reset button is pressed.
+
+    if (!rst_n) begin     //  If board restarts or reset button is pressed...
+        clk_ssd1306 <= 1'b0;  //  Init clk_ssd1306 and cnt to 0. "1'b0" means "1-Bit, Binary Value 0"
+        cnt <= 25'd0;     //  "25'd0" means "25-bit, Decimal Value 0"
+    end
+    else begin
+        if (cnt == 25'd2499_9999) begin  //  If our counter has reached its limit...
+            clk_ssd1306 <= ~clk_ssd1306;  //  Toggle the clk_led from 0 to 1 (and 1 to 0).
+            cnt <= 25'd0;         //  Reset the counter to 0.
+        end
+        else begin
+            cnt <= cnt + 25'd1;  //  Else increment counter by 1. "25'd1" means "25-bit, Decimal Value 1"
+        end
+    end
 end
 
 SSD1306_ROM_cfg_mod oled_rom_init(
@@ -95,10 +103,8 @@ spi_master	#	(
 .PRESCALLER_SIZE(8)/*	Default	8	/	Max	8*/
 )
 spi0(
-	.clk(clk),
+	.clk(clk_ssd1306),
 	.rst(btnc),
-    ////.bus(data_tmp),  //// TODO: bus is now in-out
-    ////.bus(rom_bus[15:8]),  //// TODO: bus is now in-out
 	.data_in(rom_bus[15:8]),
 	.data_out(data_tmp),
 	.wr(wr_spi),
@@ -117,10 +123,9 @@ spi0(
 );
 
 /* Synchronous lath to out commands directly from ROM except when is a repeat count load. */
-always @ (posedge clk)
+always @ (posedge clk_ssd1306)
 begin
-    if(!rom_bus[7])
-    begin
+    if(!rom_bus[7]) begin
         oled_vdd <= rom_bus[6];
         oled_vbat <= rom_bus[5];
         oled_res <= rom_bus[4];
@@ -131,66 +136,59 @@ begin
     end
 end
 
-reg internal_state_machine;
-reg [14:0]repeat_count;
-
-always @ (posedge clk)
+always @ (posedge clk_ssd1306)
 begin
-/*
+    if (!rst_n) begin     //  If board restarts or reset button is pressed...
+        //  Init the state machine.
 		time_count <= 28'h0000000;
 		time_count_back <= 28'h0000000;
 		state_machine_count <= `BLOCK_ROM_INIT_ADDR_WIDTH'h00;
 		internal_state_machine <= 1'b0;
 		repeat_count <= 15'h0000;
-*/
-    if(rom_bus[39:16] == time_count)
-    begin
+    end
+
+    //led <= state_machine_count[3:0];  //  Show the state machine count in LED.
+    led <= { ~state_machine_count[3], ~state_machine_count[2], ~state_machine_count[1], ~state_machine_count[0] };  //  Show the state machine time count in LED.
+    if(rom_bus[39:16] == time_count) begin
         case(internal_state_machine)
             1'b0 : begin
-                if(rom_bus[7])
-                begin
+                if(rom_bus[7]) begin
                     repeat_count <= {rom_bus[6:0], rom_bus[15:8]};
                     time_count_back <= time_count + 1;
                 end
-                else 
+                else begin
                     if(repeat_count && rom_bus[46:44] > 1)
-                        repeat_count <= repeat_count - 15'h0001;  
+                        repeat_count <= repeat_count - 15'h0001;
+                end
                 internal_state_machine <= 1'b1;
             end
             1'b1 : begin
-                if(wait_spi)
-                begin
-                    if(charreceived)
-                    begin
+                if(wait_spi) begin
+                    if(charreceived) begin
                         internal_state_machine <= 1'b0;
-                        if(repeat_count)
-                        begin
+                        if(repeat_count) begin
                             time_count <= time_count_back;
                             if(rom_bus[47])
                                 state_machine_count <= state_machine_count + ~rom_bus[46:44];
                             else
                                 state_machine_count <= state_machine_count + rom_bus[46:44];
                         end
-                        else
-                        begin
+                        else begin
                             time_count <= time_count + 1;
                             state_machine_count <= state_machine_count + `BLOCK_ROM_INIT_ADDR_WIDTH'h01;
                         end
                     end
                 end
-                else
-                begin
+                else begin
                     internal_state_machine <= 1'b0;
-                    if(repeat_count)
-                    begin
+                    if (repeat_count) begin
                         time_count <= time_count_back;
                         if(rom_bus[47])
                             state_machine_count <= state_machine_count + ~rom_bus[46:44];
                         else
                             state_machine_count <= state_machine_count + rom_bus[46:44];
                     end
-                    else
-                    begin
+                    else begin
                         time_count <= time_count + 1;
                         state_machine_count <= state_machine_count + `BLOCK_ROM_INIT_ADDR_WIDTH'h1;
                     end
@@ -198,8 +196,9 @@ begin
             end
         endcase
     end
-    else
+    else begin
         time_count <= time_count + 1;
+    end
 end
 
 endmodule

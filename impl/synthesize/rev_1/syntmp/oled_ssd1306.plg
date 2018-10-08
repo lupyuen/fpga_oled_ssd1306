@@ -1,0 +1,22 @@
+@P:  Worst Slack : 2.158
+@P:  SSD1306|clk_50M - Estimated Frequency : 127.5 MHz
+@P:  SSD1306|clk_50M - Requested Frequency : 100.0 MHz
+@P:  SSD1306|clk_50M - Estimated Period : 7.842
+@P:  SSD1306|clk_50M - Requested Period : 10.000
+@P:  SSD1306|clk_50M - Slack : 2.158
+@P:  SSD1306|clk_ssd1306_derived_clock - Estimated Frequency : 258.1 MHz
+@P:  SSD1306|clk_ssd1306_derived_clock - Requested Frequency : 100.0 MHz
+@P:  SSD1306|clk_ssd1306_derived_clock - Estimated Period : 3.874
+@P:  SSD1306|clk_ssd1306_derived_clock - Requested Period : 10.000
+@P:  SSD1306|clk_ssd1306_derived_clock - Slack : 12.252
+@P:  System - Estimated Frequency : 866.6 MHz
+@P:  System - Requested Frequency : 100.0 MHz
+@P:  System - Estimated Period : 1.154
+@P:  System - Requested Period : 10.000
+@P:  System - Slack : 8.846
+@P: SSD1306 Part : gw1n_4lqfp144-6
+@P: SSD1306 I/O primitives : 12
+@P: SSD1306 I/O Register bits : 0
+@P: SSD1306 Register bits (Non I/O) : 66 (1%)
+@P: SSD1306 Total Luts : 48 of 800 (1%)
+@P:  CPU Time : 0h:00m:03s

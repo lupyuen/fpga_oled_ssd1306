@@ -1,0 +1,1082 @@
+#Build: Synplify Pro (R) N-2018.03G-Beta6, Build 118R, May 15 2018
+#install: C:\Gowin\1.8\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: BEACONDEV3
+
+# Mon Oct  8 02:53:50 2018
+
+#Implementation: rev_1
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03G-Beta6
+Install: C:\Gowin\1.8\SynplifyPro
+OS: Windows 6.2
+
+Hostname: BEACONDEV3
+
+Implementation : rev_1
+Synopsys HDL Compiler, Version comp2018q1p1, Build 118R, Built May 15 2018 09:18:11
+
+@N|Running in 64-bit mode
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03G-Beta6
+Install: C:\Gowin\1.8\SynplifyPro
+OS: Windows 6.2
+
+Hostname: BEACONDEV3
+
+Implementation : rev_1
+Synopsys Verilog Compiler, Version comp2018q1p1, Build 118R, Built May 15 2018 09:18:11
+
+@N|Running in 64-bit mode
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@I::"C:\Gowin\1.8\SynplifyPro\lib\generic\gw1n.v" (library work)
+@I::"C:\Gowin\1.8\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Gowin\1.8\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Gowin\1.8\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Gowin\1.8\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\gw_ao_parameter.v" (library work)
+@I::"C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\gw_ao_top_define.v" (library work)
+@I::"C:\Gowin\1.8\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_define.v" (library work)
+@I::"C:\Gowin\1.8\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_mem_ctrl.v" (library work)
+@W: CG1337 :"C:\Gowin\1.8\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_mem_ctrl.v":104:9:104:27|Net capture_length_zero is not declared.
+@I::"C:\Gowin\1.8\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_top.v" (library work)
+Verilog syntax check successful!
+@N: CG364 :"C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\gw_ao_parameter.v":1:0:1:8|Synthesizing module work_C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\gw_ao_parameter.v_unit in library work.
+Selecting top level module ao_top
+Extracted state machine for register module_state
+State machine has 6 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0100
+   0101
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 75MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Oct  8 02:53:51 2018
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03G-Beta6
+Install: C:\Gowin\1.8\SynplifyPro
+OS: Windows 6.2
+
+Hostname: BEACONDEV3
+
+Implementation : rev_1
+Synopsys Synopsys Netlist Linker, Version comp2018q1p1, Build 118R, Built May 15 2018 09:18:11
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Oct  8 02:53:51 2018
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Oct  8 02:53:51 2018
+
+###########################################################]
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03G-Beta6
+Install: C:\Gowin\1.8\SynplifyPro
+OS: Windows 6.2
+
+Hostname: BEACONDEV3
+
+Database state : C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1\synwork\|rev_1
+Synopsys Synopsys Netlist Linker, Version comp2018q1p1, Build 118R, Built May 15 2018 09:18:11
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Oct  8 02:53:53 2018
+
+###########################################################]
+Premap Report
+
+# Mon Oct  8 02:53:53 2018
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03G-Beta6
+Install: C:\Gowin\1.8\SynplifyPro
+OS: Windows 6.2
+
+Hostname: BEACONDEV3
+
+Implementation : rev_1
+Synopsys Generic Technology Pre-mapping, Version mapgw, Build 1086R, Built May 17 2018 10:22:59
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1\ao_0_scck.rpt 
+Printing clock  summary report in "C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1\ao_0_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+@N: BN133 |Ignoring syn_hier=hard property on top-level design.
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+Encoding state machine module_state[5:0] (in view: work.ao_top(verilog))
+original code -> new code
+   0000 -> 000001
+   0001 -> 000010
+   0010 -> 000100
+   0011 -> 001000
+   0100 -> 010000
+   0101 -> 100000
+syn_allowed_resources : blockrams=10  set on top level netlist ao_top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 188MB peak: 190MB)
+
+
+
+Clock Summary
+******************
+
+          Start                 Requested     Requested     Clock        Clock                     Clock
+Level     Clock                 Frequency     Period        Type         Group                     Load 
+--------------------------------------------------------------------------------------------------------
+0 -       ao_top|control[0]     164.5 MHz     6.078         inferred     Autoconstr_clkgroup_1     115  
+                                                                                                        
+0 -       ao_top|clk_i          305.2 MHz     3.276         inferred     Autoconstr_clkgroup_0     24   
+========================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                      Clock     Source               Clock Pin                 Non-clock Pin     Non-clock Pin       
+Clock                 Load      Pin                  Seq Example               Seq Example       Comb Example        
+---------------------------------------------------------------------------------------------------------------------
+ao_top|control[0]     115       control[0](port)     data_register[28:0].C     -                 -                   
+                                                                                                                     
+ao_top|clk_i          24        clk_i(port)          rst_ao.C                  -                 clk_ao.I[0](keepbuf)
+=====================================================================================================================
+
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+2 non-gated/non-generated clock tree(s) driving 132 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+============================= Non-Gated/Non-Generated Clocks =============================
+Clock Tree ID     Driving Element     Drive Element Type        Fanout     Sample Instance
+------------------------------------------------------------------------------------------
+@KP:ckid0_0       ENCRYPTED           Unconstrained_port        17         ENCRYPTED      
+@KP:ckid0_1       ENCRYPTED           Unconstrained_io_port     115        ENCRYPTED      
+==========================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N|Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1\ao_0.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 188MB peak: 190MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 189MB peak: 190MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 189MB peak: 190MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 104MB peak: 190MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Mon Oct  8 02:53:55 2018
+
+###########################################################]
+Map & Optimize Report
+
+# Mon Oct  8 02:53:55 2018
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03G-Beta6
+Install: C:\Gowin\1.8\SynplifyPro
+OS: Windows 6.2
+
+Hostname: BEACONDEV3
+
+Implementation : rev_1
+Synopsys Generic Technology Mapper, Version mapgw, Build 1086R, Built May 17 2018 10:22:59
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 190MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 190MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 189MB peak: 190MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 191MB peak: 191MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 190MB peak: 192MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 191MB peak: 192MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 191MB peak: 192MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 191MB peak: 192MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 191MB peak: 192MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 193MB peak: 194MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		    -3.06ns		 142 /       111
+   2		0h:00m:01s		    -3.06ns		 146 /       111
+   3		0h:00m:01s		    -3.06ns		 146 /       111
+   4		0h:00m:01s		    -3.06ns		 146 /       111
+   5		0h:00m:01s		    -3.06ns		 146 /       111
+   6		0h:00m:01s		    -3.06ns		 146 /       111
+   7		0h:00m:01s		    -3.06ns		 146 /       111
+   8		0h:00m:01s		    -3.06ns		 146 /       111
+   9		0h:00m:01s		    -3.06ns		 146 /       111
+
+  10		0h:00m:02s		    -2.71ns		 153 /       111
+  11		0h:00m:02s		    -2.96ns		 154 /       111
+  12		0h:00m:02s		    -2.96ns		 156 /       111
+  13		0h:00m:02s		    -2.96ns		 155 /       111
+  14		0h:00m:02s		    -2.96ns		 156 /       111
+
+
+  15		0h:00m:02s		    -2.81ns		 158 /       111
+  16		0h:00m:02s		    -3.06ns		 161 /       111
+  17		0h:00m:02s		    -3.06ns		 160 /       111
+  18		0h:00m:02s		    -3.06ns		 161 /       111
+  19		0h:00m:02s		    -3.06ns		 160 /       111
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 193MB peak: 194MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 193MB peak: 194MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 123MB peak: 194MB)
+
+Writing Analyst data base C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1\synwork\ao_0_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 193MB peak: 195MB)
+
+Writing Verilog Simulation files
+
+Writing scf file... (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 193MB peak: 195MB)
+
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 192MB peak: 195MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 193MB peak: 195MB)
+
+@W: MT420 |Found inferred clock ao_top|clk_i with period 4.39ns. Please declare a user-defined clock on port clk_i.
+@W: MT420 |Found inferred clock ao_top|control[0] with period 9.49ns. Please declare a user-defined clock on port control[0].
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Mon Oct  8 02:54:01 2018
+#
+
+
+Top view:               ao_top
+Requested Frequency:    105.4 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -1.675
+
+                      Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock        Frequency     Frequency     Period        Period        Slack      Type         Group                
+---------------------------------------------------------------------------------------------------------------------------
+ao_top|clk_i          227.8 MHz     193.7 MHz     4.389         5.164         -0.775     inferred     Autoconstr_clkgroup_0
+ao_top|control[0]     105.4 MHz     89.6 MHz      9.489         11.164        -1.675     inferred     Autoconstr_clkgroup_1
+System                100.0 MHz     128.3 MHz     10.000        7.797         2.203      system       system_clkgroup      
+===========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------------------------
+Starting           Ending             |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------------------------
+System             ao_top|clk_i       |  4.389       2.203   |  No paths    -      |  No paths    -      |  No paths    -    
+System             ao_top|control[0]  |  9.489       4.606   |  No paths    -      |  No paths    -      |  No paths    -    
+ao_top|clk_i       System             |  4.389       3.001   |  No paths    -      |  No paths    -      |  No paths    -    
+ao_top|clk_i       ao_top|clk_i       |  4.389       -0.775  |  4.389       2.868  |  No paths    -      |  2.195       0.674
+ao_top|clk_i       ao_top|control[0]  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+ao_top|control[0]  System             |  9.489       7.918   |  No paths    -      |  No paths    -      |  No paths    -    
+ao_top|control[0]  ao_top|clk_i       |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+ao_top|control[0]  ao_top|control[0]  |  9.489       -1.675  |  No paths    -      |  No paths    -      |  No paths    -    
+=============================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: ao_top|clk_i
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                      Starting                                                         Arrival           
+Instance                              Reference        Type      Pin     Net                           Time        Slack 
+                                      Clock                                                                              
+-------------------------------------------------------------------------------------------------------------------------
+internal_reg_start_syn[1]             ao_top|clk_i     DFFC      Q       internal_reg_start_syn[1]     0.367       -0.775
+u_ao_mem_ctrl.capture_loop            ao_top|clk_i     DFFCE     Q       capture_loop                  0.367       -0.708
+trigger_seq_start                     ao_top|clk_i     DFFCE     Q       trigger_seq_start             0.367       -0.498
+internal_reg_start_dly[0]             ao_top|clk_i     DFFC      Q       internal_reg_start_dly[0]     0.367       -0.074
+u_ao_mem_ctrl.capture_mem_addr[1]     ao_top|clk_i     DFFC      Q       capture_mem_addr[1]           0.367       -0.028
+capture_start_sel                     ao_top|clk_i     DFFCE     Q       capture_start_sel             0.367       -0.007
+u_ao_mem_ctrl.capture_mem_addr[0]     ao_top|clk_i     DFFC      Q       capture_mem_addr[0]           0.367       0.039 
+internal_reg_start_dly[1]             ao_top|clk_i     DFFC      Q       internal_reg_start_dly[1]     0.367       0.142 
+u_ao_mem_ctrl.capture_mem_addr[2]     ao_top|clk_i     DFFC      Q       capture_mem_addr[2]           0.367       0.249 
+u_ao_mem_ctrl.capture_mem_wr          ao_top|clk_i     DFFCE     Q       capture_mem_wr                0.367       0.445 
+=========================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                      Starting                                                         Required           
+Instance                              Reference        Type      Pin        Net                        Time         Slack 
+                                      Clock                                                                               
+--------------------------------------------------------------------------------------------------------------------------
+u_ao_mem_ctrl.mem_addr_inc_en         ao_top|clk_i     DFFCE     CE         un1_capture_mem_addr_1     4.256        -0.775
+u_ao_mem_ctrl.mem_addr_inc_en         ao_top|clk_i     DFFCE     D          mem_addr_inc_en7           4.256        -0.351
+u_ao_mem_ctrl.capture_mem_wr          ao_top|clk_i     DFFCE     CE         un1_start_reg              4.256        -0.074
+u_ao_mem_ctrl.capture_mem_addr[2]     ao_top|clk_i     DFFC      D          capture_mem_addr_6[2]      4.256        -0.028
+u_ao_mem_ctrl.capture_mem_addr[3]     ao_top|clk_i     DFFC      D          capture_mem_addr_6[3]      4.256        0.378 
+trigger_seq_start                     ao_top|clk_i     DFFCE     CE         un1_match_final            4.256        0.378 
+capture_end_dly                       ao_top|clk_i     DFFP      PRESET     rst_ao                     2.062        0.674 
+u_ao_mem_ctrl.capture_mem_wr          ao_top|clk_i     DFFCE     D          start_reg                  4.256        0.748 
+trigger_seq_start                     ao_top|clk_i     DFFCE     D          start_reg                  4.256        0.748 
+u_ao_mem_ctrl.capture_loop            ao_top|clk_i     DFFCE     CE         un1_mem_addr_inc_en6       4.256        1.769 
+==========================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      4.389
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.256
+
+    - Propagation time:                      5.031
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.775
+
+    Number of logic level(s):                2
+    Starting point:                          internal_reg_start_syn[1] / Q
+    Ending point:                            u_ao_mem_ctrl.mem_addr_inc_en / CE
+    The start point is clocked by            ao_top|clk_i [rising] on pin CLK
+    The end   point is clocked by            ao_top|clk_i [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                     Type          Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+internal_reg_start_syn[1]                DFFC          Q        Out     0.367     0.367       -         
+internal_reg_start_syn[1]                Net           -        -       1.021     -           5         
+triger                                   LUT3          I1       In      -         1.388       -         
+triger                                   LUT3          F        Out     1.099     2.487       -         
+triger                                   Net           -        -       1.021     -           2         
+u_ao_mem_ctrl.un1_capture_mem_addr_1     MUX2_LUT6     S0       In      -         3.508       -         
+u_ao_mem_ctrl.un1_capture_mem_addr_1     MUX2_LUT6     O        Out     0.502     4.010       -         
+un1_capture_mem_addr_1                   Net           -        -       1.021     -           1         
+u_ao_mem_ctrl.mem_addr_inc_en            DFFCE         CE       In      -         5.031       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 5.164 is 2.101(40.7%) logic and 3.063(59.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      4.389
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.256
+
+    - Propagation time:                      4.964
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.707
+
+    Number of logic level(s):                2
+    Starting point:                          u_ao_mem_ctrl.capture_loop / Q
+    Ending point:                            u_ao_mem_ctrl.mem_addr_inc_en / CE
+    The start point is clocked by            ao_top|clk_i [rising] on pin CLK
+    The end   point is clocked by            ao_top|clk_i [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                     Type          Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+u_ao_mem_ctrl.capture_loop               DFFCE         Q        Out     0.367     0.367       -         
+capture_loop                             Net           -        -       1.021     -           2         
+triger                                   LUT3          I0       In      -         1.388       -         
+triger                                   LUT3          F        Out     1.032     2.420       -         
+triger                                   Net           -        -       1.021     -           2         
+u_ao_mem_ctrl.un1_capture_mem_addr_1     MUX2_LUT6     S0       In      -         3.441       -         
+u_ao_mem_ctrl.un1_capture_mem_addr_1     MUX2_LUT6     O        Out     0.502     3.943       -         
+un1_capture_mem_addr_1                   Net           -        -       1.021     -           1         
+u_ao_mem_ctrl.mem_addr_inc_en            DFFCE         CE       In      -         4.964       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 5.097 is 2.034(39.9%) logic and 3.063(60.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      4.389
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.256
+
+    - Propagation time:                      4.754
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.498
+
+    Number of logic level(s):                2
+    Starting point:                          trigger_seq_start / Q
+    Ending point:                            u_ao_mem_ctrl.mem_addr_inc_en / CE
+    The start point is clocked by            ao_top|clk_i [rising] on pin CLK
+    The end   point is clocked by            ao_top|clk_i [rising] on pin CLK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                     Type          Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+trigger_seq_start                        DFFCE         Q        Out     0.367     0.367       -         
+trigger_seq_start                        Net           -        -       1.021     -           1         
+triger                                   LUT3          I2       In      -         1.388       -         
+triger                                   LUT3          F        Out     0.822     2.210       -         
+triger                                   Net           -        -       1.021     -           2         
+u_ao_mem_ctrl.un1_capture_mem_addr_1     MUX2_LUT6     S0       In      -         3.231       -         
+u_ao_mem_ctrl.un1_capture_mem_addr_1     MUX2_LUT6     O        Out     0.502     3.733       -         
+un1_capture_mem_addr_1                   Net           -        -       1.021     -           1         
+u_ao_mem_ctrl.mem_addr_inc_en            DFFCE         CE       In      -         4.754       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 4.887 is 1.824(37.3%) logic and 3.063(62.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      4.389
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.256
+
+    - Propagation time:                      4.607
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.351
+
+    Number of logic level(s):                2
+    Starting point:                          internal_reg_start_syn[1] / Q
+    Ending point:                            u_ao_mem_ctrl.mem_addr_inc_en / D
+    The start point is clocked by            ao_top|clk_i [rising] on pin CLK
+    The end   point is clocked by            ao_top|clk_i [rising] on pin CLK
+
+Instance / Net                               Pin      Pin               Arrival     No. of    
+Name                               Type      Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------
+internal_reg_start_syn[1]          DFFC      Q        Out     0.367     0.367       -         
+internal_reg_start_syn[1]          Net       -        -       1.021     -           5         
+triger                             LUT3      I1       In      -         1.388       -         
+triger                             LUT3      F        Out     1.099     2.487       -         
+triger                             Net       -        -       1.021     -           2         
+u_ao_mem_ctrl.mem_addr_inc_en7     LUT2      I1       In      -         3.508       -         
+u_ao_mem_ctrl.mem_addr_inc_en7     LUT2      F        Out     1.099     4.607       -         
+mem_addr_inc_en7                   Net       -        -       0.000     -           1         
+u_ao_mem_ctrl.mem_addr_inc_en      DFFCE     D        In      -         4.607       -         
+==============================================================================================
+Total path delay (propagation time + setup) of 4.740 is 2.698(56.9%) logic and 2.042(43.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      4.389
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.256
+
+    - Propagation time:                      4.540
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.284
+
+    Number of logic level(s):                2
+    Starting point:                          u_ao_mem_ctrl.capture_loop / Q
+    Ending point:                            u_ao_mem_ctrl.mem_addr_inc_en / D
+    The start point is clocked by            ao_top|clk_i [rising] on pin CLK
+    The end   point is clocked by            ao_top|clk_i [rising] on pin CLK
+
+Instance / Net                               Pin      Pin               Arrival     No. of    
+Name                               Type      Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------
+u_ao_mem_ctrl.capture_loop         DFFCE     Q        Out     0.367     0.367       -         
+capture_loop                       Net       -        -       1.021     -           2         
+triger                             LUT3      I0       In      -         1.388       -         
+triger                             LUT3      F        Out     1.032     2.420       -         
+triger                             Net       -        -       1.021     -           2         
+u_ao_mem_ctrl.mem_addr_inc_en7     LUT2      I1       In      -         3.441       -         
+u_ao_mem_ctrl.mem_addr_inc_en7     LUT2      F        Out     1.099     4.540       -         
+mem_addr_inc_en7                   Net       -        -       0.000     -           1         
+u_ao_mem_ctrl.mem_addr_inc_en      DFFCE     D        In      -         4.540       -         
+==============================================================================================
+Total path delay (propagation time + setup) of 4.673 is 2.631(56.3%) logic and 2.042(43.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: ao_top|control[0]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                   Starting                                                   Arrival           
+Instance           Reference             Type      Pin     Net                Time        Slack 
+                   Clock                                                                        
+------------------------------------------------------------------------------------------------
+word_count[7]      ao_top|control[0]     DFFCE     Q       word_count[7]      0.367       -1.675
+word_count[3]      ao_top|control[0]     DFFCE     Q       word_count[3]      0.367       -1.607
+word_count[6]      ao_top|control[0]     DFFCE     Q       word_count[6]      0.367       -1.607
+word_count[2]      ao_top|control[0]     DFFCE     Q       word_count[2]      0.367       -1.540
+word_count[8]      ao_top|control[0]     DFFCE     Q       word_count[8]      0.367       -1.398
+word_count[10]     ao_top|control[0]     DFFCE     Q       word_count[10]     0.367       -1.398
+word_count[0]      ao_top|control[0]     DFFCE     Q       word_count[0]      0.367       -1.331
+word_count[4]      ao_top|control[0]     DFFCE     Q       word_count[4]      0.367       -1.331
+word_count[9]      ao_top|control[0]     DFFCE     Q       word_count[9]      0.367       -1.202
+word_count[13]     ao_top|control[0]     DFFCE     Q       word_count[13]     0.367       -1.202
+================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                          Starting                                                            Required           
+Instance                  Reference             Type      Pin     Net                         Time         Slack 
+                          Clock                                                                                  
+-----------------------------------------------------------------------------------------------------------------
+address_counter[1]        ao_top|control[0]     DFFC      D       address_countere_0[1]       9.356        -1.675
+data_out_shift_reg[0]     ao_top|control[0]     DFFCE     D       N_75                        9.356        -0.731
+address_counter[0]        ao_top|control[0]     DFFC      D       address_countere_0[0]       9.356        -0.423
+address_counter[2]        ao_top|control[0]     DFFC      D       address_countere_0[2]       9.356        -0.423
+address_counter[3]        ao_top|control[0]     DFFC      D       address_countere_0[3]       9.356        -0.423
+data_out_shift_reg[1]     ao_top|control[0]     DFFCE     D       data_out_shift_reg_4[1]     9.356        0.159 
+data_out_shift_reg[2]     ao_top|control[0]     DFFCE     D       data_out_shift_reg_4[2]     9.356        0.159 
+data_out_shift_reg[3]     ao_top|control[0]     DFFCE     D       data_out_shift_reg_4[3]     9.356        0.159 
+data_out_shift_reg[4]     ao_top|control[0]     DFFCE     D       data_out_shift_reg_4[4]     9.356        0.159 
+data_out_shift_reg[5]     ao_top|control[0]     DFFCE     D       data_out_shift_reg_4[5]     9.356        0.159 
+=================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      9.489
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.356
+
+    - Propagation time:                      11.031
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.675
+
+    Number of logic level(s):                6
+    Starting point:                          word_count[7] / Q
+    Ending point:                            address_counter[1] / D
+    The start point is clocked by            ao_top|control[0] [rising] on pin CLK
+    The end   point is clocked by            ao_top|control[0] [rising] on pin CLK
+
+Instance / Net                                 Pin      Pin               Arrival     No. of    
+Name                                 Type      Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------
+word_count[7]                        DFFCE     Q        Out     0.367     0.367       -         
+word_count[7]                        Net       -        -       1.021     -           2         
+module_state_ns_0_a2_2_0_a2_9[0]     LUT4      I1       In      -         1.388       -         
+module_state_ns_0_a2_2_0_a2_9[0]     LUT4      F        Out     1.099     2.487       -         
+module_state_ns_0_a2_2_0_a2_9[0]     Net       -        -       0.766     -           1         
+module_state_ns_0_a2_2_0_a2[0]       LUT4      I1       In      -         3.253       -         
+module_state_ns_0_a2_2_0_a2[0]       LUT4      F        Out     1.099     4.352       -         
+word_count_zero_1                    Net       -        -       1.021     -           7         
+addr_ct_en_iv_i_0_tz                 LUT4      I3       In      -         5.373       -         
+addr_ct_en_iv_i_0_tz                 LUT4      F        Out     0.626     5.999       -         
+addr_ct_en_iv_i_0_tz                 Net       -        -       1.021     -           2         
+address_countere_1_sx[1]             LUT4      I0       In      -         7.020       -         
+address_countere_1_sx[1]             LUT4      F        Out     1.032     8.052       -         
+address_countere_1_sx[1]             Net       -        -       0.766     -           1         
+address_countere_1[1]                LUT4      I2       In      -         8.817       -         
+address_countere_1[1]                LUT4      F        Out     0.822     9.639       -         
+address_countere_1[0]                Net       -        -       0.766     -           1         
+address_countere[1]                  LUT4      I3       In      -         10.405      -         
+address_countere[1]                  LUT4      F        Out     0.626     11.031      -         
+address_countere_0[1]                Net       -        -       0.000     -           1         
+address_counter[1]                   DFFC      D        In      -         11.031      -         
+================================================================================================
+Total path delay (propagation time + setup) of 11.164 is 5.804(52.0%) logic and 5.360(48.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      9.489
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.356
+
+    - Propagation time:                      10.964
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.607
+
+    Number of logic level(s):                6
+    Starting point:                          word_count[3] / Q
+    Ending point:                            address_counter[1] / D
+    The start point is clocked by            ao_top|control[0] [rising] on pin CLK
+    The end   point is clocked by            ao_top|control[0] [rising] on pin CLK
+
+Instance / Net                                 Pin      Pin               Arrival     No. of    
+Name                                 Type      Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------
+word_count[3]                        DFFCE     Q        Out     0.367     0.367       -         
+word_count[3]                        Net       -        -       1.021     -           2         
+module_state_ns_0_a2_2_0_a2_8[0]     LUT4      I1       In      -         1.388       -         
+module_state_ns_0_a2_2_0_a2_8[0]     LUT4      F        Out     1.099     2.487       -         
+module_state_ns_0_a2_2_0_a2_8[0]     Net       -        -       0.766     -           1         
+module_state_ns_0_a2_2_0_a2[0]       LUT4      I0       In      -         3.253       -         
+module_state_ns_0_a2_2_0_a2[0]       LUT4      F        Out     1.032     4.285       -         
+word_count_zero_1                    Net       -        -       1.021     -           7         
+addr_ct_en_iv_i_0_tz                 LUT4      I3       In      -         5.306       -         
+addr_ct_en_iv_i_0_tz                 LUT4      F        Out     0.626     5.932       -         
+addr_ct_en_iv_i_0_tz                 Net       -        -       1.021     -           2         
+address_countere_1_sx[1]             LUT4      I0       In      -         6.953       -         
+address_countere_1_sx[1]             LUT4      F        Out     1.032     7.984       -         
+address_countere_1_sx[1]             Net       -        -       0.766     -           1         
+address_countere_1[1]                LUT4      I2       In      -         8.750       -         
+address_countere_1[1]                LUT4      F        Out     0.822     9.572       -         
+address_countere_1[0]                Net       -        -       0.766     -           1         
+address_countere[1]                  LUT4      I3       In      -         10.338      -         
+address_countere[1]                  LUT4      F        Out     0.626     10.964      -         
+address_countere_0[1]                Net       -        -       0.000     -           1         
+address_counter[1]                   DFFC      D        In      -         10.964      -         
+================================================================================================
+Total path delay (propagation time + setup) of 11.097 is 5.737(51.7%) logic and 5.360(48.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      9.489
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.356
+
+    - Propagation time:                      10.964
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.607
+
+    Number of logic level(s):                6
+    Starting point:                          word_count[6] / Q
+    Ending point:                            address_counter[1] / D
+    The start point is clocked by            ao_top|control[0] [rising] on pin CLK
+    The end   point is clocked by            ao_top|control[0] [rising] on pin CLK
+
+Instance / Net                                 Pin      Pin               Arrival     No. of    
+Name                                 Type      Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------
+word_count[6]                        DFFCE     Q        Out     0.367     0.367       -         
+word_count[6]                        Net       -        -       1.021     -           2         
+module_state_ns_0_a2_2_0_a2_9[0]     LUT4      I0       In      -         1.388       -         
+module_state_ns_0_a2_2_0_a2_9[0]     LUT4      F        Out     1.032     2.420       -         
+module_state_ns_0_a2_2_0_a2_9[0]     Net       -        -       0.766     -           1         
+module_state_ns_0_a2_2_0_a2[0]       LUT4      I1       In      -         3.186       -         
+module_state_ns_0_a2_2_0_a2[0]       LUT4      F        Out     1.099     4.285       -         
+word_count_zero_1                    Net       -        -       1.021     -           7         
+addr_ct_en_iv_i_0_tz                 LUT4      I3       In      -         5.306       -         
+addr_ct_en_iv_i_0_tz                 LUT4      F        Out     0.626     5.932       -         
+addr_ct_en_iv_i_0_tz                 Net       -        -       1.021     -           2         
+address_countere_1_sx[1]             LUT4      I0       In      -         6.953       -         
+address_countere_1_sx[1]             LUT4      F        Out     1.032     7.984       -         
+address_countere_1_sx[1]             Net       -        -       0.766     -           1         
+address_countere_1[1]                LUT4      I2       In      -         8.750       -         
+address_countere_1[1]                LUT4      F        Out     0.822     9.572       -         
+address_countere_1[0]                Net       -        -       0.766     -           1         
+address_countere[1]                  LUT4      I3       In      -         10.338      -         
+address_countere[1]                  LUT4      F        Out     0.626     10.964      -         
+address_countere_0[1]                Net       -        -       0.000     -           1         
+address_counter[1]                   DFFC      D        In      -         10.964      -         
+================================================================================================
+Total path delay (propagation time + setup) of 11.097 is 5.737(51.7%) logic and 5.360(48.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      9.489
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.356
+
+    - Propagation time:                      10.897
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.540
+
+    Number of logic level(s):                6
+    Starting point:                          word_count[2] / Q
+    Ending point:                            address_counter[1] / D
+    The start point is clocked by            ao_top|control[0] [rising] on pin CLK
+    The end   point is clocked by            ao_top|control[0] [rising] on pin CLK
+
+Instance / Net                                 Pin      Pin               Arrival     No. of    
+Name                                 Type      Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------
+word_count[2]                        DFFCE     Q        Out     0.367     0.367       -         
+word_count[2]                        Net       -        -       1.021     -           2         
+module_state_ns_0_a2_2_0_a2_8[0]     LUT4      I0       In      -         1.388       -         
+module_state_ns_0_a2_2_0_a2_8[0]     LUT4      F        Out     1.032     2.420       -         
+module_state_ns_0_a2_2_0_a2_8[0]     Net       -        -       0.766     -           1         
+module_state_ns_0_a2_2_0_a2[0]       LUT4      I0       In      -         3.186       -         
+module_state_ns_0_a2_2_0_a2[0]       LUT4      F        Out     1.032     4.218       -         
+word_count_zero_1                    Net       -        -       1.021     -           7         
+addr_ct_en_iv_i_0_tz                 LUT4      I3       In      -         5.239       -         
+addr_ct_en_iv_i_0_tz                 LUT4      F        Out     0.626     5.864       -         
+addr_ct_en_iv_i_0_tz                 Net       -        -       1.021     -           2         
+address_countere_1_sx[1]             LUT4      I0       In      -         6.886       -         
+address_countere_1_sx[1]             LUT4      F        Out     1.032     7.917       -         
+address_countere_1_sx[1]             Net       -        -       0.766     -           1         
+address_countere_1[1]                LUT4      I2       In      -         8.683       -         
+address_countere_1[1]                LUT4      F        Out     0.822     9.505       -         
+address_countere_1[0]                Net       -        -       0.766     -           1         
+address_countere[1]                  LUT4      I3       In      -         10.271      -         
+address_countere[1]                  LUT4      F        Out     0.626     10.897      -         
+address_countere_0[1]                Net       -        -       0.000     -           1         
+address_counter[1]                   DFFC      D        In      -         10.897      -         
+================================================================================================
+Total path delay (propagation time + setup) of 11.030 is 5.670(51.4%) logic and 5.360(48.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      9.489
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.356
+
+    - Propagation time:                      10.754
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.398
+
+    Number of logic level(s):                6
+    Starting point:                          word_count[8] / Q
+    Ending point:                            address_counter[1] / D
+    The start point is clocked by            ao_top|control[0] [rising] on pin CLK
+    The end   point is clocked by            ao_top|control[0] [rising] on pin CLK
+
+Instance / Net                                 Pin      Pin               Arrival     No. of    
+Name                                 Type      Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------
+word_count[8]                        DFFCE     Q        Out     0.367     0.367       -         
+word_count[8]                        Net       -        -       1.021     -           2         
+module_state_ns_0_a2_2_0_a2_9[0]     LUT4      I2       In      -         1.388       -         
+module_state_ns_0_a2_2_0_a2_9[0]     LUT4      F        Out     0.822     2.210       -         
+module_state_ns_0_a2_2_0_a2_9[0]     Net       -        -       0.766     -           1         
+module_state_ns_0_a2_2_0_a2[0]       LUT4      I1       In      -         2.976       -         
+module_state_ns_0_a2_2_0_a2[0]       LUT4      F        Out     1.099     4.075       -         
+word_count_zero_1                    Net       -        -       1.021     -           7         
+addr_ct_en_iv_i_0_tz                 LUT4      I3       In      -         5.096       -         
+addr_ct_en_iv_i_0_tz                 LUT4      F        Out     0.626     5.722       -         
+addr_ct_en_iv_i_0_tz                 Net       -        -       1.021     -           2         
+address_countere_1_sx[1]             LUT4      I0       In      -         6.743       -         
+address_countere_1_sx[1]             LUT4      F        Out     1.032     7.775       -         
+address_countere_1_sx[1]             Net       -        -       0.766     -           1         
+address_countere_1[1]                LUT4      I2       In      -         8.540       -         
+address_countere_1[1]                LUT4      F        Out     0.822     9.362       -         
+address_countere_1[0]                Net       -        -       0.766     -           1         
+address_countere[1]                  LUT4      I3       In      -         10.128      -         
+address_countere[1]                  LUT4      F        Out     0.626     10.754      -         
+address_countere_0[1]                Net       -        -       0.000     -           1         
+address_counter[1]                   DFFC      D        In      -         10.754      -         
+================================================================================================
+Total path delay (propagation time + setup) of 10.887 is 5.527(50.8%) logic and 5.360(49.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                         Starting                                           Arrival          
+Instance                                 Reference     Type     Pin     Net                 Time        Slack
+                                         Clock                                                               
+-------------------------------------------------------------------------------------------------------------
+u_ao_mem_ctrl.capture_mem_wr_RNIQKR6     System        INV      O       capture_end         0.000       2.203
+address_counter_cry_0_RNO[0]             System        INV      O       address_counter     0.000       4.606
+=============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                                          Required          
+Instance                      Reference     Type      Pin     Net                               Time         Slack
+                              Clock                                                                               
+------------------------------------------------------------------------------------------------------------------
+capture_start_sel             System        DFFCE     CE      internal_reg_start_dly_2_i[0]     4.256        2.203
+internal_reg_start_dly[0]     System        DFFC      D       internal_reg_start_dly_2[0]       4.256        2.203
+capture_end_dly               System        DFFP      D       capture_end                       4.256        3.235
+address_counter[3]            System        DFFC      D       address_countere_0[3]             9.356        4.606
+address_counter[2]            System        DFFC      D       address_countere_0[2]             9.356        4.663
+address_counter[0]            System        DFFC      D       address_countere_0[0]             9.356        4.777
+address_counter[1]            System        DFFC      D       address_countere_0[1]             9.356        5.872
+capture_end_tck[0]            System        DFFC      D       capture_end_tck_2[0]              9.356        7.303
+==================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      4.389
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.256
+
+    - Propagation time:                      2.053
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 2.203
+
+    Number of logic level(s):                1
+    Starting point:                          u_ao_mem_ctrl.capture_mem_wr_RNIQKR6 / O
+    Ending point:                            capture_start_sel / CE
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            ao_top|clk_i [rising] on pin CLK
+
+Instance / Net                                     Pin      Pin               Arrival     No. of    
+Name                                     Type      Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------
+u_ao_mem_ctrl.capture_mem_wr_RNIQKR6     INV       O        Out     0.000     0.000       -         
+capture_end                              Net       -        -       1.021     -           4         
+capture_start_sel_RNO                    LUT3      I0       In      -         1.021       -         
+capture_start_sel_RNO                    LUT3      F        Out     1.032     2.053       -         
+internal_reg_start_dly_2_i[0]            Net       -        -       0.000     -           1         
+capture_start_sel                        DFFCE     CE       In      -         2.053       -         
+====================================================================================================
+Total path delay (propagation time + setup) of 2.186 is 1.165(53.3%) logic and 1.021(46.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 193MB peak: 195MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 193MB peak: 195MB)
+
+---------------------------------------
+Resource Usage Report for ao_top 
+
+Mapping to part: gw1n_4lqfp144-6
+Cell usage:
+ALU             20 uses
+DFFC            23 uses
+DFFCE           84 uses
+DFFNP           2 uses
+DFFP            2 uses
+GSR             1 use
+INV             2 uses
+MUX2_LUT5       35 uses
+MUX2_LUT6       17 uses
+SDP             1 use
+LUT2            34 uses
+LUT3            21 uses
+LUT4            132 uses
+
+I/O ports: 19
+I/O primitives: 19
+IBUF           17 uses
+OBUF           2 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   111 of 3456 (3%)
+
+RAM/ROM usage summary
+Block Rams : 1 of 10 (10%)
+
+Total load per clock:
+   ao_top|clk_i: 1
+   ao_top|control[0]: 96
+
+@S |Mapping Summary:
+Total  LUTs: 187 (4%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 40MB peak: 195MB)
+
+Process took 0h:00m:05s realtime, 0h:00m:05s cputime
+# Mon Oct  8 02:54:01 2018
+
+###########################################################]

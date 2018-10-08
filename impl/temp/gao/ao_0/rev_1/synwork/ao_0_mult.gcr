@@ -1,0 +1,17 @@
+i ENCNET0
+m 0 0
+u 12 17
+p {t:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_0 {t:ENCRYPTED} dffr
+c ckid0_0 {p:ENCRYPTED} Unconstrained_port Inferred clock from port
+i control[0]
+m 0 0
+u 17 115
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_1 {t:ENCRYPTED} dffr
+c ckid0_1 {p:ENCRYPTED} Unconstrained_io_port Inferred clock from port
+i clk_i
+m 0 0
+u 0 0
+c ckid0_2 {p:ENCRYPTED} Unconstrained_port Inferred clock from port
+l 0 0 0 0 0

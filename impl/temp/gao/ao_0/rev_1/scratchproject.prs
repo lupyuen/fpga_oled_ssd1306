@@ -1,0 +1,71 @@
+#--  Synopsys, Inc.
+#--  Version N-2018.03G-Beta6
+#--  Project file C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1\scratchproject.prs
+
+#project files
+add_file -verilog "C:/Gowin/oled_ssd1306/impl/temp/gao/ao_0/gw_ao_parameter.v"
+add_file -verilog "C:/Gowin/oled_ssd1306/impl/temp/gao/ao_0/gw_ao_top_define.v"
+add_file -verilog "C:/Gowin/1.8/IDE/data/ipcores/GAO_LITE/GW_AO_0/gw_ao_define.v"
+add_file -verilog "C:/Gowin/1.8/IDE/data/ipcores/GAO_LITE/GW_AO_0/gw_ao_mem_ctrl.v"
+add_file -verilog "C:/Gowin/1.8/IDE/data/ipcores/GAO_LITE/GW_AO_0/gw_ao_top.v"
+
+
+
+#implementation: "rev_1"
+impl -add C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1 -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std sysv
+
+#device options
+set_option -technology GOWIN-GW1N
+set_option -part GW1N_4
+set_option -package LQFP144
+set_option -speed_grade -6
+set_option -part_companion ""
+
+#compilation/mapping options
+
+# hdl_compiler_options
+set_option -distributed_compile 0
+
+# mapper_without_write_options
+set_option -frequency auto
+set_option -srs_instrumentation 1
+
+# mapper_options
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# GOWIN-GW1N
+set_option -maxfan 10000
+set_option -rw_check_on_ram 1
+set_option -disable_io_insertion 0
+set_option -pipe 1
+set_option -retiming 0
+set_option -update_models_cp 0
+set_option -fix_gated_and_generated_clocks 1
+set_option -run_prop_extract 1
+
+# NFilter
+set_option -no_sequential_opt 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+set_option -multi_file_compilation_unit 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "C:/Gowin/oled_ssd1306/impl/temp/gao/ao_0/rev_1/ao_0.vm"
+impl -active "rev_1"

@@ -1,0 +1,2 @@
+@W: CG1337 :"C:\Gowin\1.8\IDE\data\ipcores\GAO_LITE\GW_AO_0\gw_ao_mem_ctrl.v":104:9:104:27|Net capture_length_zero is not declared.
+

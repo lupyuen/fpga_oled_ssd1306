@@ -1,0 +1,7 @@
+C:\Gowin\1.8\SynplifyPro\bin64\syn_nfilter.exe  -link  -multisrs  C:\Gowin\oled_ssd1306\impl\temp\gao\ao_control\rev_1\synwork\ao_control_comp.srs  -osyn  C:\Gowin\oled_ssd1306\impl\temp\gao\ao_control\rev_1\synwork\ao_control_mult.srs  -log  C:\Gowin\oled_ssd1306\impl\temp\gao\ao_control\rev_1\synlog\ao_control_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\1.8\SynplifyPro\bin64\syn_nfilter.exe -link -multisrs ..\synwork\ao_control_comp.srs -osyn ..\synwork\ao_control_mult.srs -log ..\synlog\ao_control_multi_srs_gen.srr
+rc:0 success:1 runtime:1
+file:..\synwork\ao_control_comp.srs|io:i|time:1538938420|size:9364|exec:0|csum:3E7396550C467076DA20927365386B67
+file:..\synwork\ao_control_mult.srs|io:o|time:1538938422|size:9140|exec:0|csum:
+file:..\synlog\ao_control_multi_srs_gen.srr|io:o|time:1538938422|size:1027|exec:0|csum:
+file:..\..\..\..\..\..\..\1.8\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1526401362|size:8704000|exec:1|csum:B95ED65EC47187934F9262CDAE086B51

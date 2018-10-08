@@ -1,0 +1,10 @@
+@N: CG364 :"C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\gw_ao_parameter.v":1:0:1:8|Synthesizing module work_C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\gw_ao_parameter.v_unit in library work.
+Selecting top level module ao_top
+Extracted state machine for register module_state
+State machine has 6 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0100
+   0101

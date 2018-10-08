@@ -1,0 +1,16 @@
+
+fsm_encoding {1051425141} onehot
+
+fsm_state_encoding {1051425141} 0000 {000001}
+
+fsm_state_encoding {1051425141} 0001 {000010}
+
+fsm_state_encoding {1051425141} 0010 {000100}
+
+fsm_state_encoding {1051425141} 0011 {001000}
+
+fsm_state_encoding {1051425141} 0100 {010000}
+
+fsm_state_encoding {1051425141} 0101 {100000}
+
+fsm_registers {1051425141} {module_state[5]}  {module_state[4]}  {module_state[3]}  {module_state[2]}  {module_state[1]}  {module_state[0]} 

@@ -1,0 +1,12 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v":23:7:23:25|Synthesizing module SSD1306_ROM_cfg_mod in library work.
+@N: CG364 :"C:\fpga_oled_ssd1306\src\spi_master.v":18:7:18:16|Synthesizing module spi_master in library work.
+@N: CG364 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Synthesizing module SSD1306 in library work.
+@N: CL159 :"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v":24:43:24:46|Input addr is unused.
+@N|Running in 64-bit mode
+@N: NF107 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Selected library: work cell: SSD1306 view verilog as top level
+@N: NF107 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Selected library: work cell: SSD1306 view verilog as top level
+

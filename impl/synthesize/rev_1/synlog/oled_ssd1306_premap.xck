@@ -1,0 +1,2 @@
+ckid0_1:@|S:clk_ssd1306.Q[0]@|E:state_machine_count[6:0]@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1
+ckid0_3:@|S:clk_50M@|E:cnt[24:0]@|F:@syn_dgcc_clockid0_3==1@|M:ClockId_0_3

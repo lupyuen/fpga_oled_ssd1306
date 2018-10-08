@@ -1,0 +1,14 @@
+C:\Gowin\1.8\SynplifyPro\bin64\m_generic.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1   -part GW1N_4  -package LQFP144  -grade -6    -maxfan 10000 -RWCheckOnRam 1 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -csa_carry_chain_maxlen 0 -infer_seqShift -enable_gcc_in_premap -summaryfile C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1\synlog\report\ao_0_fpga_mapper.xml -merge_inferred_clocks 0  -flow mapping  -multisrs  -ovm  C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1\ao_0.vm   -autoconstraint  -freq 100.000   C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1\synwork\ao_0_prem.srd  -sap  C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1\ao_0.sap  -otap  C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1\ao_0.tap  -omap  C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1\ao_0.map  -devicelib  C:\Gowin\1.8\SynplifyPro\lib\generic\gw1n.v  -sap  C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1\ao_0.sap  -ologparam  C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1\syntmp\ao_0.plg  -osyn  C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1\ao_0.srm  -prjdir  C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\  -prjname  ao_0  -log  C:\Gowin\oled_ssd1306\impl\temp\gao\ao_0\rev_1\synlog\ao_0_fpga_mapper.srr  -sn  2018.03  -jobname  "fpga_mapper" 
+relcom:..\..\..\..\..\..\..\1.8\SynplifyPro\bin64\m_generic.exe -prodtype synplify_pro -encrypt -pro -rundir ..\..\rev_1 -part GW1N_4 -package LQFP144 -grade -6 -maxfan 10000 -RWCheckOnRam 1 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -csa_carry_chain_maxlen 0 -infer_seqShift -enable_gcc_in_premap -summaryfile ..\synlog\report\ao_0_fpga_mapper.xml -merge_inferred_clocks 0 -flow mapping -multisrs -ovm ..\ao_0.vm -autoconstraint -freq 100.000 ..\synwork\ao_0_prem.srd -sap ..\ao_0.sap -otap ..\ao_0.tap -omap ..\ao_0.map -devicelib ..\..\..\..\..\..\..\1.8\SynplifyPro\lib\generic\gw1n.v -sap ..\ao_0.sap -ologparam ao_0.plg -osyn ..\ao_0.srm -prjdir ..\..\ -prjname ao_0 -log ..\synlog\ao_0_fpga_mapper.srr -sn 2018.03 -jobname "fpga_mapper"
+rc:1 success:1 runtime:6
+file:..\ao_0.vm|io:o|time:1538938440|size:117520|exec:0|csum:
+file:..\synwork\ao_0_prem.srd|io:i|time:1538938434|size:96853|exec:0|csum:A78EB8B39B86437B029E1284A52D2E63
+file:..\ao_0.sap|io:o|time:1538938435|size:1194|exec:0|csum:
+file:..\ao_0.tap|io:o|time:0|size:-1|exec:0|csum:
+file:..\ao_0.map|io:o|time:1538938441|size:28|exec:0|csum:
+file:..\..\..\..\..\..\..\1.8\SynplifyPro\lib\generic\gw1n.v|io:i|time:1526403272|size:91162|exec:0|csum:6FE3EB7A2EE8E73111EC688BAE636AC2
+file:..\ao_0.sap|io:o|time:1538938435|size:1194|exec:0|csum:
+file:ao_0.plg|io:o|time:1538938441|size:980|exec:0|csum:
+file:..\ao_0.srm|io:o|time:1538938439|size:194680|exec:0|csum:
+file:..\synlog\ao_0_fpga_mapper.srr|io:o|time:1538938441|size:51771|exec:0|csum:
+file:..\..\..\..\..\..\..\1.8\SynplifyPro\bin64\m_generic.exe|io:i|time:1526578602|size:35019776|exec:1|csum:A38C8B64A54826308121AE5A158D9B58
