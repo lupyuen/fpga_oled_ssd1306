@@ -1,4 +1,4 @@
-# Mon Oct  8 22:02:38 2018
+# Mon Oct  8 22:16:04 2018
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -55,8 +55,8 @@ Clock Summary
           Start                                   Requested     Requested     Clock                                                Clock                     Clock
 Level     Clock                                   Frequency     Period        Type                                                 Group                     Load 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-0 -       SSD1306|clk_50M                         100.0 MHz     10.000        inferred                                             Autoconstr_clkgroup_0     26   
-1 .         SSD1306|clk_ssd1306_derived_clock     100.0 MHz     10.000        derived (from SSD1306|clk_50M)                       Autoconstr_clkgroup_0     105  
+0 -       SSD1306|clk_50M                         100.0 MHz     10.000        inferred                                             Autoconstr_clkgroup_0     55   
+1 .         SSD1306|clk_ssd1306_derived_clock     100.0 MHz     10.000        derived (from SSD1306|clk_50M)                       Autoconstr_clkgroup_0     76   
 2 ..          SSD1306|wr_spi_derived_clock        100.0 MHz     10.000        derived (from SSD1306|clk_ssd1306_derived_clock)     Autoconstr_clkgroup_0     12   
 2 ..          SSD1306|rd_spi_derived_clock        100.0 MHz     10.000        derived (from SSD1306|clk_ssd1306_derived_clock)     Autoconstr_clkgroup_0     1    
 ==================================================================================================================================================================
@@ -69,13 +69,13 @@ Clock Load Summary
                                       Clock     Source                      Clock Pin                    Non-clock Pin     Non-clock Pin
 Clock                                 Load      Pin                         Seq Example                  Seq Example       Comb Example 
 ----------------------------------------------------------------------------------------------------------------------------------------
-SSD1306|clk_50M                       26        clk_50M(port)               clk_ssd1306.C                -                 -            
-SSD1306|clk_ssd1306_derived_clock     105       clk_ssd1306.Q[0](dffre)     oled_dc.C                    -                 -            
+SSD1306|clk_50M                       55        clk_50M(port)               clk_ssd1306.C                -                 -            
+SSD1306|clk_ssd1306_derived_clock     76        clk_ssd1306.Q[0](dffre)     oled_dc.C                    -                 -            
 SSD1306|wr_spi_derived_clock          12        wr_spi.Q[0](sdffre)         spi0.input_buffer[7:0].C     -                 -            
 SSD1306|rd_spi_derived_clock          1         rd_spi.Q[0](sdffre)         spi0.charreceivedn.C         -                 -            
 ========================================================================================================================================
 
-@W: MT529 :"c:\fpga_oled_ssd1306\src\ssd1306.v":97:0:97:5|Found inferred clock SSD1306|clk_50M which controls 26 sequential elements including cnt[24:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\fpga_oled_ssd1306\src\spi_master.v":139:0:139:5|Found inferred clock SSD1306|clk_50M which controls 55 sequential elements including spi0.inbufffulln_0. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -88,21 +88,21 @@ Number of ICG latches not removed:	0
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 26 clock pin(s) of sequential element(s)
-3 gated/generated clock tree(s) driving 118 clock pin(s) of sequential element(s)
-0 instances converted, 118 sequential instances remain driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 55 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 89 clock pin(s) of sequential element(s)
+0 instances converted, 89 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------
-@KP:ckid0_7       clk_50M             Unconstrained_port     26         cnt[24:0]      
+@KP:ckid0_2       clk_50M             Unconstrained_port     55         cnt[24:0]      
 =======================================================================================
 =============================================================== Gated/Generated Clocks ===============================================================
 Clock Tree ID     Driving Element      Drive Element Type     Unconverted Fanout     Sample Instance        Explanation                               
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 @KP:ckid0_0       wr_spi.Q[0]          sdffre                 12                     spi0.inbufffullp_0     Derived clock on input (not legal for GCC)
-@KP:ckid0_3       clk_ssd1306.Q[0]     dffre                  105                    step_id[6:0]           Derived clock on input (not legal for GCC)
-@KP:ckid0_5       rd_spi.Q[0]          sdffre                 1                      spi0.charreceivedn     Derived clock on input (not legal for GCC)
+@KP:ckid0_3       rd_spi.Q[0]          sdffre                 1                      spi0.charreceivedn     Derived clock on input (not legal for GCC)
+@KP:ckid0_5       clk_ssd1306.Q[0]     dffre                  76                     step_id[6:0]           Derived clock on input (not legal for GCC)
 ======================================================================================================================================================
 
 
@@ -127,6 +127,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 104MB peak: 190MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Oct  8 22:02:40 2018
+# Mon Oct  8 22:16:06 2018
 
 ###########################################################]

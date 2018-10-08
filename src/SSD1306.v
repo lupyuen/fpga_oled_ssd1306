@@ -104,7 +104,8 @@ always@(  //  Code below is always triggered when these conditions are true...
         cnt <= 25'd0;     //  "25'd0" means "25-bit, Decimal Value 0"
     end
     else begin
-        if (cnt == 25'd2499_9999) begin  //  If our counter has reached its limit...
+        if (cnt == 25'd24_9999) begin  //  If our counter has reached its limit...
+        //if (cnt == 25'd2499_9999) begin  //  If our counter has reached its limit...
             clk_ssd1306 <= ~clk_ssd1306;  //  Toggle the clk_led from 0 to 1 (and 1 to 0).
             cnt <= 25'd0;         //  Reset the counter to 0.
         end
@@ -119,7 +120,8 @@ spi_master # (
 .PRESCALLER_SIZE(8)  //  Default 8, Max 8
 )
 spi0(
-	.clk(clk_ssd1306),
+    .clk(clk_50M),
+	////.clk(clk_ssd1306),
 	.rst(btnc),
 	.data_in(step_tx_data),
 	.data_out(data_tmp),

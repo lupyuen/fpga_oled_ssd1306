@@ -13,7 +13,7 @@ Hostname: BEACONDEV3
 
 Implementation : rev_1
 
-# Written on Mon Oct  8 22:02:40 2018
+# Written on Mon Oct  8 22:16:06 2018
 
 ##### DESIGN INFO #######################################################
 
@@ -38,12 +38,15 @@ Clock Relationships
 Starting                              Ending                                |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 SSD1306|clk_50M                       SSD1306|clk_50M                       |     10.000           |     No paths         |     No paths         |     No paths                         
+SSD1306|clk_50M                       SSD1306|clk_ssd1306_derived_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
+SSD1306|clk_50M                       SSD1306|rd_spi_derived_clock          |     10.000           |     No paths         |     No paths         |     No paths                         
+SSD1306|clk_50M                       SSD1306|wr_spi_derived_clock          |     10.000           |     No paths         |     No paths         |     No paths                         
 SSD1306|clk_ssd1306_derived_clock     SSD1306|clk_ssd1306_derived_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
-SSD1306|clk_ssd1306_derived_clock     SSD1306|rd_spi_derived_clock          |     10.000           |     No paths         |     No paths         |     No paths                         
 SSD1306|clk_ssd1306_derived_clock     SSD1306|wr_spi_derived_clock          |     10.000           |     No paths         |     No paths         |     No paths                         
+SSD1306|rd_spi_derived_clock          SSD1306|clk_50M                       |     10.000           |     No paths         |     No paths         |     No paths                         
 SSD1306|rd_spi_derived_clock          SSD1306|clk_ssd1306_derived_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
 SSD1306|rd_spi_derived_clock          SSD1306|rd_spi_derived_clock          |     10.000           |     No paths         |     No paths         |     No paths                         
-SSD1306|wr_spi_derived_clock          SSD1306|clk_ssd1306_derived_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
+SSD1306|wr_spi_derived_clock          SSD1306|clk_50M                       |     10.000           |     No paths         |     No paths         |     No paths                         
 SSD1306|wr_spi_derived_clock          SSD1306|wr_spi_derived_clock          |     10.000           |     No paths         |     No paths         |     No paths                         
 =======================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.

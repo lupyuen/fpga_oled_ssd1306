@@ -5,20 +5,20 @@
 @N: CG364 :"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v":23:7:23:25|Synthesizing module SSD1306_ROM_cfg_mod in library work.
 @N: CG364 :"C:\fpga_oled_ssd1306\src\spi_master.v":18:7:18:16|Synthesizing module spi_master in library work.
 @N: CG364 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Synthesizing module SSD1306 in library work.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":167:0:167:5|Register bit repeat_count[1] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":167:0:167:5|Register bit repeat_count[2] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":167:0:167:5|Register bit repeat_count[3] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":167:0:167:5|Register bit repeat_count[4] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":167:0:167:5|Register bit repeat_count[5] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":167:0:167:5|Register bit repeat_count[6] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":167:0:167:5|Register bit repeat_count[7] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":167:0:167:5|Register bit repeat_count[8] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":167:0:167:5|Register bit repeat_count[9] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":167:0:167:5|Register bit repeat_count[10] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":167:0:167:5|Register bit repeat_count[11] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":167:0:167:5|Register bit repeat_count[12] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":167:0:167:5|Register bit repeat_count[13] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":167:0:167:5|Register bit repeat_count[14] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[1] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[2] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[3] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[4] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[5] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[6] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[7] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[8] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[9] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[10] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[11] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[12] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[13] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[14] is always 0.
 @N|Running in 64-bit mode
 @N: NF107 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Selected library: work cell: SSD1306 view verilog as top level
 @N: NF107 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Selected library: work cell: SSD1306 view verilog as top level
