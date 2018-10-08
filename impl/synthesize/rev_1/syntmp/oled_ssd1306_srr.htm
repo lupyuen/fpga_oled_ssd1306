@@ -1,11 +1,11 @@
 <html><body><samp><pre>
-<!@TC:1538998678>
+<!@TC:1539004469>
 #Build: Synplify Pro (R) N-2018.03G-Beta6, Build 118R, May 15 2018
 #install: C:\Gowin\1.8\SynplifyPro
 #OS: Windows 8 6.2
 #Hostname: BEACONDEV3
 
-# Mon Oct  8 19:37:58 2018
+# Mon Oct  8 21:14:29 2018
 
 #Implementation: rev_1
 
@@ -25,7 +25,7 @@ Hostname: BEACONDEV3
 Implementation : rev_1
 <a name=compilerReport1></a>Synopsys HDL Compiler, Version comp2018q1p1, Build 118R, Built May 15 2018 09:18:11</a>
 
-@N: : <!@TM:1538998679> | Running in 64-bit mode 
+@N: : <!@TM:1539004470> | Running in 64-bit mode 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
 This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
@@ -42,9 +42,9 @@ Hostname: BEACONDEV3
 Implementation : rev_1
 <a name=compilerReport2></a>Synopsys Verilog Compiler, Version comp2018q1p1, Build 118R, Built May 15 2018 09:18:11</a>
 
-@N: : <!@TM:1538998679> | Running in 64-bit mode 
-@N: : <!@TM:1538998679> | : Running Verilog Compiler in System Verilog mode 
-@N: : <!@TM:1538998679> | : Running Verilog Compiler in Multiple File Compilation Unit mode 
+@N: : <!@TM:1539004470> | Running in 64-bit mode 
+@N: : <!@TM:1539004470> | : Running Verilog Compiler in System Verilog mode 
+@N: : <!@TM:1539004470> | : Running Verilog Compiler in Multiple File Compilation Unit mode 
 @I::"C:\Gowin\1.8\SynplifyPro\lib\generic\gw1n.v" (library work)
 @I::"C:\Gowin\1.8\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
 @I::"C:\Gowin\1.8\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
@@ -55,39 +55,45 @@ Implementation : rev_1
 @I::"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v" (library work)
 @I::"C:\fpga_oled_ssd1306\src\spi_master.v" (library work)
 Verilog syntax check successful!
-File C:\fpga_oled_ssd1306\src\SSD1306.v changed - recompiling
 Selecting top level module SSD1306
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v:23:7:23:26:@N:CG364:@XP_MSG">SSD1306_ROM_cfg_mod.v(23)</a><!@TM:1538998679> | Synthesizing module SSD1306_ROM_cfg_mod in library work.
-<font color=#A52A2A>@W:<a href="@W:CG371:@XP_HELP">CG371</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v:31:8:31:17:@W:CG371:@XP_MSG">SSD1306_ROM_cfg_mod.v(31)</a><!@TM:1538998679> | Cannot find data file SSD1306_ROM_script.mem for task $readmemh</font>
-<font color=#A52A2A>@W:<a href="@W:CG532:@XP_HELP">CG532</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v:31:0:31:7:@W:CG532:@XP_MSG">SSD1306_ROM_cfg_mod.v(31)</a><!@TM:1538998679> | Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.</font>
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\fpga_oled_ssd1306\src\spi_master.v:18:7:18:17:@N:CG364:@XP_MSG">spi_master.v(18)</a><!@TM:1538998679> | Synthesizing module spi_master in library work.
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v:23:7:23:26:@N:CG364:@XP_MSG">SSD1306_ROM_cfg_mod.v(23)</a><!@TM:1539004470> | Synthesizing module SSD1306_ROM_cfg_mod in library work.
+<font color=#A52A2A>@W:<a href="@W:CG371:@XP_HELP">CG371</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v:31:8:31:17:@W:CG371:@XP_MSG">SSD1306_ROM_cfg_mod.v(31)</a><!@TM:1539004470> | Cannot find data file SSD1306_ROM_script.mem for task $readmemh</font>
+<font color=#A52A2A>@W:<a href="@W:CG532:@XP_HELP">CG532</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v:31:0:31:7:@W:CG532:@XP_MSG">SSD1306_ROM_cfg_mod.v(31)</a><!@TM:1539004470> | Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.</font>
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\fpga_oled_ssd1306\src\spi_master.v:18:7:18:17:@N:CG364:@XP_MSG">spi_master.v(18)</a><!@TM:1539004470> | Synthesizing module spi_master in library work.
 
 	WORD_LEN=32'b00000000000000000000000000001000
 	PRESCALLER_SIZE=32'b00000000000000000000000000001000
 	state_idle=1'b0
 	state_busy=1'b1
    Generated name = spi_master_8s_8s_0_1
-<font color=#A52A2A>@W:<a href="@W:CL113:@XP_HELP">CL113</a> : <a href="C:\fpga_oled_ssd1306\src\spi_master.v:78:0:78:6:@W:CL113:@XP_MSG">spi_master.v(78)</a><!@TM:1538998679> | Feedback mux created for signal prescallerbuff[2:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</font>
-<font color=#A52A2A>@W:<a href="@W:CL113:@XP_HELP">CL113</a> : <a href="C:\fpga_oled_ssd1306\src\spi_master.v:78:0:78:6:@W:CL113:@XP_MSG">spi_master.v(78)</a><!@TM:1538998679> | Feedback mux created for signal inbufffullp. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</font>
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:31:7:31:14:@N:CG364:@XP_MSG">SSD1306.v(31)</a><!@TM:1538998679> | Synthesizing module SSD1306 in library work.
-<font color=#A52A2A>@W:<a href="@W:CS263:@XP_HELP">CS263</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:126:10:126:22:@W:CS263:@XP_MSG">SSD1306.v(126)</a><!@TM:1538998679> | Port-width mismatch for port data_in. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</font>
-@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:159:0:159:6:@N:CL189:@XP_MSG">SSD1306.v(159)</a><!@TM:1538998679> | Register bit repeat_count[14] is always 0.
-<font color=#A52A2A>@W:<a href="@W:CL260:@XP_HELP">CL260</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:159:0:159:6:@W:CL260:@XP_MSG">SSD1306.v(159)</a><!@TM:1538998679> | Pruning register bit 14 of repeat_count[14:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</font>
-@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:159:0:159:6:@N:CL189:@XP_MSG">SSD1306.v(159)</a><!@TM:1538998679> | Register bit repeat_count[13] is always 0.
-<font color=#A52A2A>@W:<a href="@W:CL260:@XP_HELP">CL260</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:159:0:159:6:@W:CL260:@XP_MSG">SSD1306.v(159)</a><!@TM:1538998679> | Pruning register bit 13 of repeat_count[13:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</font>
-@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:159:0:159:6:@N:CL189:@XP_MSG">SSD1306.v(159)</a><!@TM:1538998679> | Register bit repeat_count[12] is always 0.
-<font color=#A52A2A>@W:<a href="@W:CL260:@XP_HELP">CL260</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:159:0:159:6:@W:CL260:@XP_MSG">SSD1306.v(159)</a><!@TM:1538998679> | Pruning register bit 12 of repeat_count[12:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</font>
-@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:159:0:159:6:@N:CL189:@XP_MSG">SSD1306.v(159)</a><!@TM:1538998679> | Register bit repeat_count[11] is always 0.
-<font color=#A52A2A>@W:<a href="@W:CL260:@XP_HELP">CL260</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:159:0:159:6:@W:CL260:@XP_MSG">SSD1306.v(159)</a><!@TM:1538998679> | Pruning register bit 11 of repeat_count[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</font>
-<font color=#A52A2A>@W:<a href="@W:CL156:@XP_HELP">CL156</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:125:6:125:10:@W:CL156:@XP_MSG">SSD1306.v(125)</a><!@TM:1538998679> | *Input btnc to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</font>
-@N:<a href="@N:CL159:@XP_HELP">CL159</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v:24:43:24:47:@N:CL159:@XP_MSG">SSD1306_ROM_cfg_mod.v(24)</a><!@TM:1538998679> | Input addr is unused.
+<font color=#A52A2A>@W:<a href="@W:CL113:@XP_HELP">CL113</a> : <a href="C:\fpga_oled_ssd1306\src\spi_master.v:78:0:78:6:@W:CL113:@XP_MSG">spi_master.v(78)</a><!@TM:1539004470> | Feedback mux created for signal prescallerbuff[2:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</font>
+<font color=#A52A2A>@W:<a href="@W:CL113:@XP_HELP">CL113</a> : <a href="C:\fpga_oled_ssd1306\src\spi_master.v:78:0:78:6:@W:CL113:@XP_MSG">spi_master.v(78)</a><!@TM:1539004470> | Feedback mux created for signal inbufffullp. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</font>
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:31:7:31:14:@N:CG364:@XP_MSG">SSD1306.v(31)</a><!@TM:1539004470> | Synthesizing module SSD1306 in library work.
+<font color=#A52A2A>@W:<a href="@W:CS263:@XP_HELP">CS263</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:128:10:128:22:@W:CS263:@XP_MSG">SSD1306.v(128)</a><!@TM:1539004470> | Port-width mismatch for port data_in. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</font>
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:171:0:171:6:@N:CL189:@XP_MSG">SSD1306.v(171)</a><!@TM:1539004470> | Register bit repeat_count[1] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:171:0:171:6:@N:CL189:@XP_MSG">SSD1306.v(171)</a><!@TM:1539004470> | Register bit repeat_count[2] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:171:0:171:6:@N:CL189:@XP_MSG">SSD1306.v(171)</a><!@TM:1539004470> | Register bit repeat_count[3] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:171:0:171:6:@N:CL189:@XP_MSG">SSD1306.v(171)</a><!@TM:1539004470> | Register bit repeat_count[4] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:171:0:171:6:@N:CL189:@XP_MSG">SSD1306.v(171)</a><!@TM:1539004470> | Register bit repeat_count[5] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:171:0:171:6:@N:CL189:@XP_MSG">SSD1306.v(171)</a><!@TM:1539004470> | Register bit repeat_count[6] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:171:0:171:6:@N:CL189:@XP_MSG">SSD1306.v(171)</a><!@TM:1539004470> | Register bit repeat_count[7] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:171:0:171:6:@N:CL189:@XP_MSG">SSD1306.v(171)</a><!@TM:1539004470> | Register bit repeat_count[8] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:171:0:171:6:@N:CL189:@XP_MSG">SSD1306.v(171)</a><!@TM:1539004470> | Register bit repeat_count[9] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:171:0:171:6:@N:CL189:@XP_MSG">SSD1306.v(171)</a><!@TM:1539004470> | Register bit repeat_count[10] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:171:0:171:6:@N:CL189:@XP_MSG">SSD1306.v(171)</a><!@TM:1539004470> | Register bit repeat_count[11] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:171:0:171:6:@N:CL189:@XP_MSG">SSD1306.v(171)</a><!@TM:1539004470> | Register bit repeat_count[12] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:171:0:171:6:@N:CL189:@XP_MSG">SSD1306.v(171)</a><!@TM:1539004470> | Register bit repeat_count[13] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:171:0:171:6:@N:CL189:@XP_MSG">SSD1306.v(171)</a><!@TM:1539004470> | Register bit repeat_count[14] is always 0.
+<font color=#A52A2A>@W:<a href="@W:CL279:@XP_HELP">CL279</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:171:0:171:6:@W:CL279:@XP_MSG">SSD1306.v(171)</a><!@TM:1539004470> | Pruning register bits 14 to 1 of repeat_count[14:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</font>
+<font color=#A52A2A>@W:<a href="@W:CL156:@XP_HELP">CL156</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:127:6:127:10:@W:CL156:@XP_MSG">SSD1306.v(127)</a><!@TM:1539004470> | *Input btnc to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</font>
+@N:<a href="@N:CL159:@XP_HELP">CL159</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v:24:43:24:47:@N:CL159:@XP_MSG">SSD1306_ROM_cfg_mod.v(24)</a><!@TM:1539004470> | Input addr is unused.
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 100MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 88MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Oct  8 19:37:58 2018
+# Mon Oct  8 21:14:30 2018
 
 ###########################################################]
 
@@ -106,17 +112,17 @@ Hostname: BEACONDEV3
 Implementation : rev_1
 <a name=compilerReport3></a>Synopsys Synopsys Netlist Linker, Version comp2018q1p1, Build 118R, Built May 15 2018 09:18:11</a>
 
-@N: : <!@TM:1538998679> | Running in 64-bit mode 
+@N: : <!@TM:1539004470> | Running in 64-bit mode 
 File C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\layer0.srs changed - recompiling
-@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:31:7:31:14:@N:NF107:@XP_MSG">SSD1306.v(31)</a><!@TM:1538998679> | Selected library: work cell: SSD1306 view verilog as top level
-@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:31:7:31:14:@N:NF107:@XP_MSG">SSD1306.v(31)</a><!@TM:1538998679> | Selected library: work cell: SSD1306 view verilog as top level
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:31:7:31:14:@N:NF107:@XP_MSG">SSD1306.v(31)</a><!@TM:1539004470> | Selected library: work cell: SSD1306 view verilog as top level
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:31:7:31:14:@N:NF107:@XP_MSG">SSD1306.v(31)</a><!@TM:1539004470> | Selected library: work cell: SSD1306 view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Oct  8 19:37:59 2018
+# Mon Oct  8 21:14:30 2018
 
 ###########################################################]
 @END
@@ -126,13 +132,13 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Oct  8 19:37:59 2018
+# Mon Oct  8 21:14:30 2018
 
 ###########################################################]
 
 </pre></samp></body></html>
 <html><body><samp><pre>
-<!@TC:1538998678>
+<!@TC:1539004469>
 
 Copyright (C) 1994-2018 Synopsys, Inc.
 This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
@@ -149,24 +155,24 @@ Hostname: BEACONDEV3
 Database state : C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\|rev_1
 <a name=compilerReport4></a>Synopsys Synopsys Netlist Linker, Version comp2018q1p1, Build 118R, Built May 15 2018 09:18:11</a>
 
-@N: : <!@TM:1538998680> | Running in 64-bit mode 
+@N: : <!@TM:1539004472> | Running in 64-bit mode 
 File C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\oled_ssd1306_comp.srs changed - recompiling
-@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:31:7:31:14:@N:NF107:@XP_MSG">SSD1306.v(31)</a><!@TM:1538998680> | Selected library: work cell: SSD1306 view verilog as top level
-@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:31:7:31:14:@N:NF107:@XP_MSG">SSD1306.v(31)</a><!@TM:1538998680> | Selected library: work cell: SSD1306 view verilog as top level
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:31:7:31:14:@N:NF107:@XP_MSG">SSD1306.v(31)</a><!@TM:1539004472> | Selected library: work cell: SSD1306 view verilog as top level
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\fpga_oled_ssd1306\src\SSD1306.v:31:7:31:14:@N:NF107:@XP_MSG">SSD1306.v(31)</a><!@TM:1539004472> | Selected library: work cell: SSD1306 view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Oct  8 19:38:00 2018
+# Mon Oct  8 21:14:32 2018
 
 ###########################################################]
 
 </pre></samp></body></html>
 <html><body><samp><pre>
-<!@TC:1538998678>
-# Mon Oct  8 19:38:00 2018
+<!@TC:1539004469>
+# Mon Oct  8 21:14:32 2018
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -187,12 +193,12 @@ Implementation : rev_1
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
 
-@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1538998682> | No constraint file specified. 
+@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1539004474> | No constraint file specified. 
 Linked File:  <a href="C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306_scck.rpt:@XP_FILE">oled_ssd1306_scck.rpt</a>
 Printing clock  summary report in "C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306_scck.rpt" file 
-@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1538998682> | Option synthesis_strategy=base is enabled.  
-@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1538998682> | Running in 64-bit mode. 
-@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1538998682> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1539004474> | Option synthesis_strategy=base is enabled.  
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1539004474> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1539004474> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
 
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
 
@@ -205,21 +211,21 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
 
-<font color=#A52A2A>@W:<a href="@W:FX474:@XP_HELP">FX474</a> : <!@TM:1538998682> | User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </font> 
-@N:<a href="@N:MH105:@XP_HELP">MH105</a> : <!@TM:1538998682> | UMR3 is only supported for HAPS-80. 
-@N:<a href="@N:MH105:@XP_HELP">MH105</a> : <!@TM:1538998682> | UMR3 is only supported for HAPS-80. 
-@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:248:19:248:58:@N:MO111:@XP_MSG">spi_master.v(248)</a><!@TM:1538998682> | Tristate driver data_out_1[7] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[7] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:248:19:248:58:@N:MO111:@XP_MSG">spi_master.v(248)</a><!@TM:1538998682> | Tristate driver data_out_1[6] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[6] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:248:19:248:58:@N:MO111:@XP_MSG">spi_master.v(248)</a><!@TM:1538998682> | Tristate driver data_out_1[5] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[5] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:248:19:248:58:@N:MO111:@XP_MSG">spi_master.v(248)</a><!@TM:1538998682> | Tristate driver data_out_1[4] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[4] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:248:19:248:58:@N:MO111:@XP_MSG">spi_master.v(248)</a><!@TM:1538998682> | Tristate driver data_out_1[3] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[3] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:248:19:248:58:@N:MO111:@XP_MSG">spi_master.v(248)</a><!@TM:1538998682> | Tristate driver data_out_1[2] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[2] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:248:19:248:58:@N:MO111:@XP_MSG">spi_master.v(248)</a><!@TM:1538998682> | Tristate driver data_out_1[1] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[1] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:248:19:248:58:@N:MO111:@XP_MSG">spi_master.v(248)</a><!@TM:1538998682> | Tristate driver data_out_1[0] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[0] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N:<a href="@N:BN115:@XP_HELP">BN115</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:58:20:58:33:@N:BN115:@XP_MSG">ssd1306.v(58)</a><!@TM:1538998682> | Removing instance oled_rom_init (in view: work.SSD1306(verilog)) of type view:work.SSD1306_ROM_cfg_mod(verilog) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:78:0:78:6:@N:BN362:@XP_MSG">spi_master.v(78)</a><!@TM:1538998682> | Removing sequential instance senderr (in view: work.spi_master_8s_8s_0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998682> | Removing sequential instance output_buffer[7:0] (in view: work.spi_master_8s_8s_0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N:<a href="@N:MF578:@XP_HELP">MF578</a> : <!@TM:1538998682> | Incompatible asynchronous control logic preventing generated clock conversion. 
+<font color=#A52A2A>@W:<a href="@W:FX474:@XP_HELP">FX474</a> : <!@TM:1539004474> | User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </font> 
+@N:<a href="@N:MH105:@XP_HELP">MH105</a> : <!@TM:1539004474> | UMR3 is only supported for HAPS-80. 
+@N:<a href="@N:MH105:@XP_HELP">MH105</a> : <!@TM:1539004474> | UMR3 is only supported for HAPS-80. 
+@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:248:19:248:58:@N:MO111:@XP_MSG">spi_master.v(248)</a><!@TM:1539004474> | Tristate driver data_out_1[7] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[7] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
+@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:248:19:248:58:@N:MO111:@XP_MSG">spi_master.v(248)</a><!@TM:1539004474> | Tristate driver data_out_1[6] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[6] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
+@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:248:19:248:58:@N:MO111:@XP_MSG">spi_master.v(248)</a><!@TM:1539004474> | Tristate driver data_out_1[5] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[5] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
+@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:248:19:248:58:@N:MO111:@XP_MSG">spi_master.v(248)</a><!@TM:1539004474> | Tristate driver data_out_1[4] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[4] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
+@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:248:19:248:58:@N:MO111:@XP_MSG">spi_master.v(248)</a><!@TM:1539004474> | Tristate driver data_out_1[3] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[3] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
+@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:248:19:248:58:@N:MO111:@XP_MSG">spi_master.v(248)</a><!@TM:1539004474> | Tristate driver data_out_1[2] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[2] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
+@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:248:19:248:58:@N:MO111:@XP_MSG">spi_master.v(248)</a><!@TM:1539004474> | Tristate driver data_out_1[1] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[1] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
+@N:<a href="@N:MO111:@XP_HELP">MO111</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:248:19:248:58:@N:MO111:@XP_MSG">spi_master.v(248)</a><!@TM:1539004474> | Tristate driver data_out_1[0] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[0] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
+@N:<a href="@N:BN115:@XP_HELP">BN115</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:58:20:58:33:@N:BN115:@XP_MSG">ssd1306.v(58)</a><!@TM:1539004474> | Removing instance oled_rom_init (in view: work.SSD1306(verilog)) of type view:work.SSD1306_ROM_cfg_mod(verilog) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:78:0:78:6:@N:BN362:@XP_MSG">spi_master.v(78)</a><!@TM:1539004474> | Removing sequential instance senderr (in view: work.spi_master_8s_8s_0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004474> | Removing sequential instance output_buffer[7:0] (in view: work.spi_master_8s_8s_0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N:<a href="@N:MF578:@XP_HELP">MF578</a> : <!@TM:1539004474> | Incompatible asynchronous control logic preventing generated clock conversion. 
 syn_allowed_resources : blockrams=10  set on top level netlist SSD1306
 
 Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 190MB)
@@ -233,7 +239,7 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0
 Level     Clock                                   Frequency     Period        Type                               Group                     Load 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 0 -       SSD1306|clk_50M                         252.8 MHz     3.955         inferred                           Autoconstr_clkgroup_0     26   
-1 .         SSD1306|clk_ssd1306_derived_clock     252.8 MHz     3.955         derived (from SSD1306|clk_50M)     Autoconstr_clkgroup_0     79   
+1 .         SSD1306|clk_ssd1306_derived_clock     252.8 MHz     3.955         derived (from SSD1306|clk_50M)     Autoconstr_clkgroup_0     70   
 ================================================================================================================================================
 
 
@@ -245,10 +251,10 @@ Clock Load Summary
 Clock                                 Load      Pin                         Seq Example       Seq Example       Comb Example 
 -----------------------------------------------------------------------------------------------------------------------------
 SSD1306|clk_50M                       26        clk_50M(port)               clk_ssd1306.C     -                 -            
-SSD1306|clk_ssd1306_derived_clock     79        clk_ssd1306.Q[0](dffre)     led[3:0].C        -                 -            
+SSD1306|clk_ssd1306_derived_clock     70        clk_ssd1306.Q[0](dffre)     oled_vbat.C       -                 -            
 =============================================================================================================================
 
-<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:99:0:99:6:@W:MT529:@XP_MSG">ssd1306.v(99)</a><!@TM:1538998682> | Found inferred clock SSD1306|clk_50M which controls 26 sequential elements including cnt[24:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
+<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:101:0:101:6:@W:MT529:@XP_MSG">ssd1306.v(101)</a><!@TM:1539004474> | Found inferred clock SSD1306|clk_50M which controls 26 sequential elements including cnt[24:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -262,8 +268,8 @@ Number of ICG latches not removed:	0
 <a name=clockReport7></a>#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[</a>
 
 1 non-gated/non-generated clock tree(s) driving 26 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 79 clock pin(s) of sequential element(s)
-0 instances converted, 79 sequential instances remain driven by gated/generated clocks
+1 gated/generated clock tree(s) driving 70 clock pin(s) of sequential element(s)
+0 instances converted, 70 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
@@ -273,15 +279,15 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 ============================================================= Gated/Generated Clocks ==============================================================
 Clock Tree ID     Driving Element      Drive Element Type     Unconverted Fanout     Sample Instance     Explanation                               
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-<a href="@|L:C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\oled_ssd1306_prem.srm@|S:clk_ssd1306.Q[0]@|E:step_id[6:0]@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1 @XP_NAMES_BY_PROP">ClockId_0_1</a>       clk_ssd1306.Q[0]     dffre                  79                     step_id[6:0]        Derived clock on input (not legal for GCC)
+<a href="@|L:C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\oled_ssd1306_prem.srm@|S:clk_ssd1306.Q[0]@|E:step_id[6:0]@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1 @XP_NAMES_BY_PROP">ClockId_0_1</a>       clk_ssd1306.Q[0]     dffre                  70                     step_id[6:0]        Derived clock on input (not legal for GCC)
 ===================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######
 
-@N: : <!@TM:1538998682> | Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized. 
+@N: : <!@TM:1539004474> | Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized. 
 Finished Pre Mapping Phase.
-@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1538998682> | Writing default property annotation file C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.sap. 
+@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1539004474> | Writing default property annotation file C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.sap. 
 
 Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 188MB peak: 190MB)
 
@@ -298,14 +304,14 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 104MB peak: 190MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Oct  8 19:38:02 2018
+# Mon Oct  8 21:14:34 2018
 
 ###########################################################]
 
 </pre></samp></body></html>
 <html><body><samp><pre>
-<!@TC:1538998678>
-# Mon Oct  8 19:38:02 2018
+<!@TC:1539004469>
+# Mon Oct  8 21:14:34 2018
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -326,9 +332,9 @@ Implementation : rev_1
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
 
-@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1538998686> | Option synthesis_strategy=base is enabled.  
-@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1538998686> | Running in 64-bit mode. 
-@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1538998686> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1539004478> | Option synthesis_strategy=base is enabled.  
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1539004478> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1539004478> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
 
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
 
@@ -345,58 +351,48 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 190MB)
 
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:146:0:146:6:@W:BN132:@XP_MSG">ssd1306.v(146)</a><!@TM:1539004478> | Removing sequential instance oled_vbat because it is equivalent to instance oled_vdd. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
 
 Available hyper_sources - for debug and ip models
 	None Found
 
-@N:<a href="@N:MT206:@XP_HELP">MT206</a> : <!@TM:1538998686> | Auto Constrain mode is enabled 
-@N:<a href="@N:FX493:@XP_HELP">FX493</a> : <!@TM:1538998686> | Applying initial value "0" on instance spi0.inbufffullp. 
-@N:<a href="@N:FX493:@XP_HELP">FX493</a> : <!@TM:1538998686> | Applying initial value "0" on instance spi0.inbufffulln. 
+@N:<a href="@N:MT206:@XP_HELP">MT206</a> : <!@TM:1539004478> | Auto Constrain mode is enabled 
+@N:<a href="@N:FX493:@XP_HELP">FX493</a> : <!@TM:1539004478> | Applying initial value "0" on instance spi0.inbufffullp. 
+@N:<a href="@N:FX493:@XP_HELP">FX493</a> : <!@TM:1539004478> | Applying initial value "0" on instance spi0.inbufffulln. 
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 190MB)
 
-@N:<a href="@N:MO231:@XP_HELP">MO231</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@N:MO231:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Found counter in view:work.SSD1306(verilog) instance step_id[6:0] 
-@N:<a href="@N:MO231:@XP_HELP">MO231</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@N:MO231:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Found counter in view:work.SSD1306(verilog) instance elapsed_time[27:0] 
-<font color=#A52A2A>@W:<a href="@W:MO160:@XP_HELP">MO160</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@W:MO160:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Register bit repeat_count[10] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:MO160:@XP_HELP">MO160</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@W:MO160:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Register bit repeat_count[9] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:MO160:@XP_HELP">MO160</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@W:MO160:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Register bit repeat_count[8] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:MO160:@XP_HELP">MO160</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@W:MO160:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Register bit repeat_count[7] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:MO160:@XP_HELP">MO160</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@W:MO160:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Register bit repeat_count[6] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:MO160:@XP_HELP">MO160</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@W:MO160:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Register bit repeat_count[5] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:MO160:@XP_HELP">MO160</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@W:MO160:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Register bit repeat_count[4] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:MO160:@XP_HELP">MO160</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@W:MO160:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Register bit repeat_count[3] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:MO160:@XP_HELP">MO160</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@W:MO160:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Register bit repeat_count[2] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:MO160:@XP_HELP">MO160</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@W:MO160:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Register bit repeat_count[1] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:MO160:@XP_HELP">MO160</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@W:MO160:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Register bit repeat_count[0] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.</font>
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@N:BN362:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Removing sequential instance elapsed_time[27:0] (in view: work.SSD1306(verilog)) of type view:PrimLib.scounter(prim) because it does not drive other instances.
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:78:0:78:6:@W:BN132:@XP_MSG">spi_master.v(78)</a><!@TM:1538998686> | Removing instance spi0.prescallerbuff[2] because it is equivalent to instance spi0.prescallerbuff[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@W:BN132:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing instance spi0.prescallerint[2] because it is equivalent to instance spi0.prescallerint[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-@N:<a href="@N:MO231:@XP_HELP">MO231</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:MO231:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Found counter in view:work.spi_master_8s_8s_0_1(verilog) instance sckint[4:0] 
-@N:<a href="@N:MO231:@XP_HELP">MO231</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:MO231:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Found counter in view:work.spi_master_8s_8s_0_1(verilog) instance prescaller_cnt[7:0] 
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:78:0:78:6:@N:BN362:@XP_MSG">spi_master.v(78)</a><!@TM:1538998686> | Removing sequential instance inbufffullp_0 (in view: work.spi_master_8s_8s_0_1(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance prescallerint[0] (in view: work.spi_master_8s_8s_0_1(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance prescallerint[1] (in view: work.spi_master_8s_8s_0_1(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:78:0:78:6:@N:BN362:@XP_MSG">spi_master.v(78)</a><!@TM:1538998686> | Removing sequential instance prescallerbuff[0] (in view: work.spi_master_8s_8s_0_1(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:78:0:78:6:@N:BN362:@XP_MSG">spi_master.v(78)</a><!@TM:1538998686> | Removing sequential instance prescallerbuff[1] (in view: work.spi_master_8s_8s_0_1(verilog)) because it does not drive other instances.
+@N:<a href="@N:MO231:@XP_HELP">MO231</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:171:0:171:6:@N:MO231:@XP_MSG">ssd1306.v(171)</a><!@TM:1539004478> | Found counter in view:work.SSD1306(verilog) instance step_id[6:0] 
+@N:<a href="@N:MO231:@XP_HELP">MO231</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:171:0:171:6:@N:MO231:@XP_MSG">ssd1306.v(171)</a><!@TM:1539004478> | Found counter in view:work.SSD1306(verilog) instance elapsed_time[27:0] 
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:171:0:171:6:@N:BN362:@XP_MSG">ssd1306.v(171)</a><!@TM:1539004478> | Removing sequential instance elapsed_time[27:0] (in view: work.SSD1306(verilog)) of type view:PrimLib.scounter(prim) because it does not drive other instances.
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:78:0:78:6:@W:BN132:@XP_MSG">spi_master.v(78)</a><!@TM:1539004478> | Removing instance spi0.prescallerbuff[2] because it is equivalent to instance spi0.prescallerbuff[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@W:BN132:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing instance spi0.prescallerint[2] because it is equivalent to instance spi0.prescallerint[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
+@N:<a href="@N:MO231:@XP_HELP">MO231</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:MO231:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Found counter in view:work.spi_master_8s_8s_0_1(verilog) instance sckint[4:0] 
+@N:<a href="@N:MO231:@XP_HELP">MO231</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:MO231:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Found counter in view:work.spi_master_8s_8s_0_1(verilog) instance prescaller_cnt[7:0] 
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:78:0:78:6:@N:BN362:@XP_MSG">spi_master.v(78)</a><!@TM:1539004478> | Removing sequential instance inbufffullp_0 (in view: work.spi_master_8s_8s_0_1(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance prescallerint[0] (in view: work.spi_master_8s_8s_0_1(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance prescallerint[1] (in view: work.spi_master_8s_8s_0_1(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:78:0:78:6:@N:BN362:@XP_MSG">spi_master.v(78)</a><!@TM:1539004478> | Removing sequential instance prescallerbuff[0] (in view: work.spi_master_8s_8s_0_1(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:78:0:78:6:@N:BN362:@XP_MSG">spi_master.v(78)</a><!@TM:1539004478> | Removing sequential instance prescallerbuff[1] (in view: work.spi_master_8s_8s_0_1(verilog)) because it does not drive other instances.
 
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 190MB)
 
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.inbufffulln_0 (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.inbufffulln_0 (in view: work.SSD1306(verilog)) because it does not drive other instances.
 
 Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 190MB)
 
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.ss (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.shift_reg_out[0] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.shift_reg_out[1] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.shift_reg_out[2] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.shift_reg_out[3] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.shift_reg_out[4] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.shift_reg_out[5] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.shift_reg_out[6] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.shift_reg_out[7] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0._mosi (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.state (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.prescaller_cnt[7:0] (in view: work.SSD1306(verilog)) of type view:PrimLib.counter(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.ss (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.shift_reg_out[0] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.shift_reg_out[1] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.shift_reg_out[2] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.shift_reg_out[3] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.shift_reg_out[4] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.shift_reg_out[5] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.shift_reg_out[6] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.shift_reg_out[7] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0._mosi (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.state (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.prescaller_cnt[7:0] (in view: work.SSD1306(verilog)) of type view:PrimLib.counter(prim) because it does not drive other instances.
 
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 190MB)
 
@@ -409,19 +405,19 @@ Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elaps
 
 Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 190MB)
 
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@N:BN362:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Removing sequential instance step_id[6] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@N:BN362:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Removing sequential instance step_id[5] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:159:0:159:6:@N:BN362:@XP_MSG">ssd1306.v(159)</a><!@TM:1538998686> | Removing sequential instance step_id[4] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.sckint[0] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@A:BN291:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Boundary register spi0.sckint[0] (in view: work.SSD1306(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.sckint[1] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@A:BN291:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Boundary register spi0.sckint[1] (in view: work.SSD1306(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.sckint[2] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@A:BN291:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Boundary register spi0.sckint[2] (in view: work.SSD1306(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.sckint[3] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@A:BN291:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Boundary register spi0.sckint[3] (in view: work.SSD1306(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Removing sequential instance spi0.sckint[4] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@A:BN291:@XP_MSG">spi_master.v(139)</a><!@TM:1538998686> | Boundary register spi0.sckint[4] (in view: work.SSD1306(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:171:0:171:6:@N:BN362:@XP_MSG">ssd1306.v(171)</a><!@TM:1539004478> | Removing sequential instance step_id[6] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:171:0:171:6:@N:BN362:@XP_MSG">ssd1306.v(171)</a><!@TM:1539004478> | Removing sequential instance step_id[5] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:171:0:171:6:@N:BN362:@XP_MSG">ssd1306.v(171)</a><!@TM:1539004478> | Removing sequential instance step_id[4] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.sckint[0] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@A:BN291:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Boundary register spi0.sckint[0] (in view: work.SSD1306(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.sckint[1] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@A:BN291:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Boundary register spi0.sckint[1] (in view: work.SSD1306(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.sckint[2] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@A:BN291:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Boundary register spi0.sckint[2] (in view: work.SSD1306(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.sckint[3] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@A:BN291:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Boundary register spi0.sckint[3] (in view: work.SSD1306(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@N:BN362:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Removing sequential instance spi0.sckint[4] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\fpga_oled_ssd1306\src\spi_master.v:139:0:139:6:@A:BN291:@XP_MSG">spi_master.v(139)</a><!@TM:1539004478> | Boundary register spi0.sckint[4] (in view: work.SSD1306(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
 Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 190MB)
 
@@ -430,23 +426,23 @@ Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:0
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		    -1.74ns		  65 /        35
-   2		0h:00m:00s		    -1.74ns		  65 /        35
-@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:99:0:99:6:@N:FX271:@XP_MSG">ssd1306.v(99)</a><!@TM:1538998686> | Replicating instance cnt[0] (in view: work.SSD1306(verilog)) with 4 loads 1 time to improve timing.
-@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:99:0:99:6:@N:FX271:@XP_MSG">ssd1306.v(99)</a><!@TM:1538998686> | Replicating instance cnt[1] (in view: work.SSD1306(verilog)) with 4 loads 1 time to improve timing.
-@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:99:0:99:6:@N:FX271:@XP_MSG">ssd1306.v(99)</a><!@TM:1538998686> | Replicating instance cnt[7] (in view: work.SSD1306(verilog)) with 4 loads 1 time to improve timing.
+   1		0h:00m:00s		    -1.74ns		  65 /        36
+   2		0h:00m:00s		    -1.74ns		  65 /        36
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:101:0:101:6:@N:FX271:@XP_MSG">ssd1306.v(101)</a><!@TM:1539004478> | Replicating instance cnt[0] (in view: work.SSD1306(verilog)) with 4 loads 1 time to improve timing.
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:101:0:101:6:@N:FX271:@XP_MSG">ssd1306.v(101)</a><!@TM:1539004478> | Replicating instance cnt[1] (in view: work.SSD1306(verilog)) with 4 loads 1 time to improve timing.
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="c:\fpga_oled_ssd1306\src\ssd1306.v:101:0:101:6:@N:FX271:@XP_MSG">ssd1306.v(101)</a><!@TM:1539004478> | Replicating instance cnt[7] (in view: work.SSD1306(verilog)) with 4 loads 1 time to improve timing.
 Timing driven replication report
 Added 3 Registers via timing driven replication
 Added 0 LUTs via timing driven replication
 
-   3		0h:00m:00s		    -1.74ns		  65 /        38
+   3		0h:00m:00s		    -1.74ns		  65 /        39
 
 
-   4		0h:00m:00s		    -1.68ns		  67 /        38
+   4		0h:00m:00s		    -1.68ns		  67 /        39
 
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 190MB)
 
-@N:<a href="@N:FX164:@XP_HELP">FX164</a> : <!@TM:1538998686> | The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.   
+@N:<a href="@N:FX164:@XP_HELP">FX164</a> : <!@TM:1539004478> | The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.   
 
 Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 189MB peak: 190MB)
 
@@ -461,21 +457,21 @@ Writing Verilog Simulation files
 
 Writing scf file... (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 188MB peak: 190MB)
 
-@N:<a href="@N:BW103:@XP_HELP">BW103</a> : <!@TM:1538998686> | The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns. 
-@N:<a href="@N:BW107:@XP_HELP">BW107</a> : <!@TM:1538998686> | Synopsys Constraint File capacitance units using default value of 1pF  
-@A:<a href="@A:BN540:@XP_HELP">BN540</a> : <!@TM:1538998686> | No min timing constraints supplied; adding min timing constraints 
+@N:<a href="@N:BW103:@XP_HELP">BW103</a> : <!@TM:1539004478> | The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns. 
+@N:<a href="@N:BW107:@XP_HELP">BW107</a> : <!@TM:1539004478> | Synopsys Constraint File capacitance units using default value of 1pF  
+@A:<a href="@A:BN540:@XP_HELP">BN540</a> : <!@TM:1539004478> | No min timing constraints supplied; adding min timing constraints 
 
 Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 187MB peak: 190MB)
 
 
 Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 188MB peak: 190MB)
 
-<font color=#A52A2A>@W:<a href="@W:MT420:@XP_HELP">MT420</a> : <!@TM:1538998686> | Found inferred clock SSD1306|clk_50M with period 10.00ns. Please declare a user-defined clock on port clk_50M.</font> 
-@N:<a href="@N:MT615:@XP_HELP">MT615</a> : <!@TM:1538998686> | Found clock SSD1306|clk_ssd1306_derived_clock with period 10.00ns  
+<font color=#A52A2A>@W:<a href="@W:MT420:@XP_HELP">MT420</a> : <!@TM:1539004478> | Found inferred clock SSD1306|clk_50M with period 10.00ns. Please declare a user-defined clock on port clk_50M.</font> 
+@N:<a href="@N:MT615:@XP_HELP">MT615</a> : <!@TM:1539004478> | Found clock SSD1306|clk_ssd1306_derived_clock with period 10.00ns  
 
 
 <a name=timingReport9></a>##### START OF TIMING REPORT #####[</a>
-<a name=pnr10></a># Timing Report written on Mon Oct  8 19:38:06 2018</a>
+<a name=pnr10></a># Timing Report written on Mon Oct  8 21:14:37 2018</a>
 #
 
 
@@ -484,9 +480,9 @@ Requested Frequency:    100.0 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
-@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1538998686> | This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report. 
+@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1539004478> | This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report. 
 
-@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1538998686> | Clock constraints include only register-to-register paths associated with each individual clock. 
+@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1539004478> | Clock constraints include only register-to-register paths associated with each individual clock. 
 
 
 
@@ -517,7 +513,7 @@ Starting                           Ending                             |  constra
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                             SSD1306|clk_50M                    |  10.000      8.846   |  No paths    -      |  No paths    -      |  No paths    -    
 System                             SSD1306|clk_ssd1306_derived_clock  |  10.000      8.846   |  No paths    -      |  No paths    -      |  No paths    -    
-SSD1306|clk_50M                    System                             |  10.000      8.612   |  No paths    -      |  No paths    -      |  No paths    -    
+SSD1306|clk_50M                    System                             |  10.000      8.551   |  No paths    -      |  No paths    -      |  No paths    -    
 SSD1306|clk_50M                    SSD1306|clk_50M                    |  10.000      2.158   |  No paths    -      |  No paths    -      |  No paths    -    
 SSD1306|clk_ssd1306_derived_clock  System                             |  10.000      8.612   |  No paths    -      |  No paths    -      |  No paths    -    
 SSD1306|clk_ssd1306_derived_clock  SSD1306|clk_ssd1306_derived_clock  |  10.000      15.823  |  No paths    -      |  No paths    -      |  No paths    -    
@@ -582,7 +578,7 @@ cnt[11]      SSD1306|clk_50M     DFFC     D       cnt_3[11]     9.867        2.5
 
 
 <a name=worstPaths17></a>Worst Path Information</a>
-<a href="C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.srr:srsfC:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.srs:fp:41462:45734:@XP_NAMES_GATE">View Worst Path in Analyst</a>
+<a href="C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.srr:srsfC:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.srs:fp:39820:44092:@XP_NAMES_GATE">View Worst Path in Analyst</a>
 ***********************
 
 
@@ -696,14 +692,14 @@ step_id_s[0]                 SSD1306|clk_ssd1306_derived_clock     INV       I  
 step_id[3]                   SSD1306|clk_ssd1306_derived_clock     DFFRE     D         step_id_s[3]               19.867       15.823
 step_id[2]                   SSD1306|clk_ssd1306_derived_clock     DFFRE     D         step_id_s[2]               19.867       15.880
 step_id[1]                   SSD1306|clk_ssd1306_derived_clock     DFFRE     D         step_id_s[1]               19.867       15.937
-step_id[0]                   SSD1306|clk_ssd1306_derived_clock     DFFRE     CE        step_id_1_sqmuxa_2_i       19.867       16.426
+step_id[0]                   SSD1306|clk_ssd1306_derived_clock     DFFRE     CE        step_id_1_sqmuxa_3_i       19.867       16.426
 step_id[0]                   SSD1306|clk_ssd1306_derived_clock     DFFRE     RESET     step_id_0_sqmuxa_2         19.867       16.426
 =====================================================================================================================================
 
 
 
 <a name=worstPaths21></a>Worst Path Information</a>
-<a href="C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.srr:srsfC:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.srs:fp:50815:51082:@XP_NAMES_GATE">View Worst Path in Analyst</a>
+<a href="C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.srr:srsfC:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.srs:fp:49173:49440:@XP_NAMES_GATE">View Worst Path in Analyst</a>
 ***********************
 
 
@@ -755,6 +751,7 @@ internal_state_machine_i     System        INV      O       internal_state_machi
 led_RNO[1]                   System        INV      O       step_id_i[1]                 0.000       8.846
 led_RNO[2]                   System        INV      O       step_id_i[2]                 0.000       8.846
 led_RNO[3]                   System        INV      O       step_id_i[3]                 0.000       8.846
+rst_n_ibuf_RNIBNDC           System        INV      O       rst_n_c_i                    0.000       8.846
 step_id_s[0]                 System        INV      O       step_id_s[0]                 0.000       8.846
 ==========================================================================================================
 
@@ -771,13 +768,14 @@ internal_state_machine     System        DFFS      SET     internal_state_machin
 led[1]                     System        DFF       D       step_id_i[1]                 9.867        8.846
 led[2]                     System        DFF       D       step_id_i[2]                 9.867        8.846
 led[3]                     System        DFF       D       step_id_i[3]                 9.867        8.846
+oled_vdd                   System        DFFS      SET     rst_n_c_i                    9.867        8.846
 step_id[0]                 System        DFFRE     D       step_id_s[0]                 9.867        8.846
 ==========================================================================================================
 
 
 
 <a name=worstPaths25></a>Worst Path Information</a>
-<a href="C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.srr:srsfC:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.srs:fp:55135:55378:@XP_NAMES_GATE">View Worst Path in Analyst</a>
+<a href="C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.srr:srsfC:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.srs:fp:53709:53952:@XP_NAMES_GATE">View Worst Path in Analyst</a>
 ***********************
 
 
@@ -830,7 +828,7 @@ DFF             4 uses
 DFFC            28 uses
 DFFCE           1 use
 DFFRE           4 uses
-DFFS            1 use
+DFFS            2 uses
 GSR             1 use
 INV             7 uses
 LUT2            3 uses
@@ -843,10 +841,10 @@ IBUF           2 uses
 OBUF           10 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   38 of 3456 (1%)
+Register bits not including I/Os:   39 of 3456 (1%)
 Total load per clock:
    SSD1306|clk_50M: 29
-   SSD1306|clk_ssd1306_derived_clock: 9
+   SSD1306|clk_ssd1306_derived_clock: 10
 
 @S |Mapping Summary:
 Total  LUTs: 32 (0%)
@@ -856,7 +854,7 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 38MB peak: 190MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Mon Oct  8 19:38:06 2018
+# Mon Oct  8 21:14:37 2018
 
 ###########################################################]
 

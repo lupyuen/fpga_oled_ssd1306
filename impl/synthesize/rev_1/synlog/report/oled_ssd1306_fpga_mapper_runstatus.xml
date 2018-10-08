@@ -19,7 +19,7 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="Warnings">
-<data>14</data>
+<data>4</data>
 <report_link name="more">
 <data>C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synlog\report\oled_ssd1306_fpga_mapper_warnings.txt</data>
 </report_link>
@@ -40,7 +40,7 @@ The file contains the job information from mapper to be displayed as part of the
 <data>190MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1538998686</data>
+<data type="timestamp">1539004477</data>
 </info>
 </job_info>
 </job_run_status>

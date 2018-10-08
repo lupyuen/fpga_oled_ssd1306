@@ -13,7 +13,7 @@ Hostname: BEACONDEV3
 
 Implementation : rev_1
 
-# Written on Mon Oct  8 19:38:00 2018
+# Written on Mon Oct  8 21:14:32 2018
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      (none)
@@ -34,7 +34,7 @@ Clock Summary
 Level     Clock                                   Frequency     Period        Type                               Group                     Load 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 0 -       SSD1306|clk_50M                         252.8 MHz     3.955         inferred                           Autoconstr_clkgroup_0     26   
-1 .         SSD1306|clk_ssd1306_derived_clock     252.8 MHz     3.955         derived (from SSD1306|clk_50M)     Autoconstr_clkgroup_0     79   
+1 .         SSD1306|clk_ssd1306_derived_clock     252.8 MHz     3.955         derived (from SSD1306|clk_50M)     Autoconstr_clkgroup_0     70   
 ================================================================================================================================================
 
 
@@ -45,5 +45,5 @@ Clock Load Summary
 Clock                                 Load      Pin                         Seq Example       Seq Example       Comb Example 
 -----------------------------------------------------------------------------------------------------------------------------
 SSD1306|clk_50M                       26        clk_50M(port)               clk_ssd1306.C     -                 -            
-SSD1306|clk_ssd1306_derived_clock     79        clk_ssd1306.Q[0](dffre)     led[3:0].C        -                 -            
+SSD1306|clk_ssd1306_derived_clock     70        clk_ssd1306.Q[0](dffre)     oled_vbat.C       -                 -            
 =============================================================================================================================

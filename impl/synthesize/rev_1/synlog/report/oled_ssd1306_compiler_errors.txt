@@ -1,0 +1,2 @@
+@E: CL172 :"C:\fpga_oled_ssd1306\src\SSD1306.v":34:12:34:18|Only one always block can assign a given variable oled_dc
+

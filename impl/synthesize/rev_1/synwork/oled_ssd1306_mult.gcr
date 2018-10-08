@@ -1,6 +1,6 @@
 i clk_ssd1306_i
 m 0 0
-u 13 79
+u 14 70
 n ckid0_0 {t:spi0.inbufffulln_0.C} Derived clock on input (not legal for GCC)
 p {t:clk_ssd1306.Q[0]}{t:clk_ssd1306_derived_clock.I[0]}{t:clk_ssd1306_derived_clock.OUT[0]}{t:step_id[6:0].C}
 e ckid0_1 {t:step_id[6:0].C} sdffr

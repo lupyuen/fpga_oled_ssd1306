@@ -17,6 +17,6 @@
 @P: SSD1306 Part : gw1n_4lqfp144-6
 @P: SSD1306 I/O primitives : 12
 @P: SSD1306 I/O Register bits : 0
-@P: SSD1306 Register bits (Non I/O) : 38 (1%)
+@P: SSD1306 Register bits (Non I/O) : 39 (1%)
 @P: SSD1306 Total Luts : 32 of 800 (0%)
 @P:  CPU Time : 0h:00m:03s

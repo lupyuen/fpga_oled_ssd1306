@@ -145,8 +145,18 @@ spi0(
 //  Synchronous lath to out commands directly from ROM except when is a repeat count load.
 always @ (posedge clk_ssd1306)
 begin
+    if (!rst_n) begin     //  If board restarts or reset button is pressed...
+        //  Init the SPI default values.
+        oled_vdd <= 1'b1;
+		oled_vbat <= 1'b1;
+		oled_res <= 1'b0;
+		oled_dc <= 1'b0;
+		wr_spi <= 1'b0;
+		rd_spi <= 1'b0;
+		wait_spi <= 1'b0;
+    end
     //  If this is not a repeated step...
-    if (!step_should_repeat) begin
+    else if (!step_should_repeat) begin
         //  Copy the decoded values into registers so they won't change when we go to next step.
         oled_vdd <= step_oled_vdd;
         oled_vbat <= step_oled_vbat;
@@ -167,14 +177,6 @@ begin
 		step_id <= `BLOCK_ROM_INIT_ADDR_WIDTH'h00;
 		internal_state_machine <= 1'b0;
 		repeat_count <= 15'h0000;
-
-        oled_vdd <= 1'b1;
-		oled_vbat <= 1'b1;
-		oled_res <= 1'b0;
-		oled_dc <= 1'b0;
-		wr_spi <= 1'b0;
-		rd_spi <= 1'b0;
-		wait_spi <= 1'b0;
     end
     led <= { ~step_id[3], ~step_id[2], ~step_id[1], ~step_id[0] };  //  Show the state machine step ID in LED.
 

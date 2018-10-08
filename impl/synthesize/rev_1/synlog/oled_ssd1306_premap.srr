@@ -1,4 +1,4 @@
-# Mon Oct  8 19:38:00 2018
+# Mon Oct  8 21:14:32 2018
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -65,7 +65,7 @@ Clock Summary
 Level     Clock                                   Frequency     Period        Type                               Group                     Load 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 0 -       SSD1306|clk_50M                         252.8 MHz     3.955         inferred                           Autoconstr_clkgroup_0     26   
-1 .         SSD1306|clk_ssd1306_derived_clock     252.8 MHz     3.955         derived (from SSD1306|clk_50M)     Autoconstr_clkgroup_0     79   
+1 .         SSD1306|clk_ssd1306_derived_clock     252.8 MHz     3.955         derived (from SSD1306|clk_50M)     Autoconstr_clkgroup_0     70   
 ================================================================================================================================================
 
 
@@ -77,10 +77,10 @@ Clock Load Summary
 Clock                                 Load      Pin                         Seq Example       Seq Example       Comb Example 
 -----------------------------------------------------------------------------------------------------------------------------
 SSD1306|clk_50M                       26        clk_50M(port)               clk_ssd1306.C     -                 -            
-SSD1306|clk_ssd1306_derived_clock     79        clk_ssd1306.Q[0](dffre)     led[3:0].C        -                 -            
+SSD1306|clk_ssd1306_derived_clock     70        clk_ssd1306.Q[0](dffre)     oled_vbat.C       -                 -            
 =============================================================================================================================
 
-@W: MT529 :"c:\fpga_oled_ssd1306\src\ssd1306.v":99:0:99:5|Found inferred clock SSD1306|clk_50M which controls 26 sequential elements including cnt[24:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\fpga_oled_ssd1306\src\ssd1306.v":101:0:101:5|Found inferred clock SSD1306|clk_50M which controls 26 sequential elements including cnt[24:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -94,8 +94,8 @@ Number of ICG latches not removed:	0
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
 1 non-gated/non-generated clock tree(s) driving 26 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 79 clock pin(s) of sequential element(s)
-0 instances converted, 79 sequential instances remain driven by gated/generated clocks
+1 gated/generated clock tree(s) driving 70 clock pin(s) of sequential element(s)
+0 instances converted, 70 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
@@ -105,7 +105,7 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 ============================================================= Gated/Generated Clocks ==============================================================
 Clock Tree ID     Driving Element      Drive Element Type     Unconverted Fanout     Sample Instance     Explanation                               
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_1       clk_ssd1306.Q[0]     dffre                  79                     step_id[6:0]        Derived clock on input (not legal for GCC)
+@KP:ckid0_1       clk_ssd1306.Q[0]     dffre                  70                     step_id[6:0]        Derived clock on input (not legal for GCC)
 ===================================================================================================================================================
 
 
@@ -130,6 +130,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 104MB peak: 190MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Oct  8 19:38:02 2018
+# Mon Oct  8 21:14:34 2018
 
 ###########################################################]

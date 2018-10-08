@@ -8,7 +8,7 @@ DFF             4 uses
 DFFC            28 uses
 DFFCE           1 use
 DFFRE           4 uses
-DFFS            1 use
+DFFS            2 uses
 GSR             1 use
 INV             7 uses
 LUT2            3 uses
@@ -21,7 +21,7 @@ IBUF           2 uses
 OBUF           10 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   38 of 3456 (1%)
+Register bits not including I/Os:   39 of 3456 (1%)
 
 @S |Mapping Summary:
 Total  LUTs: 32 (0%)
