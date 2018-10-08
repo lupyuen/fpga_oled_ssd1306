@@ -1,7 +1,7 @@
 C:\Gowin\1.8\SynplifyPro\bin64\syn_nfilter.exe  -link  -multisrs  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\oled_ssd1306_comp.srs  -osyn  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\oled_ssd1306_mult.srs  -log  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synlog\oled_ssd1306_multi_srs_gen.srr 
 relcom:..\..\..\..\..\Gowin\1.8\SynplifyPro\bin64\syn_nfilter.exe -link -multisrs ..\synwork\oled_ssd1306_comp.srs -osyn ..\synwork\oled_ssd1306_mult.srs -log ..\synlog\oled_ssd1306_multi_srs_gen.srr
-rc:0 success:1 runtime:1
-file:..\synwork\oled_ssd1306_comp.srs|io:i|time:1538991180|size:11785|exec:0|csum:88280BF0FBC6962EA0F0A84A78A787B6
-file:..\synwork\oled_ssd1306_mult.srs|io:o|time:1538991182|size:7022|exec:0|csum:
-file:..\synlog\oled_ssd1306_multi_srs_gen.srr|io:o|time:1538991182|size:1263|exec:0|csum:
+rc:0 success:1 runtime:0
+file:..\synwork\oled_ssd1306_comp.srs|io:i|time:1538998679|size:11857|exec:0|csum:3CDCBEFFC288CEBF3CA413D2C75856DB
+file:..\synwork\oled_ssd1306_mult.srs|io:o|time:1538998680|size:7081|exec:0|csum:
+file:..\synlog\oled_ssd1306_multi_srs_gen.srr|io:o|time:1538998680|size:1364|exec:0|csum:
 file:..\..\..\..\..\Gowin\1.8\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1526401362|size:8704000|exec:1|csum:B95ED65EC47187934F9262CDAE086B51

@@ -1,4 +1,4 @@
-# Mon Oct  8 17:33:02 2018
+# Mon Oct  8 19:38:00 2018
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -48,13 +48,13 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @N: MO111 :"c:\fpga_oled_ssd1306\src\spi_master.v":248:19:248:57|Tristate driver data_out_1[2] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[2] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\fpga_oled_ssd1306\src\spi_master.v":248:19:248:57|Tristate driver data_out_1[1] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[1] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\fpga_oled_ssd1306\src\spi_master.v":248:19:248:57|Tristate driver data_out_1[0] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[0] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N: BN115 :"c:\fpga_oled_ssd1306\src\ssd1306.v":96:20:96:32|Removing instance oled_rom_init (in view: work.SSD1306(verilog)) of type view:work.SSD1306_ROM_cfg_mod(verilog) because it does not drive other instances.
+@N: BN115 :"c:\fpga_oled_ssd1306\src\ssd1306.v":58:20:58:32|Removing instance oled_rom_init (in view: work.SSD1306(verilog)) of type view:work.SSD1306_ROM_cfg_mod(verilog) because it does not drive other instances.
 @N: BN362 :"c:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Removing sequential instance senderr (in view: work.spi_master_8s_8s_0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"c:\fpga_oled_ssd1306\src\spi_master.v":139:0:139:5|Removing sequential instance output_buffer[7:0] (in view: work.spi_master_8s_8s_0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.
 syn_allowed_resources : blockrams=10  set on top level netlist SSD1306
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 188MB peak: 190MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 190MB)
 
 
 
@@ -65,7 +65,7 @@ Clock Summary
 Level     Clock                                   Frequency     Period        Type                               Group                     Load 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 0 -       SSD1306|clk_50M                         252.8 MHz     3.955         inferred                           Autoconstr_clkgroup_0     26   
-1 .         SSD1306|clk_ssd1306_derived_clock     252.8 MHz     3.955         derived (from SSD1306|clk_50M)     Autoconstr_clkgroup_0     83   
+1 .         SSD1306|clk_ssd1306_derived_clock     252.8 MHz     3.955         derived (from SSD1306|clk_50M)     Autoconstr_clkgroup_0     79   
 ================================================================================================================================================
 
 
@@ -77,10 +77,10 @@ Clock Load Summary
 Clock                                 Load      Pin                         Seq Example       Seq Example       Comb Example 
 -----------------------------------------------------------------------------------------------------------------------------
 SSD1306|clk_50M                       26        clk_50M(port)               clk_ssd1306.C     -                 -            
-SSD1306|clk_ssd1306_derived_clock     83        clk_ssd1306.Q[0](dffre)     led[3:0].C        -                 -            
+SSD1306|clk_ssd1306_derived_clock     79        clk_ssd1306.Q[0](dffre)     led[3:0].C        -                 -            
 =============================================================================================================================
 
-@W: MT529 :"c:\fpga_oled_ssd1306\src\ssd1306.v":76:0:76:5|Found inferred clock SSD1306|clk_50M which controls 26 sequential elements including cnt[24:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\fpga_oled_ssd1306\src\ssd1306.v":99:0:99:5|Found inferred clock SSD1306|clk_50M which controls 26 sequential elements including cnt[24:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -94,19 +94,19 @@ Number of ICG latches not removed:	0
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
 1 non-gated/non-generated clock tree(s) driving 26 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 83 clock pin(s) of sequential element(s)
-0 instances converted, 83 sequential instances remain driven by gated/generated clocks
+1 gated/generated clock tree(s) driving 79 clock pin(s) of sequential element(s)
+0 instances converted, 79 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------
 @KP:ckid0_3       clk_50M             Unconstrained_port     26         cnt[24:0]      
 =======================================================================================
-================================================================== Gated/Generated Clocks ==================================================================
-Clock Tree ID     Driving Element      Drive Element Type     Unconverted Fanout     Sample Instance              Explanation                               
-------------------------------------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_1       clk_ssd1306.Q[0]     dffre                  83                     state_machine_count[6:0]     Derived clock on input (not legal for GCC)
-============================================================================================================================================================
+============================================================= Gated/Generated Clocks ==============================================================
+Clock Tree ID     Driving Element      Drive Element Type     Unconverted Fanout     Sample Instance     Explanation                               
+---------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_1       clk_ssd1306.Q[0]     dffre                  79                     step_id[6:0]        Derived clock on input (not legal for GCC)
+===================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######
@@ -123,13 +123,13 @@ Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Tim
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 188MB peak: 190MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 188MB peak: 190MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 104MB peak: 190MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 104MB peak: 190MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Mon Oct  8 17:33:04 2018
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Oct  8 19:38:02 2018
 
 ###########################################################]

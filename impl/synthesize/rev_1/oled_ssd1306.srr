@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: BEACONDEV3
 
-# Mon Oct  8 17:32:59 2018
+# Mon Oct  8 19:37:58 2018
 
 #Implementation: rev_1
 
@@ -53,6 +53,7 @@ Synopsys Verilog Compiler, Version comp2018q1p1, Build 118R, Built May 15 2018 0
 @I::"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v" (library work)
 @I::"C:\fpga_oled_ssd1306\src\spi_master.v" (library work)
 Verilog syntax check successful!
+File C:\fpga_oled_ssd1306\src\SSD1306.v changed - recompiling
 Selecting top level module SSD1306
 @N: CG364 :"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v":23:7:23:25|Synthesizing module SSD1306_ROM_cfg_mod in library work.
 @W: CG371 :"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v":31:8:31:16|Cannot find data file SSD1306_ROM_script.mem for task $readmemh
@@ -67,15 +68,24 @@ Selecting top level module SSD1306
 @W: CL113 :"C:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Feedback mux created for signal prescallerbuff[2:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
 @W: CL113 :"C:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Feedback mux created for signal inbufffullp. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
 @N: CG364 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Synthesizing module SSD1306 in library work.
-@W: CL156 :"C:\fpga_oled_ssd1306\src\SSD1306.v":107:6:107:9|*Input btnc to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CS263 :"C:\fpga_oled_ssd1306\src\SSD1306.v":126:10:126:21|Port-width mismatch for port data_in. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":159:0:159:5|Register bit repeat_count[14] is always 0.
+@W: CL260 :"C:\fpga_oled_ssd1306\src\SSD1306.v":159:0:159:5|Pruning register bit 14 of repeat_count[14:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":159:0:159:5|Register bit repeat_count[13] is always 0.
+@W: CL260 :"C:\fpga_oled_ssd1306\src\SSD1306.v":159:0:159:5|Pruning register bit 13 of repeat_count[13:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":159:0:159:5|Register bit repeat_count[12] is always 0.
+@W: CL260 :"C:\fpga_oled_ssd1306\src\SSD1306.v":159:0:159:5|Pruning register bit 12 of repeat_count[12:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":159:0:159:5|Register bit repeat_count[11] is always 0.
+@W: CL260 :"C:\fpga_oled_ssd1306\src\SSD1306.v":159:0:159:5|Pruning register bit 11 of repeat_count[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL156 :"C:\fpga_oled_ssd1306\src\SSD1306.v":125:6:125:9|*Input btnc to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
 @N: CL159 :"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v":24:43:24:46|Input addr is unused.
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 73MB peak: 95MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 100MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Oct  8 17:33:00 2018
+# Mon Oct  8 19:37:58 2018
 
 ###########################################################]
 
@@ -95,6 +105,7 @@ Implementation : rev_1
 Synopsys Synopsys Netlist Linker, Version comp2018q1p1, Build 118R, Built May 15 2018 09:18:11
 
 @N|Running in 64-bit mode
+File C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\layer0.srs changed - recompiling
 @N: NF107 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Selected library: work cell: SSD1306 view verilog as top level
 @N: NF107 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Selected library: work cell: SSD1306 view verilog as top level
 
@@ -103,7 +114,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Oct  8 17:33:00 2018
+# Mon Oct  8 19:37:59 2018
 
 ###########################################################]
 @END
@@ -113,7 +124,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Oct  8 17:33:00 2018
+# Mon Oct  8 19:37:59 2018
 
 ###########################################################]
 
@@ -133,6 +144,7 @@ Database state : C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\|rev_1
 Synopsys Synopsys Netlist Linker, Version comp2018q1p1, Build 118R, Built May 15 2018 09:18:11
 
 @N|Running in 64-bit mode
+File C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\oled_ssd1306_comp.srs changed - recompiling
 @N: NF107 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Selected library: work cell: SSD1306 view verilog as top level
 @N: NF107 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Selected library: work cell: SSD1306 view verilog as top level
 
@@ -141,12 +153,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Oct  8 17:33:02 2018
+# Mon Oct  8 19:38:00 2018
 
 ###########################################################]
-Premap Report
-
-# Mon Oct  8 17:33:02 2018
+# Mon Oct  8 19:38:00 2018
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -196,13 +206,13 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @N: MO111 :"c:\fpga_oled_ssd1306\src\spi_master.v":248:19:248:57|Tristate driver data_out_1[2] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[2] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\fpga_oled_ssd1306\src\spi_master.v":248:19:248:57|Tristate driver data_out_1[1] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[1] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\fpga_oled_ssd1306\src\spi_master.v":248:19:248:57|Tristate driver data_out_1[0] (in view: work.spi_master_8s_8s_0_1(verilog)) on net data_out[0] (in view: work.spi_master_8s_8s_0_1(verilog)) has its enable tied to GND.
-@N: BN115 :"c:\fpga_oled_ssd1306\src\ssd1306.v":96:20:96:32|Removing instance oled_rom_init (in view: work.SSD1306(verilog)) of type view:work.SSD1306_ROM_cfg_mod(verilog) because it does not drive other instances.
+@N: BN115 :"c:\fpga_oled_ssd1306\src\ssd1306.v":58:20:58:32|Removing instance oled_rom_init (in view: work.SSD1306(verilog)) of type view:work.SSD1306_ROM_cfg_mod(verilog) because it does not drive other instances.
 @N: BN362 :"c:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Removing sequential instance senderr (in view: work.spi_master_8s_8s_0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"c:\fpga_oled_ssd1306\src\spi_master.v":139:0:139:5|Removing sequential instance output_buffer[7:0] (in view: work.spi_master_8s_8s_0_1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.
 syn_allowed_resources : blockrams=10  set on top level netlist SSD1306
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 188MB peak: 190MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 190MB)
 
 
 
@@ -213,7 +223,7 @@ Clock Summary
 Level     Clock                                   Frequency     Period        Type                               Group                     Load 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 0 -       SSD1306|clk_50M                         252.8 MHz     3.955         inferred                           Autoconstr_clkgroup_0     26   
-1 .         SSD1306|clk_ssd1306_derived_clock     252.8 MHz     3.955         derived (from SSD1306|clk_50M)     Autoconstr_clkgroup_0     83   
+1 .         SSD1306|clk_ssd1306_derived_clock     252.8 MHz     3.955         derived (from SSD1306|clk_50M)     Autoconstr_clkgroup_0     79   
 ================================================================================================================================================
 
 
@@ -225,10 +235,10 @@ Clock Load Summary
 Clock                                 Load      Pin                         Seq Example       Seq Example       Comb Example 
 -----------------------------------------------------------------------------------------------------------------------------
 SSD1306|clk_50M                       26        clk_50M(port)               clk_ssd1306.C     -                 -            
-SSD1306|clk_ssd1306_derived_clock     83        clk_ssd1306.Q[0](dffre)     led[3:0].C        -                 -            
+SSD1306|clk_ssd1306_derived_clock     79        clk_ssd1306.Q[0](dffre)     led[3:0].C        -                 -            
 =============================================================================================================================
 
-@W: MT529 :"c:\fpga_oled_ssd1306\src\ssd1306.v":76:0:76:5|Found inferred clock SSD1306|clk_50M which controls 26 sequential elements including cnt[24:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\fpga_oled_ssd1306\src\ssd1306.v":99:0:99:5|Found inferred clock SSD1306|clk_50M which controls 26 sequential elements including cnt[24:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -242,19 +252,19 @@ Number of ICG latches not removed:	0
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
 1 non-gated/non-generated clock tree(s) driving 26 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 83 clock pin(s) of sequential element(s)
-0 instances converted, 83 sequential instances remain driven by gated/generated clocks
+1 gated/generated clock tree(s) driving 79 clock pin(s) of sequential element(s)
+0 instances converted, 79 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------
 @KP:ckid0_3       clk_50M             Unconstrained_port     26         cnt[24:0]      
 =======================================================================================
-================================================================== Gated/Generated Clocks ==================================================================
-Clock Tree ID     Driving Element      Drive Element Type     Unconverted Fanout     Sample Instance              Explanation                               
-------------------------------------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_1       clk_ssd1306.Q[0]     dffre                  83                     state_machine_count[6:0]     Derived clock on input (not legal for GCC)
-============================================================================================================================================================
+============================================================= Gated/Generated Clocks ==============================================================
+Clock Tree ID     Driving Element      Drive Element Type     Unconverted Fanout     Sample Instance     Explanation                               
+---------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_1       clk_ssd1306.Q[0]     dffre                  79                     step_id[6:0]        Derived clock on input (not legal for GCC)
+===================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######
@@ -271,19 +281,17 @@ Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Tim
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 188MB peak: 190MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 188MB peak: 190MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 104MB peak: 190MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 104MB peak: 190MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Mon Oct  8 17:33:04 2018
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Oct  8 19:38:02 2018
 
 ###########################################################]
-Map & Optimize Report
-
-# Mon Oct  8 17:33:04 2018
+# Mon Oct  8 19:38:02 2018
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -333,23 +341,20 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 190MB)
 
-@N: MO231 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Found counter in view:work.SSD1306(verilog) instance state_machine_count[6:0] 
-@N: MO231 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Found counter in view:work.SSD1306(verilog) instance time_count[27:0] 
-@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Register bit repeat_count[14] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Register bit repeat_count[13] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Register bit repeat_count[12] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Register bit repeat_count[11] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Register bit repeat_count[10] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Register bit repeat_count[9] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Register bit repeat_count[8] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Register bit repeat_count[7] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Register bit repeat_count[6] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Register bit repeat_count[5] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Register bit repeat_count[4] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Register bit repeat_count[3] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Register bit repeat_count[2] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Register bit repeat_count[1] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Register bit repeat_count[0] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@N: MO231 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Found counter in view:work.SSD1306(verilog) instance step_id[6:0] 
+@N: MO231 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Found counter in view:work.SSD1306(verilog) instance elapsed_time[27:0] 
+@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Register bit repeat_count[10] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Register bit repeat_count[9] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Register bit repeat_count[8] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Register bit repeat_count[7] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Register bit repeat_count[6] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Register bit repeat_count[5] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Register bit repeat_count[4] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Register bit repeat_count[3] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Register bit repeat_count[2] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Register bit repeat_count[1] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Register bit repeat_count[0] (in view view:work.SSD1306(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Removing sequential instance elapsed_time[27:0] (in view: work.SSD1306(verilog)) of type view:PrimLib.scounter(prim) because it does not drive other instances.
 @W: BN132 :"c:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Removing instance spi0.prescallerbuff[2] because it is equivalent to instance spi0.prescallerbuff[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\fpga_oled_ssd1306\src\spi_master.v":139:0:139:5|Removing instance spi0.prescallerint[2] because it is equivalent to instance spi0.prescallerint[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: MO231 :"c:\fpga_oled_ssd1306\src\spi_master.v":139:0:139:5|Found counter in view:work.spi_master_8s_8s_0_1(verilog) instance sckint[4:0] 
@@ -390,9 +395,9 @@ Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elaps
 
 Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 190MB)
 
-@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Removing sequential instance state_machine_count[6] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Removing sequential instance state_machine_count[5] (in view: work.SSD1306(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":139:0:139:5|Removing sequential instance state_machine_count[4] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Removing sequential instance step_id[6] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Removing sequential instance step_id[5] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":159:0:159:5|Removing sequential instance step_id[4] (in view: work.SSD1306(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\fpga_oled_ssd1306\src\spi_master.v":139:0:139:5|Removing sequential instance spi0.sckint[0] (in view: work.SSD1306(verilog)) because it does not drive other instances.
 @A: BN291 :"c:\fpga_oled_ssd1306\src\spi_master.v":139:0:139:5|Boundary register spi0.sckint[0] (in view: work.SSD1306(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: BN362 :"c:\fpga_oled_ssd1306\src\spi_master.v":139:0:139:5|Removing sequential instance spi0.sckint[1] (in view: work.SSD1306(verilog)) because it does not drive other instances.
@@ -411,44 +416,42 @@ Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:0
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		    -1.74ns		 104 /        63
-   2		0h:00m:00s		    -1.74ns		 108 /        63
-@N: FX271 :"c:\fpga_oled_ssd1306\src\ssd1306.v":76:0:76:5|Replicating instance cnt[0] (in view: work.SSD1306(verilog)) with 4 loads 1 time to improve timing.
-@N: FX271 :"c:\fpga_oled_ssd1306\src\ssd1306.v":76:0:76:5|Replicating instance cnt[1] (in view: work.SSD1306(verilog)) with 4 loads 1 time to improve timing.
-@N: FX271 :"c:\fpga_oled_ssd1306\src\ssd1306.v":76:0:76:5|Replicating instance cnt[7] (in view: work.SSD1306(verilog)) with 4 loads 1 time to improve timing.
+   1		0h:00m:00s		    -1.74ns		  65 /        35
+   2		0h:00m:00s		    -1.74ns		  65 /        35
+@N: FX271 :"c:\fpga_oled_ssd1306\src\ssd1306.v":99:0:99:5|Replicating instance cnt[0] (in view: work.SSD1306(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\fpga_oled_ssd1306\src\ssd1306.v":99:0:99:5|Replicating instance cnt[1] (in view: work.SSD1306(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\fpga_oled_ssd1306\src\ssd1306.v":99:0:99:5|Replicating instance cnt[7] (in view: work.SSD1306(verilog)) with 4 loads 1 time to improve timing.
 Timing driven replication report
 Added 3 Registers via timing driven replication
 Added 0 LUTs via timing driven replication
 
-   3		0h:00m:01s		    -1.74ns		 108 /        66
-   4		0h:00m:01s		    -1.74ns		 109 /        66
+   3		0h:00m:00s		    -1.74ns		  65 /        38
 
 
-   5		0h:00m:01s		    -1.68ns		 113 /        66
-   6		0h:00m:01s		    -1.42ns		 113 /        66
+   4		0h:00m:00s		    -1.68ns		  67 /        38
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 189MB peak: 190MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 190MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 189MB peak: 190MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 189MB peak: 190MB)
 
 
 Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 190MB)
 
 Writing Analyst data base C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\oled_ssd1306_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 188MB peak: 190MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 187MB peak: 190MB)
 
 Writing Verilog Simulation files
 
-Writing scf file... (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 188MB peak: 190MB)
+Writing scf file... (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 188MB peak: 190MB)
 
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 @A: BN540 |No min timing constraints supplied; adding min timing constraints
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 187MB peak: 190MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 187MB peak: 190MB)
 
 
 Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 188MB peak: 190MB)
@@ -458,7 +461,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Oct  8 17:33:08 2018
+# Timing Report written on Mon Oct  8 19:38:06 2018
 #
 
 
@@ -483,7 +486,7 @@ Worst slack in design: 2.158
 Starting Clock                        Frequency     Frequency     Period        Period        Slack      Type                               Group                
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 SSD1306|clk_50M                       100.0 MHz     127.5 MHz     10.000        7.842         2.158      inferred                           Autoconstr_clkgroup_0
-SSD1306|clk_ssd1306_derived_clock     100.0 MHz     258.1 MHz     10.000        3.874         12.252     derived (from SSD1306|clk_50M)     Autoconstr_clkgroup_0
+SSD1306|clk_ssd1306_derived_clock     100.0 MHz     478.8 MHz     10.000        2.088         15.823     derived (from SSD1306|clk_50M)     Autoconstr_clkgroup_0
 System                                100.0 MHz     866.6 MHz     10.000        1.154         8.846      system                             system_clkgroup      
 =================================================================================================================================================================
 
@@ -500,10 +503,10 @@ Starting                           Ending                             |  constra
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                             SSD1306|clk_50M                    |  10.000      8.846   |  No paths    -      |  No paths    -      |  No paths    -    
 System                             SSD1306|clk_ssd1306_derived_clock  |  10.000      8.846   |  No paths    -      |  No paths    -      |  No paths    -    
-SSD1306|clk_50M                    System                             |  10.000      8.429   |  No paths    -      |  No paths    -      |  No paths    -    
+SSD1306|clk_50M                    System                             |  10.000      8.612   |  No paths    -      |  No paths    -      |  No paths    -    
 SSD1306|clk_50M                    SSD1306|clk_50M                    |  10.000      2.158   |  No paths    -      |  No paths    -      |  No paths    -    
 SSD1306|clk_ssd1306_derived_clock  System                             |  10.000      8.612   |  No paths    -      |  No paths    -      |  No paths    -    
-SSD1306|clk_ssd1306_derived_clock  SSD1306|clk_ssd1306_derived_clock  |  10.000      12.252  |  No paths    -      |  No paths    -      |  No paths    -    
+SSD1306|clk_ssd1306_derived_clock  SSD1306|clk_ssd1306_derived_clock  |  10.000      15.823  |  No paths    -      |  No paths    -      |  No paths    -    
 =============================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -651,21 +654,16 @@ Detailed Report for Clock: SSD1306|clk_ssd1306_derived_clock
 Starting Points with Worst Slack
 ********************************
 
-                           Starting                                                                           Arrival           
-Instance                   Reference                             Type      Pin     Net                        Time        Slack 
-                           Clock                                                                                                
---------------------------------------------------------------------------------------------------------------------------------
-state_machine_count[0]     SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       state_machine_count[0]     0.367       8.612 
-state_machine_count[1]     SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       state_machine_count[1]     0.367       8.612 
-state_machine_count[2]     SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       state_machine_count[2]     0.367       8.612 
-state_machine_count[3]     SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       state_machine_count[3]     0.367       8.612 
-time_count[1]              SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       time_count[1]              0.367       12.252
-time_count[0]              SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       time_count[0]              0.367       12.319
-time_count[9]              SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       time_count[9]              0.367       12.319
-time_count[25]             SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       time_count[25]             0.367       12.319
-time_count[8]              SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       time_count[8]              0.367       12.386
-time_count[17]             SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       time_count[17]             0.367       12.386
-================================================================================================================================
+                           Starting                                                                           Arrival          
+Instance                   Reference                             Type      Pin     Net                        Time        Slack
+                           Clock                                                                                               
+-------------------------------------------------------------------------------------------------------------------------------
+internal_state_machine     SSD1306|clk_ssd1306_derived_clock     DFFS      Q       internal_state_machine     0.367       8.612
+step_id[0]                 SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       step_id[0]                 0.367       8.612
+step_id[1]                 SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       step_id[1]                 0.367       8.612
+step_id[2]                 SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       step_id[2]                 0.367       8.612
+step_id[3]                 SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       step_id[3]                 0.367       8.612
+===============================================================================================================================
 
 
 Ending Points with Worst Slack
@@ -675,16 +673,16 @@ Ending Points with Worst Slack
 Instance                     Reference                             Type      Pin       Net                        Time         Slack 
                              Clock                                                                                                   
 -------------------------------------------------------------------------------------------------------------------------------------
-led_RNO[1]                   SSD1306|clk_ssd1306_derived_clock     INV       I         state_machine_count[1]     10.000       8.612 
-led_RNO[2]                   SSD1306|clk_ssd1306_derived_clock     INV       I         state_machine_count[2]     10.000       8.612 
-led_RNO[3]                   SSD1306|clk_ssd1306_derived_clock     INV       I         state_machine_count[3]     10.000       8.612 
-state_machine_count_s[0]     SSD1306|clk_ssd1306_derived_clock     INV       I         state_machine_count[0]     10.000       8.612 
-time_count[0]                SSD1306|clk_ssd1306_derived_clock     DFFRE     RESET     time_count_0_sqmuxa_1      19.867       12.252
-time_count[1]                SSD1306|clk_ssd1306_derived_clock     DFFRE     RESET     time_count_0_sqmuxa_1      19.867       12.252
-time_count[2]                SSD1306|clk_ssd1306_derived_clock     DFFRE     RESET     time_count_0_sqmuxa_1      19.867       12.252
-time_count[3]                SSD1306|clk_ssd1306_derived_clock     DFFRE     RESET     time_count_0_sqmuxa_1      19.867       12.252
-time_count[4]                SSD1306|clk_ssd1306_derived_clock     DFFRE     RESET     time_count_0_sqmuxa_1      19.867       12.252
-time_count[5]                SSD1306|clk_ssd1306_derived_clock     DFFRE     RESET     time_count_0_sqmuxa_1      19.867       12.252
+internal_state_machine_i     SSD1306|clk_ssd1306_derived_clock     INV       I         internal_state_machine     10.000       8.612 
+led_RNO[1]                   SSD1306|clk_ssd1306_derived_clock     INV       I         step_id[1]                 10.000       8.612 
+led_RNO[2]                   SSD1306|clk_ssd1306_derived_clock     INV       I         step_id[2]                 10.000       8.612 
+led_RNO[3]                   SSD1306|clk_ssd1306_derived_clock     INV       I         step_id[3]                 10.000       8.612 
+step_id_s[0]                 SSD1306|clk_ssd1306_derived_clock     INV       I         step_id[0]                 10.000       8.612 
+step_id[3]                   SSD1306|clk_ssd1306_derived_clock     DFFRE     D         step_id_s[3]               19.867       15.823
+step_id[2]                   SSD1306|clk_ssd1306_derived_clock     DFFRE     D         step_id_s[2]               19.867       15.880
+step_id[1]                   SSD1306|clk_ssd1306_derived_clock     DFFRE     D         step_id_s[1]               19.867       15.937
+step_id[0]                   SSD1306|clk_ssd1306_derived_clock     DFFRE     CE        step_id_1_sqmuxa_2_i       19.867       16.426
+step_id[0]                   SSD1306|clk_ssd1306_derived_clock     DFFRE     RESET     step_id_0_sqmuxa_2         19.867       16.426
 =====================================================================================================================================
 
 
@@ -705,18 +703,18 @@ Path information for path number 1:
     = Slack (non-critical) :                 8.612
 
     Number of logic level(s):                0
-    Starting point:                          state_machine_count[0] / Q
-    Ending point:                            state_machine_count_s[0] / I
+    Starting point:                          internal_state_machine / Q
+    Ending point:                            internal_state_machine_i / I
     The start point is clocked by            SSD1306|clk_ssd1306_derived_clock [rising] on pin CLK
     The end   point is clocked by            System [rising]
 
-Instance / Net                         Pin      Pin               Arrival     No. of    
-Name                         Type      Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------
-state_machine_count[0]       DFFRE     Q        Out     0.367     0.367       -         
-state_machine_count[0]       Net       -        -       1.021     -           2         
-state_machine_count_s[0]     INV       I        In      -         1.388       -         
-========================================================================================
+Instance / Net                        Pin      Pin               Arrival     No. of    
+Name                         Type     Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------
+internal_state_machine       DFFS     Q        Out     0.367     0.367       -         
+internal_state_machine       Net      -        -       1.021     -           3         
+internal_state_machine_i     INV      I        In      -         1.388       -         
+=======================================================================================
 Total path delay (propagation time + setup) of 1.388 is 0.367(26.4%) logic and 1.021(73.6%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
@@ -737,10 +735,11 @@ Instance                     Reference     Type     Pin     Net                 
                              Clock                                                                        
 ----------------------------------------------------------------------------------------------------------
 clk_ssd1306_i_i              System        INV      O       clk_ssd1306_i_i              0.000       8.846
-led_RNO[1]                   System        INV      O       state_machine_count_i[1]     0.000       8.846
-led_RNO[2]                   System        INV      O       state_machine_count_i[2]     0.000       8.846
-led_RNO[3]                   System        INV      O       state_machine_count_i[3]     0.000       8.846
-state_machine_count_s[0]     System        INV      O       state_machine_count_s[0]     0.000       8.846
+internal_state_machine_i     System        INV      O       internal_state_machine_i     0.000       8.846
+led_RNO[1]                   System        INV      O       step_id_i[1]                 0.000       8.846
+led_RNO[2]                   System        INV      O       step_id_i[2]                 0.000       8.846
+led_RNO[3]                   System        INV      O       step_id_i[3]                 0.000       8.846
+step_id_s[0]                 System        INV      O       step_id_s[0]                 0.000       8.846
 ==========================================================================================================
 
 
@@ -752,10 +751,11 @@ Instance                   Reference     Type      Pin     Net                  
                            Clock                                                                          
 ----------------------------------------------------------------------------------------------------------
 clk_ssd1306                System        DFFCE     D       clk_ssd1306_i_i              9.867        8.846
-led[1]                     System        DFF       D       state_machine_count_i[1]     9.867        8.846
-led[2]                     System        DFF       D       state_machine_count_i[2]     9.867        8.846
-led[3]                     System        DFF       D       state_machine_count_i[3]     9.867        8.846
-state_machine_count[0]     System        DFFRE     D       state_machine_count_s[0]     9.867        8.846
+internal_state_machine     System        DFFS      SET     internal_state_machine_i     9.867        8.846
+led[1]                     System        DFF       D       step_id_i[1]                 9.867        8.846
+led[2]                     System        DFF       D       step_id_i[2]                 9.867        8.846
+led[3]                     System        DFF       D       step_id_i[3]                 9.867        8.846
+step_id[0]                 System        DFFRE     D       step_id_s[0]                 9.867        8.846
 ==========================================================================================================
 
 
@@ -808,17 +808,17 @@ Resource Usage Report for SSD1306
 
 Mapping to part: gw1n_4lqfp144-6
 Cell usage:
-ALU             64 uses
+ALU             36 uses
 DFF             4 uses
 DFFC            28 uses
 DFFCE           1 use
-DFFRE           32 uses
-DFFSE           1 use
+DFFRE           4 uses
+DFFS            1 use
 GSR             1 use
-INV             6 uses
-LUT2            1 use
-LUT3            5 uses
-LUT4            42 uses
+INV             7 uses
+LUT2            3 uses
+LUT3            1 use
+LUT4            28 uses
 
 I/O ports: 12
 I/O primitives: 12
@@ -826,19 +826,19 @@ IBUF           2 uses
 OBUF           10 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   66 of 3456 (1%)
+Register bits not including I/Os:   38 of 3456 (1%)
 Total load per clock:
    SSD1306|clk_50M: 29
-   SSD1306|clk_ssd1306_derived_clock: 37
+   SSD1306|clk_ssd1306_derived_clock: 9
 
 @S |Mapping Summary:
-Total  LUTs: 48 (1%)
+Total  LUTs: 32 (0%)
 
 Mapper successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 38MB peak: 190MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Mon Oct  8 17:33:08 2018
+# Mon Oct  8 19:38:06 2018
 
 ###########################################################]

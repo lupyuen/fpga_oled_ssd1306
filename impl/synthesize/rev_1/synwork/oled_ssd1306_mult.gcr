@@ -1,9 +1,9 @@
 i clk_ssd1306_i
 m 0 0
-u 13 83
+u 13 79
 n ckid0_0 {t:spi0.inbufffulln_0.C} Derived clock on input (not legal for GCC)
-p {t:clk_ssd1306.Q[0]}{t:clk_ssd1306_derived_clock.I[0]}{t:clk_ssd1306_derived_clock.OUT[0]}{t:state_machine_count[6:0].C}
-e ckid0_1 {t:state_machine_count[6:0].C} sdffr
+p {t:clk_ssd1306.Q[0]}{t:clk_ssd1306_derived_clock.I[0]}{t:clk_ssd1306_derived_clock.OUT[0]}{t:step_id[6:0].C}
+e ckid0_1 {t:step_id[6:0].C} sdffr
 d ckid0_2 {t:clk_ssd1306.Q[0]} dffre Potential generated clock but with a nonconvertable driver or an unknown conversion method
 i clk_50M
 m 0 0

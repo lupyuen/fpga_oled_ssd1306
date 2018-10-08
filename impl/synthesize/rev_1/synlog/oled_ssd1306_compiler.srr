@@ -44,6 +44,7 @@ Synopsys Verilog Compiler, Version comp2018q1p1, Build 118R, Built May 15 2018 0
 @I::"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v" (library work)
 @I::"C:\fpga_oled_ssd1306\src\spi_master.v" (library work)
 Verilog syntax check successful!
+File C:\fpga_oled_ssd1306\src\SSD1306.v changed - recompiling
 Selecting top level module SSD1306
 @N: CG364 :"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v":23:7:23:25|Synthesizing module SSD1306_ROM_cfg_mod in library work.
 @W: CG371 :"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v":31:8:31:16|Cannot find data file SSD1306_ROM_script.mem for task $readmemh
@@ -58,15 +59,24 @@ Selecting top level module SSD1306
 @W: CL113 :"C:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Feedback mux created for signal prescallerbuff[2:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
 @W: CL113 :"C:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Feedback mux created for signal inbufffullp. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
 @N: CG364 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Synthesizing module SSD1306 in library work.
-@W: CL156 :"C:\fpga_oled_ssd1306\src\SSD1306.v":107:6:107:9|*Input btnc to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CS263 :"C:\fpga_oled_ssd1306\src\SSD1306.v":126:10:126:21|Port-width mismatch for port data_in. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":159:0:159:5|Register bit repeat_count[14] is always 0.
+@W: CL260 :"C:\fpga_oled_ssd1306\src\SSD1306.v":159:0:159:5|Pruning register bit 14 of repeat_count[14:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":159:0:159:5|Register bit repeat_count[13] is always 0.
+@W: CL260 :"C:\fpga_oled_ssd1306\src\SSD1306.v":159:0:159:5|Pruning register bit 13 of repeat_count[13:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":159:0:159:5|Register bit repeat_count[12] is always 0.
+@W: CL260 :"C:\fpga_oled_ssd1306\src\SSD1306.v":159:0:159:5|Pruning register bit 12 of repeat_count[12:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":159:0:159:5|Register bit repeat_count[11] is always 0.
+@W: CL260 :"C:\fpga_oled_ssd1306\src\SSD1306.v":159:0:159:5|Pruning register bit 11 of repeat_count[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL156 :"C:\fpga_oled_ssd1306\src\SSD1306.v":125:6:125:9|*Input btnc to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
 @N: CL159 :"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v":24:43:24:46|Input addr is unused.
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 73MB peak: 95MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 100MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Oct  8 17:33:00 2018
+# Mon Oct  8 19:37:58 2018
 
 ###########################################################]
 
@@ -86,6 +96,7 @@ Implementation : rev_1
 Synopsys Synopsys Netlist Linker, Version comp2018q1p1, Build 118R, Built May 15 2018 09:18:11
 
 @N|Running in 64-bit mode
+File C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\layer0.srs changed - recompiling
 @N: NF107 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Selected library: work cell: SSD1306 view verilog as top level
 @N: NF107 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Selected library: work cell: SSD1306 view verilog as top level
 
@@ -94,7 +105,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Oct  8 17:33:00 2018
+# Mon Oct  8 19:37:59 2018
 
 ###########################################################]
 @END
@@ -104,6 +115,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Oct  8 17:33:00 2018
+# Mon Oct  8 19:37:59 2018
 
 ###########################################################]

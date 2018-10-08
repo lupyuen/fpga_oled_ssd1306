@@ -47,10 +47,35 @@ reg wr_spi;
 wire buffempty;
 wire charreceived;
 
-reg [27:0]time_count;
-reg [27:0]time_count_back;
-reg [`BLOCK_ROM_INIT_ADDR_WIDTH-1:0]state_machine_count;
-wire [`BLOCK_ROM_INIT_DATA_WIDTH-1:0]rom_bus;
+reg[27:0] elapsed_time;
+reg[27:0] saved_elapsed_time;
+
+//  The step ID that we are now executing: 0, 1, 2, ...
+reg[`BLOCK_ROM_INIT_ADDR_WIDTH-1:0] step_id;
+//  The step details, encoded in 48 bits.  This will be refetched whenever step_id changes.
+wire[`BLOCK_ROM_INIT_DATA_WIDTH-1:0] encoded_step;
+//  Whenever step_id is updated, fetch the encoded step from ROM.
+SSD1306_ROM_cfg_mod oled_rom_init(
+	.addr(step_id),
+	.dout(encoded_step)
+);
+
+//  We define convenience wires to decode our encoded step.  Prefix by "step" so we don't mix up.
+//  If encoded_step is changed, these will automatically change.
+wire step_backward = encoded_step[47];  //  1 if next step is backwards i.e. a negative offset.
+wire step_next = encoded_step[46:44];  //  Offset to the next step, i.e. 1=go to following step.  If step_backward=1, go backwards.
+wire step_time = encoded_step[39:16];  //  Number of clk_ssd1306 clock cycles to wait before starting this step. This time is relative to the time of power on.
+wire step_tx_data = encoded_step[15:8];  //  Data to be transmitted via SPI (1 byte).
+wire step_should_repeat = encoded_step[7];  //  1 if step should be repeated.
+wire step_repeat = { encoded_step[6:0], step_tx_data };  //  How many times the step should be repeated.  Only if step_should_repeat=1
+
+wire step_oled_vdd = encoded_step[6];
+wire step_oled_vbat = encoded_step[5];
+wire step_oled_res = encoded_step[4];
+wire step_oled_dc = encoded_step[3];
+wire step_wr_spi = encoded_step[2];
+wire step_rd_spi = encoded_step[1];
+wire step_wait_spi = encoded_step[0];
 
 reg internal_state_machine;
 reg [14:0]repeat_count;
@@ -60,20 +85,20 @@ reg [7:0]data_tmp;
 reg [24:0]cnt;
 
 /*
-reg [3:0]clk_div;
-wire clk;
-assign clk = (rom_bus[46:44]) ? clk_div[3] : 1'b0;
+    reg [3:0]clk_div;
+    wire clk;
+    assign clk = (step_next) ? clk_div[3] : 1'b0;
 
-always @ (posedge clk_ssd1306)
-begin
-	//if(btnc)
-		//clk_div <= 4'h0;
-	//else
-		clk_div <= clk_div + 1;
-end
+    always @ (posedge clk_ssd1306)
+    begin
+        //if(btnc)
+            //clk_div <= 4'h0;
+        //else
+            clk_div <= clk_div + 1;
+    end
 */
 
-always@(                //  Code below is always triggered when these conditions are true...
+always@(  //  Code below is always triggered when these conditions are true...
     posedge clk_50M or  //  When the clock signal transitions from low to high (positive edge) OR
     negedge rst_n       //  When the reset signal transitions from high to low (negative edge) which
     ) begin             //  happens when the board restarts or reset button is pressed.
@@ -93,19 +118,14 @@ always@(                //  Code below is always triggered when these conditions
     end
 end
 
-SSD1306_ROM_cfg_mod oled_rom_init(
-	.addr(state_machine_count),
-	.dout(rom_bus)
-);
-
-spi_master	#	(
-.WORD_LEN(8),/*	Default	8	*/
-.PRESCALLER_SIZE(8)/*	Default	8	/	Max	8*/
+spi_master # (
+.WORD_LEN(8),        //  Default 8
+.PRESCALLER_SIZE(8)  //  Default 8, Max 8
 )
 spi0(
 	.clk(clk_ssd1306),
 	.rst(btnc),
-	.data_in(rom_bus[15:8]),
+	.data_in(step_tx_data),
 	.data_out(data_tmp),
 	.wr(wr_spi),
 	.rd(rd_spi),
@@ -122,17 +142,19 @@ spi0(
 	.charreceived(charreceived)
 );
 
-/* Synchronous lath to out commands directly from ROM except when is a repeat count load. */
+//  Synchronous lath to out commands directly from ROM except when is a repeat count load.
 always @ (posedge clk_ssd1306)
 begin
-    if(!rom_bus[7]) begin
-        oled_vdd <= rom_bus[6];
-        oled_vbat <= rom_bus[5];
-        oled_res <= rom_bus[4];
-        oled_dc <= rom_bus[3];
-        wr_spi <= rom_bus[2];
-        rd_spi <= rom_bus[1];
-        wait_spi <= rom_bus[0];
+    //  If this is not a repeated step...
+    if (!step_should_repeat) begin
+        //  Copy the decoded values into registers so they won't change when we go to next step.
+        oled_vdd <= step_oled_vdd;
+        oled_vbat <= step_oled_vbat;
+        oled_res <= step_oled_res;
+        oled_dc <= step_oled_dc;
+        wr_spi <= step_wr_spi;
+        rd_spi <= step_rd_spi;
+        wait_spi <= step_wait_spi;
     end
 end
 
@@ -140,64 +162,96 @@ always @ (posedge clk_ssd1306)
 begin
     if (!rst_n) begin     //  If board restarts or reset button is pressed...
         //  Init the state machine.
-		time_count <= 28'h0000000;
-		time_count_back <= 28'h0000000;
-		state_machine_count <= `BLOCK_ROM_INIT_ADDR_WIDTH'h00;
+		elapsed_time <= 28'h0000000;
+		saved_elapsed_time <= 28'h0000000;
+		step_id <= `BLOCK_ROM_INIT_ADDR_WIDTH'h00;
 		internal_state_machine <= 1'b0;
 		repeat_count <= 15'h0000;
-    end
 
-    //led <= state_machine_count[3:0];  //  Show the state machine count in LED.
-    led <= { ~state_machine_count[3], ~state_machine_count[2], ~state_machine_count[1], ~state_machine_count[0] };  //  Show the state machine time count in LED.
-    if(rom_bus[39:16] == time_count) begin
+        oled_vdd <= 1'b1;
+		oled_vbat <= 1'b1;
+		oled_res <= 1'b0;
+		oled_dc <= 1'b0;
+		wr_spi <= 1'b0;
+		rd_spi <= 1'b0;
+		wait_spi <= 1'b0;
+    end
+    led <= { ~step_id[3], ~step_id[2], ~step_id[1], ~step_id[0] };  //  Show the state machine step ID in LED.
+
+    //  If the start time is up and the step is ready to execute...
+    if (elapsed_time >= step_time) begin
         case(internal_state_machine)
+            //  Handle repeating steps.
             1'b0 : begin
-                if(rom_bus[7]) begin
-                    repeat_count <= {rom_bus[6:0], rom_bus[15:8]};
-                    time_count_back <= time_count + 1;
+                //  If this is a repeating step...
+                if (step_should_repeat) begin
+                    //  Remember in a register how many times to repeat.
+                    repeat_count <= step_repeat;
+                    //  Remember the elapsed time for recalling later.
+                    saved_elapsed_time <= elapsed_time + 1;
                 end
+                //  If this is not a repeating step...
                 else begin
-                    if(repeat_count && rom_bus[46:44] > 1)
+                    //  If we are still repeating...
+                    if (repeat_count && step_next > 1)
+                        //  Count down number of times to repeat.
                         repeat_count <= repeat_count - 15'h0001;
                 end
                 internal_state_machine <= 1'b1;
             end
+            //  Handle normal steps.
             1'b1 : begin
-                if(wait_spi) begin
-                    if(charreceived) begin
+                //  If we are waiting for SPI command to complete...
+                if (wait_spi) begin
+                    //  If SPI command has completed...
+                    if (charreceived) begin
                         internal_state_machine <= 1'b0;
-                        if(repeat_count) begin
-                            time_count <= time_count_back;
-                            if(rom_bus[47])
-                                state_machine_count <= state_machine_count + ~rom_bus[46:44];
+                        //  If we are still repeating...
+                        if (repeat_count) begin
+                            //  Restore the elapsed time.
+                            elapsed_time <= saved_elapsed_time;
+                            //  Jump to the step we should repeat.
+                            if (step_backward)
+                                step_id <= step_id + ~step_next;
                             else
-                                state_machine_count <= state_machine_count + rom_bus[46:44];
+                                step_id <= step_id + step_next;
                         end
+                        //  If we are not repeating, or repeat has completed...
                         else begin
-                            time_count <= time_count + 1;
-                            state_machine_count <= state_machine_count + `BLOCK_ROM_INIT_ADDR_WIDTH'h01;
+                            elapsed_time <= elapsed_time + 1;
+                            //  Move to following step.
+                            step_id <= step_id + `BLOCK_ROM_INIT_ADDR_WIDTH'h1;
                         end
                     end
+                    //  Else continue waiting for SPI command to complete.
                 end
+                //  Else we are not waiting for SPI command to complete...
                 else begin
                     internal_state_machine <= 1'b0;
+                    //  If we are still repeating...
                     if (repeat_count) begin
-                        time_count <= time_count_back;
-                        if(rom_bus[47])
-                            state_machine_count <= state_machine_count + ~rom_bus[46:44];
+                        //  Restore the elapsed time.
+                        elapsed_time <= saved_elapsed_time;
+                        //  Jump to the step we should repeat.
+                        if (step_backward)
+                            step_id <= step_id + ~step_next;
                         else
-                            state_machine_count <= state_machine_count + rom_bus[46:44];
+                            step_id <= step_id + step_next;
                     end
+                    //  If we are not repeating, or repeat has completed...
                     else begin
-                        time_count <= time_count + 1;
-                        state_machine_count <= state_machine_count + `BLOCK_ROM_INIT_ADDR_WIDTH'h1;
+                        elapsed_time <= elapsed_time + 1;
+                        //  Move to following step.
+                        step_id <= step_id + `BLOCK_ROM_INIT_ADDR_WIDTH'h1;
                     end
                 end
             end
         endcase
     end
+    //  If the step start time has not been reached...
     else begin
-        time_count <= time_count + 1;
+        //  Wait until the step start time has elapsed.
+        elapsed_time <= elapsed_time + 1;
     end
 end
 
