@@ -37,6 +37,7 @@ module	SSD1306(
 	output	oled_sdin,
 	output	reg oled_vbat,
 	output	reg oled_vdd,
+    output  reg ss,
     output  reg[3:0] led  //  LED is actually 4 discrete LEDs at 4 Output signals. Each LED Output is 1 bit.
 );
 
@@ -66,12 +67,12 @@ wire step_oled_dc = encoded_step[3];
 wire step_wr_spi = encoded_step[2];
 wire step_rd_spi = encoded_step[1];
 wire step_wait_spi = encoded_step[0];
-
-reg wait_spi;
-reg rd_spi;
-reg wr_spi;				
 wire buffempty;
 wire charreceived;
+
+reg wait_spi = 1'b0;
+reg rd_spi = 1'b0;
+reg wr_spi = 1'b0;				
 reg[27:0] elapsed_time;
 reg[27:0] saved_elapsed_time;
 reg internal_state_machine;
@@ -122,7 +123,7 @@ spi_master # (
 spi0(
     .clk(clk_50M),
 	////.clk(clk_ssd1306),
-	.rst(btnc),
+	.rst(rst_n),
 	.data_in(step_tx_data),
 	.data_out(data_tmp),
 	.wr(wr_spi),
@@ -132,7 +133,7 @@ spi0(
 	.sck(oled_sclk),
 	.mosi(oled_sdin),
 	.miso(1'b1),
-	//.ss(ss),
+	.ss(ss),
 	.lsbfirst(1'b0),
 	.mode(2'h0),
 	//.senderr(senderr),

@@ -1,7 +1,6 @@
 @W: CG532 :"C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v":31:0:31:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
 @W: CL113 :"C:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Feedback mux created for signal prescallerbuff[2:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
 @W: CL113 :"C:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Feedback mux created for signal inbufffullp. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
-@W: CS263 :"C:\fpga_oled_ssd1306\src\SSD1306.v":126:10:126:21|Port-width mismatch for port data_in. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
-@W: CL279 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Pruning register bits 14 to 1 of repeat_count[14:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL156 :"C:\fpga_oled_ssd1306\src\SSD1306.v":125:6:125:9|*Input btnc to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CS263 :"C:\fpga_oled_ssd1306\src\SSD1306.v":127:10:127:21|Port-width mismatch for port data_in. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CL279 :"C:\fpga_oled_ssd1306\src\SSD1306.v":170:0:170:5|Pruning register bits 14 to 1 of repeat_count[14:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 

@@ -1,7 +1,7 @@
 /***********************************************************************
  Physical Constraint file 
  Version:1.8.0.02Beta
- Created Time:   Mon Oct 08 22:05:21 2018
+ Created Time:   Tue Oct 09 00:16:55 2018
  Device:         GW1N-4
  Package:        LQFP144
 ************************************************************************/
@@ -17,3 +17,11 @@ IO_LOC "oled_sdin" 134;
 IO_LOC "oled_vbat" 135;
 IO_LOC "oled_vdd" 136;
 IO_LOC "rst_n" 92;
+IO_LOC "ss" 137;
+IO_PORT "oled_dc"  IO_TYPE=LVCMOS33 BANK_VCCIO=3.3;
+IO_PORT "oled_res"  IO_TYPE=LVCMOS33 BANK_VCCIO=3.3;
+IO_PORT "oled_sclk"  IO_TYPE=LVCMOS33 BANK_VCCIO=3.3;
+IO_PORT "oled_sdin"  IO_TYPE=LVCMOS33 BANK_VCCIO=3.3;
+IO_PORT "oled_vbat"  IO_TYPE=LVCMOS33 BANK_VCCIO=3.3;
+IO_PORT "oled_vdd"  IO_TYPE=LVCMOS33 BANK_VCCIO=3.3;
+IO_PORT "ss"  IO_TYPE=LVCMOS33 BANK_VCCIO=3.3;

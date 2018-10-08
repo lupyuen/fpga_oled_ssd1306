@@ -4,9 +4,13 @@
 @N: MT206 |Auto Constrain mode is enabled
 @N: FX493 |Applying initial value "0" on instance spi0.inbufffullp.
 @N: FX493 |Applying initial value "0" on instance spi0.inbufffulln.
+@N: FX493 |Applying initial value "0" on instance wr_spi.
+@N: FX493 |Applying initial value "0" on instance wait_spi.
+@N: FX493 |Applying initial value "0" on instance rd_spi.
 @N: MO231 :"c:\fpga_oled_ssd1306\src\spi_master.v":139:0:139:5|Found counter in view:work.spi_master_8s_8s_0_1(verilog) instance sckint[4:0] 
 @N: MO231 :"c:\fpga_oled_ssd1306\src\spi_master.v":139:0:139:5|Found counter in view:work.spi_master_8s_8s_0_1(verilog) instance prescaller_cnt[7:0] 
 @N: BN362 :"c:\fpga_oled_ssd1306\src\spi_master.v":139:0:139:5|Removing sequential instance prescallerint[0] (in view: work.spi_master_8s_8s_0_1(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Removing sequential instance prescallerbuff[0] (in view: work.spi_master_8s_8s_0_1(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\fpga_oled_ssd1306\src\spi_master.v":65:0:65:5|Removing sequential instance input_buffer[1] (in view: work.spi_master_8s_8s_0_1(verilog)) because it does not drive other instances.
 @N: MO106 :"c:\fpga_oled_ssd1306\src\ssd1306_rom_cfg_mod.v":32:14:32:23|Found ROM oled_rom_init.dout_1[47:0] (in view: work.SSD1306(verilog)) with 128 words by 48 bits.
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  

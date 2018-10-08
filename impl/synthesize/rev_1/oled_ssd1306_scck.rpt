@@ -13,7 +13,7 @@ Hostname: BEACONDEV3
 
 Implementation : rev_1
 
-# Written on Mon Oct  8 22:16:04 2018
+# Written on Mon Oct  8 22:33:53 2018
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      (none)
@@ -48,6 +48,6 @@ Clock                                 Load      Pin                         Seq 
 ----------------------------------------------------------------------------------------------------------------------------------------
 SSD1306|clk_50M                       55        clk_50M(port)               clk_ssd1306.C                -                 -            
 SSD1306|clk_ssd1306_derived_clock     76        clk_ssd1306.Q[0](dffre)     oled_dc.C                    -                 -            
-SSD1306|wr_spi_derived_clock          12        wr_spi.Q[0](sdffre)         spi0.input_buffer[7:0].C     -                 -            
-SSD1306|rd_spi_derived_clock          1         rd_spi.Q[0](sdffre)         spi0.charreceivedn.C         -                 -            
+SSD1306|wr_spi_derived_clock          12        wr_spi_0.Q[0](dffr)         spi0.input_buffer[7:0].C     -                 -            
+SSD1306|rd_spi_derived_clock          1         rd_spi_0.Q[0](dffr)         spi0.charreceivedn.C         -                 -            
 ========================================================================================================================================

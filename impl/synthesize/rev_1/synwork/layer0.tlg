@@ -12,20 +12,19 @@ Opening data file SSD1306_ROM_script.mem from directory C:\fpga_oled_ssd1306\src
 @W: CL113 :"C:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Feedback mux created for signal prescallerbuff[2:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
 @W: CL113 :"C:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Feedback mux created for signal inbufffullp. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
 @N: CG364 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Synthesizing module SSD1306 in library work.
-@W: CS263 :"C:\fpga_oled_ssd1306\src\SSD1306.v":126:10:126:21|Port-width mismatch for port data_in. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[1] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[2] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[3] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[4] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[5] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[6] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[7] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[8] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[9] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[10] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[11] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[12] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[13] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Register bit repeat_count[14] is always 0.
-@W: CL279 :"C:\fpga_oled_ssd1306\src\SSD1306.v":169:0:169:5|Pruning register bits 14 to 1 of repeat_count[14:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL156 :"C:\fpga_oled_ssd1306\src\SSD1306.v":125:6:125:9|*Input btnc to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CS263 :"C:\fpga_oled_ssd1306\src\SSD1306.v":127:10:127:21|Port-width mismatch for port data_in. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":170:0:170:5|Register bit repeat_count[1] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":170:0:170:5|Register bit repeat_count[2] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":170:0:170:5|Register bit repeat_count[3] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":170:0:170:5|Register bit repeat_count[4] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":170:0:170:5|Register bit repeat_count[5] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":170:0:170:5|Register bit repeat_count[6] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":170:0:170:5|Register bit repeat_count[7] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":170:0:170:5|Register bit repeat_count[8] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":170:0:170:5|Register bit repeat_count[9] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":170:0:170:5|Register bit repeat_count[10] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":170:0:170:5|Register bit repeat_count[11] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":170:0:170:5|Register bit repeat_count[12] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":170:0:170:5|Register bit repeat_count[13] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":170:0:170:5|Register bit repeat_count[14] is always 0.
+@W: CL279 :"C:\fpga_oled_ssd1306\src\SSD1306.v":170:0:170:5|Pruning register bits 14 to 1 of repeat_count[14:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.

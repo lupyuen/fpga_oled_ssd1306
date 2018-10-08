@@ -13,7 +13,7 @@ Hostname: BEACONDEV3
 
 Implementation : rev_1
 
-# Written on Mon Oct  8 22:16:06 2018
+# Written on Mon Oct  8 22:33:55 2018
 
 ##### DESIGN INFO #######################################################
 
@@ -67,6 +67,7 @@ p:oled_sdin
 p:oled_vbat
 p:oled_vdd
 p:rst_n
+p:ss
 
 
 Inapplicable constraints

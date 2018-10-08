@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version N-2018.03G-Beta6
 #--  Project file C:\fpga_oled_ssd1306\impl\synthesize\rev_1\run_options.txt
-#--  Written on Mon Oct  8 22:16:02 2018
+#--  Written on Mon Oct  8 22:33:51 2018
 
 
 #project files

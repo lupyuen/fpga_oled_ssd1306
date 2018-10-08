@@ -16,17 +16,17 @@ Synopsys HDL compiler and linker, Version comp2018q1p1, Build 118R, Built May 15
 
 Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
-5        C:\fpga_oled_ssd1306\src\SSD1306.v (2018-10-08 22:13:34, 2018-10-08 22:15:49)
+5        C:\fpga_oled_ssd1306\src\SSD1306.v (2018-10-08 22:26:26, 2018-10-08 22:33:44)
 
 *******************************************************************
 Modules that may have changed as a result of file changes: 3
 MID:  lib.cell.view
 1        work.SSD1306.verilog may have changed because the following files changed:
-                        C:\fpga_oled_ssd1306\src\SSD1306.v (2018-10-08 22:13:34, 2018-10-08 22:15:49) <-- (module definition)
+                        C:\fpga_oled_ssd1306\src\SSD1306.v (2018-10-08 22:26:26, 2018-10-08 22:33:44) <-- (module definition)
 0        work.SSD1306_ROM_cfg_mod.verilog may have changed because the following files changed:
-                        C:\fpga_oled_ssd1306\src\SSD1306.v (2018-10-08 22:13:34, 2018-10-08 22:15:49) <-- (may instantiate this module)
+                        C:\fpga_oled_ssd1306\src\SSD1306.v (2018-10-08 22:26:26, 2018-10-08 22:33:44) <-- (may instantiate this module)
 2        work.spi_master.verilog may have changed because the following files changed:
-                        C:\fpga_oled_ssd1306\src\SSD1306.v (2018-10-08 22:13:34, 2018-10-08 22:15:49) <-- (may instantiate this module)
+                        C:\fpga_oled_ssd1306\src\SSD1306.v (2018-10-08 22:26:26, 2018-10-08 22:33:44) <-- (may instantiate this module)
 
 *******************************************************************
 Unmodified files: 9
