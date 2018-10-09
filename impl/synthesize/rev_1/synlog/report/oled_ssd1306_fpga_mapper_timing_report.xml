@@ -17,20 +17,20 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>SSD1306|clk_50M</data>
 <data>100.0 MHz</data>
-<data>122.1 MHz</data>
-<data>1.808</data>
+<data>121.2 MHz</data>
+<data>1.747</data>
 </row>
 <row>
 <data>SSD1306|clk_ssd1306_derived_clock</data>
 <data>100.0 MHz</data>
-<data>109.4 MHz</data>
-<data>1.717</data>
+<data>117.1 MHz</data>
+<data>3.111</data>
 </row>
 <row>
 <data>SSD1306|rd_spi_derived_clock</data>
 <data>100.0 MHz</data>
-<data>118.3 MHz</data>
-<data>1.546</data>
+<data>117.1 MHz</data>
+<data>1.459</data>
 </row>
 <row>
 <data>SSD1306|wr_spi_derived_clock</data>
