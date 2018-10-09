@@ -1,14 +1,14 @@
 C:\Gowin\1.8\SynplifyPro\bin64\m_generic.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  C:\fpga_oled_ssd1306\impl\synthesize\rev_1   -part GW1N_4  -package LQFP144  -grade -6    -maxfan 10000 -RWCheckOnRam 1 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -csa_carry_chain_maxlen 0 -infer_seqShift -enable_gcc_in_premap -summaryfile C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synlog\report\oled_ssd1306_fpga_mapper.xml -merge_inferred_clocks 0  -flow mapping  -multisrs  -ovm  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.vm   -autoconstraint  -freq 100.000   C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\oled_ssd1306_prem.srd  -sap  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.sap  -otap  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.tap  -omap  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.map  -devicelib  C:\Gowin\1.8\SynplifyPro\lib\generic\gw1n.v  -sap  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.sap  -ologparam  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\syntmp\oled_ssd1306.plg  -osyn  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.srm  -prjdir  C:\fpga_oled_ssd1306\impl\synthesize\  -prjname  oled_ssd1306  -log  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synlog\oled_ssd1306_fpga_mapper.srr  -sn  2018.03  -jobname  "fpga_mapper" 
 relcom:..\..\..\..\..\Gowin\1.8\SynplifyPro\bin64\m_generic.exe -prodtype synplify_pro -encrypt -pro -rundir ..\..\rev_1 -part GW1N_4 -package LQFP144 -grade -6 -maxfan 10000 -RWCheckOnRam 1 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -csa_carry_chain_maxlen 0 -infer_seqShift -enable_gcc_in_premap -summaryfile ..\synlog\report\oled_ssd1306_fpga_mapper.xml -merge_inferred_clocks 0 -flow mapping -multisrs -ovm ..\oled_ssd1306.vm -autoconstraint -freq 100.000 ..\synwork\oled_ssd1306_prem.srd -sap ..\oled_ssd1306.sap -otap ..\oled_ssd1306.tap -omap ..\oled_ssd1306.map -devicelib ..\..\..\..\..\Gowin\1.8\SynplifyPro\lib\generic\gw1n.v -sap ..\oled_ssd1306.sap -ologparam oled_ssd1306.plg -osyn ..\oled_ssd1306.srm -prjdir ..\..\ -prjname oled_ssd1306 -log ..\synlog\oled_ssd1306_fpga_mapper.srr -sn 2018.03 -jobname "fpga_mapper"
-rc:1 success:1 runtime:4
-file:..\oled_ssd1306.vm|io:o|time:1539018977|size:98303|exec:0|csum:
-file:..\synwork\oled_ssd1306_prem.srd|io:i|time:1539018973|size:21112|exec:0|csum:1BB60985391FCCC3C1B7033ED743064D
-file:..\oled_ssd1306.sap|io:o|time:1539018974|size:1444|exec:0|csum:
+rc:1 success:1 runtime:5
+file:..\oled_ssd1306.vm|io:o|time:1539046804|size:73029|exec:0|csum:
+file:..\synwork\oled_ssd1306_prem.srd|io:i|time:1539046800|size:24038|exec:0|csum:1BB60985391FCCC3C1B7033ED743064D
+file:..\oled_ssd1306.sap|io:o|time:1539046801|size:2483|exec:0|csum:
 file:..\oled_ssd1306.tap|io:o|time:0|size:-1|exec:0|csum:
-file:..\oled_ssd1306.map|io:o|time:1539018978|size:28|exec:0|csum:
+file:..\oled_ssd1306.map|io:o|time:1539046806|size:28|exec:0|csum:
 file:..\..\..\..\..\Gowin\1.8\SynplifyPro\lib\generic\gw1n.v|io:i|time:1526403272|size:91162|exec:0|csum:6FE3EB7A2EE8E73111EC688BAE636AC2
-file:..\oled_ssd1306.sap|io:o|time:1539018974|size:1444|exec:0|csum:
-file:oled_ssd1306.plg|io:o|time:1539018978|size:1672|exec:0|csum:
-file:..\oled_ssd1306.srm|io:o|time:1539018976|size:29516|exec:0|csum:
-file:..\synlog\oled_ssd1306_fpga_mapper.srr|io:o|time:1539018978|size:144997|exec:0|csum:
+file:..\oled_ssd1306.sap|io:o|time:1539046801|size:2483|exec:0|csum:
+file:oled_ssd1306.plg|io:o|time:1539046806|size:1668|exec:0|csum:
+file:..\oled_ssd1306.srm|io:o|time:1539046803|size:28012|exec:0|csum:
+file:..\synlog\oled_ssd1306_fpga_mapper.srr|io:o|time:1539046806|size:60267|exec:0|csum:
 file:..\..\..\..\..\Gowin\1.8\SynplifyPro\bin64\m_generic.exe|io:i|time:1526578602|size:35019776|exec:1|csum:A38C8B64A54826308121AE5A158D9B58

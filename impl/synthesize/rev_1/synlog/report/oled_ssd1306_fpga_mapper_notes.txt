@@ -4,15 +4,48 @@
 @N: MT206 |Auto Constrain mode is enabled
 @N: FX493 |Applying initial value "0" on instance spi0.inbufffullp.
 @N: FX493 |Applying initial value "0" on instance spi0.inbufffulln.
+@N: FX493 |Applying initial value "0000000000000000000000000" on instance cnt[24:0].
+@N: FX493 |Applying initial value "0" on instance repeat_count[0].
+@N: FX493 |Applying initial value "0000000000000000000000000000" on instance saved_elapsed_time[27:0].
+@N: FX493 |Applying initial value "0" on instance clk_ssd1306.
+@N: FX493 |Applying initial value "0" on instance internal_state_machine.
+@N: FX493 |Applying initial value "0000000000000000000000000000" on instance elapsed_time[27:0].
 @N: FX493 |Applying initial value "0" on instance wr_spi.
 @N: FX493 |Applying initial value "0" on instance wait_spi.
 @N: FX493 |Applying initial value "0" on instance rd_spi.
 @N: MO231 :"c:\fpga_oled_ssd1306\src\spi_master.v":139:0:139:5|Found counter in view:work.spi_master_8s_8s_0_1(verilog) instance sckint[4:0] 
 @N: MO231 :"c:\fpga_oled_ssd1306\src\spi_master.v":139:0:139:5|Found counter in view:work.spi_master_8s_8s_0_1(verilog) instance prescaller_cnt[7:0] 
-@N: BN362 :"c:\fpga_oled_ssd1306\src\spi_master.v":139:0:139:5|Removing sequential instance prescallerint[0] (in view: work.spi_master_8s_8s_0_1(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Removing sequential instance prescallerbuff[0] (in view: work.spi_master_8s_8s_0_1(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\fpga_oled_ssd1306\src\spi_master.v":65:0:65:5|Removing sequential instance input_buffer[1] (in view: work.spi_master_8s_8s_0_1(verilog)) because it does not drive other instances.
 @N: MO106 :"c:\fpga_oled_ssd1306\src\ssd1306_rom_cfg_mod.v":32:14:32:23|Found ROM oled_rom_init.dout_1[47:0] (in view: work.SSD1306(verilog)) with 128 words by 48 bits.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance repeat_count_0[0] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[0] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[1] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[2] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[3] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[4] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[5] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[6] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[7] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[8] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[9] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[10] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[11] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[12] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[13] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[14] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[15] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[16] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[17] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[18] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[19] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[20] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[21] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[22] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[23] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[24] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[25] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[26] (in view: work.SSD1306(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\fpga_oled_ssd1306\src\ssd1306.v":173:0:173:5|Removing sequential instance saved_elapsed_time[27] (in view: work.SSD1306(verilog)) because it does not drive other instances.
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 

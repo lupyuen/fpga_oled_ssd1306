@@ -73,13 +73,14 @@ wire charreceived;
 reg wait_spi = 1'b0;
 reg rd_spi = 1'b0;
 reg wr_spi = 1'b0;				
-reg[27:0] elapsed_time;
-reg[27:0] saved_elapsed_time;
-reg internal_state_machine;
-reg[14:0] repeat_count;
-reg clk_ssd1306;
-reg[7:0] data_tmp;
-reg[24:0] cnt;
+reg clk_ssd1306 = 1'b0;
+reg rst_ssd1306 = 1'b0;
+reg internal_state_machine = 1'b0;
+reg[24:0] cnt = 25'h0;
+reg[27:0] elapsed_time = 28'h0;
+reg[27:0] saved_elapsed_time = 28'h0;
+reg[14:0] repeat_count = 15'h0;
+reg[7:0] data_tmp = 8'h0;
 
 /*
     reg [3:0]clk_div;
@@ -121,15 +122,17 @@ spi_master # (
 .PRESCALLER_SIZE(8)  //  Default 8, Max 8
 )
 spi0(
-    .clk(clk_50M),
-	////.clk(clk_ssd1306),
-	.rst(rst_n),
+    ////.clk(clk_50M),  //  Fast clock.
+	.clk(clk_ssd1306),  //  Very slow clock.
+	////.rst(rst_n),
+    .rst(rst_ssd1306),  //  Start sending when rst_ssd1306 transitions from low to hi.
 	.data_in(step_tx_data),
 	.data_out(data_tmp),
 	.wr(wr_spi),
 	.rd(rd_spi),
 	.buffempty(buffempty),
-	.prescaller(3'h2),
+	.prescaller(3'h0),  //  No prescaler.  Fast.
+	////.prescaller(3'h2),  //  Prescale by 4.  Slow.
 	.sck(oled_sclk),
 	.mosi(oled_sdin),
 	.miso(1'b1),
@@ -182,7 +185,7 @@ begin
     //  If the start time is up and the step is ready to execute...
     if (elapsed_time >= step_time) begin
         case(internal_state_machine)
-            //  Handle repeating steps.
+            //  First Part: Set up repeating steps.
             1'b0 : begin
                 //  If this is a repeating step...
                 if (step_should_repeat) begin
@@ -194,13 +197,15 @@ begin
                 //  If this is not a repeating step...
                 else begin
                     //  If we are still repeating...
-                    if (repeat_count && step_next > 1)
+                    if (repeat_count && step_next > 1) begin
                         //  Count down number of times to repeat.
                         repeat_count <= repeat_count - 15'h0001;
+                    end
                 end
+                //  Handle as a normal step in the next clock tick.
                 internal_state_machine <= 1'b1;
             end
-            //  Handle normal steps.
+            //  Second Part: Execute the step.
             1'b1 : begin
                 //  If we are waiting for SPI command to complete...
                 if (wait_spi) begin

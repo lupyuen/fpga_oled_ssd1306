@@ -30,7 +30,7 @@ Table of Contents
   <Physical Constraint File>: C:\fpga_oled_ssd1306\src\oled_ssd1306.cst
   <Timing Constraint File>: ---
   <PnR Report File>: C:\fpga_oled_ssd1306\impl\pnr\oled_ssd1306.rpt.txt
-  <Created Time>: Tue Oct 09 01:16:33 2018
+  <Created Time>: Tue Oct 09 09:00:31 2018
   <Command Line>: C:\Gowin\1.8\Pnr\bin\gowin.exe -do C:\fpga_oled_ssd1306\impl\pnr\cmd.do 
   <Legal Announcement>: Copyright ©2014-2018 Gowin Semiconductor Corporation. All rights reserved.
 
@@ -38,11 +38,11 @@ Table of Contents
 2. Placer
 
   Starting Placer:
-    Placement Phase 0 ...   REAL time: 2.1e-005 secs
-    Placement Phase 1 ...   REAL time: 0.000101 secs
-    Placement Phase 2 ...   REAL time: 3.4e-005 secs
-    Placement Phase 3 ...   REAL time: 0.001166 secs
-  Total REAL time to Placement completion: 1.322 secs.
+    Placement Phase 0 ...   REAL time: 1.2e-005 secs
+    Placement Phase 1 ...   REAL time: 0.000149 secs
+    Placement Phase 2 ...   REAL time: 1.3e-005 secs
+    Placement Phase 3 ...   REAL time: 0.001086 secs
+  Total REAL time to Placement completion: 1.26 secs.
 
 
 3. Resource Usage Summary
@@ -50,12 +50,12 @@ Table of Contents
   ----------------------------------------------------------
   Resources            | Usage
   ----------------------------------------------------------
-  CFU Logics           | 261(160 LUTs, 101 ALUs)/4608  5%
-  Registers            | 133/3556  3%
-    --Logic Registers  | 125/3456  3%
+  CFU Logics           | 215(114 LUTs, 101 ALUs)/4608  4%
+  Registers            | 102/3556  2%
+    --Logic Registers  | 94/3456  2%
     --I/O Registers    | 8/100  8%
-  CLSs(ideal)          | 140/2304  6%
-  CLSs(used)           | 167/2304  7%
+  CLSs(ideal)          | 117/2304  5%
+  CLSs(used)           | 132/2304  5%
   I/O Ports            | 13
   I/O Bufs             | 13/104  12%
     --Input Bufs       | 2
@@ -79,9 +79,9 @@ Table of Contents
   -----------------------
   I/O Bank  | Usage       
   -----------------------
-  bank 0   | 8/33(24%)   
+  bank 0   | 7/33(21%)   
   bank 1   | 0/24(0%)    
-  bank 2   | 4/38(10%)   
+  bank 2   | 5/38(13%)   
   bank 3   | 1/25(4%)    
   =======================
 
@@ -89,10 +89,10 @@ Table of Contents
 5. Router
 
   Starting Router:
-    Route Phase 0: 534 unrouted; REAL time: 0 secs
-    Route Phase 1: 273 unrouted; REAL time: 0.093 secs
-    Route Phase 2: 0  unrouted; REAL time: 0.098 secs
-  Total REAL time to Router completion: 0.191 secs.
+    Route Phase 0: 456 unrouted; REAL time: 0 secs
+    Route Phase 1: 196 unrouted; REAL time: 0.08 secs
+    Route Phase 2: 0  unrouted; REAL time: 0.048 secs
+  Total REAL time to Router completion: 0.128 secs.
 
 
 6. Global Clock Usage Summary
@@ -126,7 +126,7 @@ Table of Contents
 Port Name  | Loc./Bank  | Dir.  | Site     | IO Type    | Drive      | Pull Mode  | Slew Rate  | Clamp      | OpenDrain  | VREF       | BankVccio 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 clk_50M    | 6/3        | in    | IOL3[B]  | LVCMOS18   | NA         | UP         | NA         | NA         | NA         | NA         | 1.2       
-rst_n      | 130/0      | in    | IOT16[A] | LVCMOS18   | NA         | UP         | NA         | NA         | NA         | NA         | 3.3       
+rst_n      | 50/2       | in    | IOB14[A] | LVCMOS18   | NA         | UP         | NA         | NA         | NA         | NA         | 1.8       
 oled_dc    | 131/0      | out   | IOT14[B] | LVCMOS33   | 8          | UP         | FAST       | NA         | OFF        | NA         | 3.3       
 oled_res   | 132/0      | out   | IOT14[A] | LVCMOS33   | 8          | UP         | FAST       | NA         | OFF        | NA         | 3.3       
 oled_sclk  | 133/0      | out   | IOT12[B] | LVCMOS33   | 8          | UP         | FAST       | NA         | OFF        | NA         | 3.3       
@@ -162,7 +162,7 @@ Loc./Bank| Signal     | Dir.  | Site     | IO Type  | Pull Mode | Hysteresis | D
 133/0    | oled_sclk  | out   | IOT12[B] | LVCMOS33 | UP        | NA         | NA           | NA            
 132/0    | oled_res   | out   | IOT14[A] | LVCMOS33 | UP        | NA         | NA           | NA            
 131/0    | oled_dc    | out   | IOT14[B] | LVCMOS33 | UP        | NA         | NA           | NA            
-130/0    | rst_n      | in    | IOT16[A] | LVCMOS18 | UP        | NONE       | NA           | NA            
+130/0    | UNUSED     | -     | IOT16[A] | -        | -         | -          | -            | -             
 129/0    | UNUSED     | -     | IOT16[B] | -        | -         | -          | -            | -             
 128/0    | UNUSED     | -     | IOT17[A] | -        | -         | -          | -            | -             
 126/0    | UNUSED     | -     | IOT18[B] | -        | -         | -          | -            | -             
@@ -196,7 +196,7 @@ Loc./Bank| Signal     | Dir.  | Site     | IO Type  | Pull Mode | Hysteresis | D
 47/2     | led[0]     | out   | IOB11[B] | LVCMOS18 | UP        | NA         | NA           | NA            
 48/2     | UNUSED     | -     | IOB12[A] | -        | -         | -          | -            | -             
 49/2     | UNUSED     | -     | IOB12[B] | -        | -         | -          | -            | -             
-50/2     | UNUSED     | -     | IOB14[A] | -        | -         | -          | -            | -             
+50/2     | rst_n      | in    | IOB14[A] | LVCMOS18 | UP        | NONE       | NA           | NA            
 51/2     | UNUSED     | -     | IOB14[B] | -        | -         | -          | -            | -             
 52/2     | UNUSED     | -     | IOB16[A] | -        | -         | -          | -            | -             
 54/2     | UNUSED     | -     | IOB16[B] | -        | -         | -          | -            | -             

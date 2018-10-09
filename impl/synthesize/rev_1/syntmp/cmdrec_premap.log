@@ -1,13 +1,13 @@
 C:\Gowin\1.8\SynplifyPro\bin64\m_generic.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  C:\fpga_oled_ssd1306\impl\synthesize\rev_1   -part GW1N_4  -package LQFP144  -grade -6    -maxfan 10000 -RWCheckOnRam 1 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -csa_carry_chain_maxlen 0 -infer_seqShift -enable_gcc_in_premap -summaryfile C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synlog\report\oled_ssd1306_premap.xml -merge_inferred_clocks 0  -ovm  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.vm  -conchk_prepass  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306_cck.rpt   -autoconstraint  -freq 100.000   C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\oled_ssd1306_mult.srs  -flow prepass  -gcc_prepass  -osrd  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\oled_ssd1306_prem.srd  -qsap  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\oled_ssd1306.sap  -devicelib  C:\Gowin\1.8\SynplifyPro\lib\generic\gw1n.v  -ologparam  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\syntmp\oled_ssd1306.plg  -osyn  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\oled_ssd1306_prem.srd  -prjdir  C:\fpga_oled_ssd1306\impl\synthesize\  -prjname  oled_ssd1306  -log  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synlog\oled_ssd1306_premap.srr  -sn  2018.03  -jobname  "premap" 
 relcom:..\..\..\..\..\Gowin\1.8\SynplifyPro\bin64\m_generic.exe -prodtype synplify_pro -encrypt -pro -rundir ..\..\rev_1 -part GW1N_4 -package LQFP144 -grade -6 -maxfan 10000 -RWCheckOnRam 1 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -csa_carry_chain_maxlen 0 -infer_seqShift -enable_gcc_in_premap -summaryfile ..\synlog\report\oled_ssd1306_premap.xml -merge_inferred_clocks 0 -ovm ..\oled_ssd1306.vm -conchk_prepass ..\oled_ssd1306_cck.rpt -autoconstraint -freq 100.000 ..\synwork\oled_ssd1306_mult.srs -flow prepass -gcc_prepass -osrd ..\synwork\oled_ssd1306_prem.srd -qsap ..\oled_ssd1306.sap -devicelib ..\..\..\..\..\Gowin\1.8\SynplifyPro\lib\generic\gw1n.v -ologparam oled_ssd1306.plg -osyn ..\synwork\oled_ssd1306_prem.srd -prjdir ..\..\ -prjname oled_ssd1306 -log ..\synlog\oled_ssd1306_premap.srr -sn 2018.03 -jobname "premap"
 rc:1 success:1 runtime:3
-file:..\oled_ssd1306.vm|io:o|time:1539009238|size:98176|exec:0|csum:
-file:..\oled_ssd1306_cck.rpt|io:o|time:1539018974|size:4331|exec:0|csum:
-file:..\synwork\oled_ssd1306_mult.srs|io:i|time:1539018971|size:6759|exec:0|csum:0C001F8CBCDB20ABA890DAF66324FFD2
-file:..\synwork\oled_ssd1306_prem.srd|io:o|time:1539018973|size:21112|exec:0|csum:
-file:..\oled_ssd1306.sap|io:o|time:1539018974|size:1444|exec:0|csum:
+file:..\oled_ssd1306.vm|io:o|time:1539018977|size:98303|exec:0|csum:
+file:..\oled_ssd1306_cck.rpt|io:o|time:1539046800|size:3773|exec:0|csum:
+file:..\synwork\oled_ssd1306_mult.srs|io:i|time:1539046798|size:6776|exec:0|csum:CA82F53431DBCA2AC412C54DEBCB5A66
+file:..\synwork\oled_ssd1306_prem.srd|io:o|time:1539046800|size:24038|exec:0|csum:
+file:..\oled_ssd1306.sap|io:o|time:1539046801|size:2483|exec:0|csum:
 file:..\..\..\..\..\Gowin\1.8\SynplifyPro\lib\generic\gw1n.v|io:i|time:1526403272|size:91162|exec:0|csum:6FE3EB7A2EE8E73111EC688BAE636AC2
-file:oled_ssd1306.plg|io:o|time:1539018972|size:0|exec:0|csum:
-file:..\synwork\oled_ssd1306_prem.srd|io:o|time:1539018973|size:21112|exec:0|csum:
-file:..\synlog\oled_ssd1306_premap.srr|io:o|time:1539018974|size:8575|exec:0|csum:
+file:oled_ssd1306.plg|io:o|time:1539046798|size:0|exec:0|csum:
+file:..\synwork\oled_ssd1306_prem.srd|io:o|time:1539046800|size:24038|exec:0|csum:
+file:..\synlog\oled_ssd1306_premap.srr|io:o|time:1539046801|size:8590|exec:0|csum:
 file:..\..\..\..\..\Gowin\1.8\SynplifyPro\bin64\m_generic.exe|io:i|time:1526578602|size:35019776|exec:1|csum:A38C8B64A54826308121AE5A158D9B58

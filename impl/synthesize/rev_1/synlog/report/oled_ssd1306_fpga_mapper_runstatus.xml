@@ -13,13 +13,13 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>23</data>
+<data>56</data>
 <report_link name="more">
 <data>C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synlog\report\oled_ssd1306_fpga_mapper_notes.txt</data>
 </report_link>
 </info>
 <info name="Warnings">
-<data>9</data>
+<data>7</data>
 <report_link name="more">
 <data>C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synlog\report\oled_ssd1306_fpga_mapper_warnings.txt</data>
 </report_link>
@@ -40,7 +40,7 @@ The file contains the job information from mapper to be displayed as part of the
 <data>200MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1539018978</data>
+<data type="timestamp">1539046805</data>
 </info>
 </job_info>
 </job_run_status>
