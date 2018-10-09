@@ -59,29 +59,28 @@ Opening data file SSD1306_ROM_script.mem from directory C:\fpga_oled_ssd1306\src
 @W: CL113 :"C:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Feedback mux created for signal prescallerbuff[2:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
 @W: CL113 :"C:\fpga_oled_ssd1306\src\spi_master.v":78:0:78:5|Feedback mux created for signal inbufffullp. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
 @N: CG364 :"C:\fpga_oled_ssd1306\src\SSD1306.v":31:7:31:13|Synthesizing module SSD1306 in library work.
-@W: CS263 :"C:\fpga_oled_ssd1306\src\SSD1306.v":129:10:129:21|Port-width mismatch for port data_in. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":173:0:173:5|Register bit repeat_count[1] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":173:0:173:5|Register bit repeat_count[2] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":173:0:173:5|Register bit repeat_count[3] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":173:0:173:5|Register bit repeat_count[4] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":173:0:173:5|Register bit repeat_count[5] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":173:0:173:5|Register bit repeat_count[6] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":173:0:173:5|Register bit repeat_count[7] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":173:0:173:5|Register bit repeat_count[8] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":173:0:173:5|Register bit repeat_count[9] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":173:0:173:5|Register bit repeat_count[10] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":173:0:173:5|Register bit repeat_count[11] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":173:0:173:5|Register bit repeat_count[12] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":173:0:173:5|Register bit repeat_count[13] is always 0.
-@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":173:0:173:5|Register bit repeat_count[14] is always 0.
-@W: CL279 :"C:\fpga_oled_ssd1306\src\SSD1306.v":173:0:173:5|Pruning register bits 14 to 1 of repeat_count[14:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":180:0:180:5|Register bit repeat_count[1] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":180:0:180:5|Register bit repeat_count[2] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":180:0:180:5|Register bit repeat_count[3] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":180:0:180:5|Register bit repeat_count[4] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":180:0:180:5|Register bit repeat_count[5] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":180:0:180:5|Register bit repeat_count[6] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":180:0:180:5|Register bit repeat_count[7] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":180:0:180:5|Register bit repeat_count[8] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":180:0:180:5|Register bit repeat_count[9] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":180:0:180:5|Register bit repeat_count[10] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":180:0:180:5|Register bit repeat_count[11] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":180:0:180:5|Register bit repeat_count[12] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":180:0:180:5|Register bit repeat_count[13] is always 0.
+@N: CL189 :"C:\fpga_oled_ssd1306\src\SSD1306.v":180:0:180:5|Register bit repeat_count[14] is always 0.
+@W: CL279 :"C:\fpga_oled_ssd1306\src\SSD1306.v":180:0:180:5|Pruning register bits 14 to 1 of repeat_count[14:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 73MB peak: 83MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Oct  9 09:06:38 2018
+# Tue Oct  9 09:16:00 2018
 
 ###########################################################]
 
@@ -110,7 +109,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Oct  9 09:06:38 2018
+# Tue Oct  9 09:16:00 2018
 
 ###########################################################]
 @END
@@ -120,6 +119,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Oct  9 09:06:38 2018
+# Tue Oct  9 09:16:00 2018
 
 ###########################################################]

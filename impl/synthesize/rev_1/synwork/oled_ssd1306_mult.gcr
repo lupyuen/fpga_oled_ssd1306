@@ -1,9 +1,9 @@
 i wr_spi_i
 m 0 0
-u 2 9
-n ckid0_0 {t:spi0.inbufffullp_0.C} Derived clock on input (not legal for GCC)
-p {t:wr_spi_0.Q[0]}{t:wr_spi_derived_clock.I[0]}{t:wr_spi_derived_clock.OUT[0]}{t:spi0.wr}{p:spi0.wr}{t:spi0.inbufffullp_0.C}
-e ckid0_0 {t:spi0.inbufffullp_0.C} dffre
+u 4 7
+n ckid0_0 {t:spi0.input_buffer[7].C} Derived clock on input (not legal for GCC)
+p {t:wr_spi_0.Q[0]}{t:wr_spi_derived_clock.I[0]}{t:wr_spi_derived_clock.OUT[0]}{t:spi0.wr}{p:spi0.wr}{t:spi0.input_buffer[7].C}
+e ckid0_0 {t:spi0.input_buffer[7].C} dffe
 d ckid0_1 {t:wr_spi_0.Q[0]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
 i clk_ssd1306_i
 m 0 0

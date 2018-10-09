@@ -1,2 +1,2 @@
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
-@W: MT529 :"c:\fpga_oled_ssd1306\src\ssd1306.v":99:0:99:5|Found inferred clock SSD1306|clk_50M which controls 26 sequential elements including cnt[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\fpga_oled_ssd1306\src\ssd1306.v":101:0:101:5|Found inferred clock SSD1306|clk_50M which controls 26 sequential elements including cnt[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

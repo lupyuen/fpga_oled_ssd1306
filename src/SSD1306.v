@@ -82,6 +82,8 @@ reg[27:0] saved_elapsed_time = 28'h0;
 reg[14:0] repeat_count = 15'h0;
 reg[7:0] data_tmp = 8'h0;
 
+reg[7:0] test_display_on = 8'haf;
+
 /*
     reg [3:0]clk_div;
     wire clk;
@@ -106,8 +108,8 @@ always@(  //  Code below is always triggered when these conditions are true...
         cnt <= 25'd0;     //  "25'd0" means "25-bit, Decimal Value 0"
     end
     else begin
-        if (cnt == 25'd249_9999) begin  //  If our counter has reached its limit...
-        //if (cnt == 25'd2499_9999) begin  //  If our counter has reached its limit...
+        ////if (cnt == 25'd249_9999) begin  //  If our counter has reached its limit...
+        if (cnt == 25'd2499_9999) begin  //  If our counter has reached its limit...
             clk_ssd1306 <= ~clk_ssd1306;  //  Toggle the clk_led from 0 to 1 (and 1 to 0).
             cnt <= 25'd0;         //  Reset the counter to 0.
         end
@@ -124,15 +126,20 @@ spi_master # (
 spi0(
     ////.clk(clk_50M),  //  Fast clock.
 	.clk(clk_ssd1306),  //  Very slow clock.
+
+	.prescaller(3'h0),  //  No prescaler.  Fast.
+	////.prescaller(3'h2),  //  Prescale by 4.  Slow.
+
 	////.rst(rst_n),
     .rst(rst_ssd1306),  //  Start sending when rst_ssd1306 transitions from low to hi.
-	.data_in(step_tx_data),
+
+	////.data_in(step_tx_data),  //  Send real data.
+	.data_in(test_display_on),  //  Send test data to switch on display (0xAF).
+
 	.data_out(data_tmp),
 	.wr(wr_spi),
 	.rd(rd_spi),
 	.buffempty(buffempty),
-	.prescaller(3'h0),  //  No prescaler.  Fast.
-	////.prescaller(3'h2),  //  Prescale by 4.  Slow.
 	.sck(oled_sclk),
 	.mosi(oled_sdin),
 	.miso(1'b1),
@@ -204,11 +211,11 @@ begin
                 end
                 //  Handle as a normal step in the next clock tick.
                 internal_state_machine <= 1'b1;
-                if (step_wr_spi) begin
+                if (wr_spi) begin
                     //  If this is a write step, signal to SPI module to start the transfer (low to hi transition).
                     rst_ssd1306 <= 1'b1;
                 end
-                if (step_rd_spi) begin
+                if (rd_spi) begin
                     //  If this is a read step, reset the transfer.
                     rst_ssd1306 <= 1'b0;
                 end                

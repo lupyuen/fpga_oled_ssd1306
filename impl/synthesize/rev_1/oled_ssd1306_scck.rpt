@@ -13,7 +13,7 @@ Hostname: BEACONDEV3
 
 Implementation : rev_1
 
-# Written on Tue Oct  9 09:06:40 2018
+# Written on Tue Oct  9 09:16:02 2018
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      (none)
@@ -35,7 +35,7 @@ Level     Clock                                   Frequency     Period        Ty
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 0 -       SSD1306|clk_50M                         100.0 MHz     10.000        inferred                                             Autoconstr_clkgroup_0     26   
 1 .         SSD1306|clk_ssd1306_derived_clock     100.0 MHz     10.000        derived (from SSD1306|clk_50M)                       Autoconstr_clkgroup_0     103  
-2 ..          SSD1306|wr_spi_derived_clock        100.0 MHz     10.000        derived (from SSD1306|clk_ssd1306_derived_clock)     Autoconstr_clkgroup_0     9    
+2 ..          SSD1306|wr_spi_derived_clock        100.0 MHz     10.000        derived (from SSD1306|clk_ssd1306_derived_clock)     Autoconstr_clkgroup_0     7    
 2 ..          SSD1306|rd_spi_derived_clock        100.0 MHz     10.000        derived (from SSD1306|clk_ssd1306_derived_clock)     Autoconstr_clkgroup_0     1    
 ==================================================================================================================================================================
 
@@ -43,11 +43,11 @@ Level     Clock                                   Frequency     Period        Ty
 Clock Load Summary
 ******************
 
-                                      Clock     Source                        Clock Pin                    Non-clock Pin     Non-clock Pin
-Clock                                 Load      Pin                           Seq Example                  Seq Example       Comb Example 
-------------------------------------------------------------------------------------------------------------------------------------------
-SSD1306|clk_50M                       26        clk_50M(port)                 clk_ssd1306_0.C              -                 -            
-SSD1306|clk_ssd1306_derived_clock     103       clk_ssd1306_0.Q[0](dffre)     oled_dc.C                    -                 -            
-SSD1306|wr_spi_derived_clock          9         wr_spi_0.Q[0](dffr)           spi0.input_buffer[7:0].C     -                 -            
-SSD1306|rd_spi_derived_clock          1         rd_spi_0.Q[0](dffr)           spi0.charreceivedn.C         -                 -            
-==========================================================================================================================================
+                                      Clock     Source                        Clock Pin                Non-clock Pin     Non-clock Pin
+Clock                                 Load      Pin                           Seq Example              Seq Example       Comb Example 
+--------------------------------------------------------------------------------------------------------------------------------------
+SSD1306|clk_50M                       26        clk_50M(port)                 clk_ssd1306_0.C          -                 -            
+SSD1306|clk_ssd1306_derived_clock     103       clk_ssd1306_0.Q[0](dffre)     oled_dc.C                -                 -            
+SSD1306|wr_spi_derived_clock          7         wr_spi_0.Q[0](dffr)           spi0.inbufffullp_0.C     -                 -            
+SSD1306|rd_spi_derived_clock          1         rd_spi_0.Q[0](dffr)           spi0.charreceivedn.C     -                 -            
+======================================================================================================================================
