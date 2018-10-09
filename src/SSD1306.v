@@ -213,11 +213,11 @@ begin
                 internal_state_machine <= 1'b1;
                 if (wr_spi) begin
                     //  If this is a write step, signal to SPI module to start the transfer (low to hi transition).
-                    rst_ssd1306 <= 1'b1;
+                    //rst_ssd1306 <= 1'b1;
                 end
                 if (rd_spi) begin
                     //  If this is a read step, reset the transfer.
-                    rst_ssd1306 <= 1'b0;
+                    //rst_ssd1306 <= 1'b0;
                 end                
             end
             //  Second Part: Execute the step.

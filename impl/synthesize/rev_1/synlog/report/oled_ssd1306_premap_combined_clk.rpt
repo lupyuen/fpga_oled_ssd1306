@@ -7,8 +7,8 @@
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
 1 non-gated/non-generated clock tree(s) driving 26 clock pin(s) of sequential element(s)
-3 gated/generated clock tree(s) driving 111 clock pin(s) of sequential element(s)
-0 instances converted, 111 sequential instances remain driven by gated/generated clocks
+3 gated/generated clock tree(s) driving 110 clock pin(s) of sequential element(s)
+0 instances converted, 110 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
@@ -19,7 +19,7 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 Clock Tree ID     Driving Element        Drive Element Type     Unconverted Fanout     Sample Instance          Explanation                               
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 @KP:ckid0_0       wr_spi_0.Q[0]          dffr                   7                      spi0.input_buffer[7]     Derived clock on input (not legal for GCC)
-@KP:ckid0_3       clk_ssd1306_0.Q[0]     dffre                  103                    repeat_count_0[0]        Derived clock on input (not legal for GCC)
+@KP:ckid0_3       clk_ssd1306_0.Q[0]     dffre                  102                    repeat_count_0[0]        Derived clock on input (not legal for GCC)
 @KP:ckid0_5       rd_spi_0.Q[0]          dffr                   1                      spi0.charreceivedn       Derived clock on input (not legal for GCC)
 ==========================================================================================================================================================
 

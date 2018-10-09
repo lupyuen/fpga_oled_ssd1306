@@ -30,7 +30,7 @@ Table of Contents
   <Physical Constraint File>: C:\fpga_oled_ssd1306\src\oled_ssd1306.cst
   <Timing Constraint File>: ---
   <PnR Report File>: C:\fpga_oled_ssd1306\impl\pnr\oled_ssd1306.rpt.txt
-  <Created Time>: Tue Oct 09 09:17:47 2018
+  <Created Time>: Tue Oct 09 11:02:41 2018
   <Command Line>: C:\Gowin\1.8\Pnr\bin\gowin.exe -do C:\fpga_oled_ssd1306\impl\pnr\cmd.do 
   <Legal Announcement>: Copyright ©2014-2018 Gowin Semiconductor Corporation. All rights reserved.
 
@@ -39,10 +39,10 @@ Table of Contents
 
   Starting Placer:
     Placement Phase 0 ...   REAL time: 1.3e-005 secs
-    Placement Phase 1 ...   REAL time: 8.9e-005 secs
-    Placement Phase 2 ...   REAL time: 1.3e-005 secs
-    Placement Phase 3 ...   REAL time: 0.001058 secs
-  Total REAL time to Placement completion: 1.173 secs.
+    Placement Phase 1 ...   REAL time: 8.6e-005 secs
+    Placement Phase 2 ...   REAL time: 1.4e-005 secs
+    Placement Phase 3 ...   REAL time: 0.001081 secs
+  Total REAL time to Placement completion: 1.194 secs.
 
 
 3. Resource Usage Summary
@@ -51,11 +51,11 @@ Table of Contents
   Resources            | Usage
   ----------------------------------------------------------
   CFU Logics           | 216(115 LUTs, 101 ALUs)/4608  4%
-  Registers            | 103/3556  2%
-    --Logic Registers  | 95/3456  2%
+  Registers            | 102/3556  2%
+    --Logic Registers  | 94/3456  2%
     --I/O Registers    | 8/100  8%
   CLSs(ideal)          | 118/2304  5%
-  CLSs(used)           | 130/2304  5%
+  CLSs(used)           | 129/2304  5%
   I/O Ports            | 13
   I/O Bufs             | 13/104  12%
     --Input Bufs       | 2
@@ -89,10 +89,10 @@ Table of Contents
 5. Router
 
   Starting Router:
-    Route Phase 0: 459 unrouted; REAL time: 0 secs
-    Route Phase 1: 198 unrouted; REAL time: 0.08 secs
+    Route Phase 0: 465 unrouted; REAL time: 0 secs
+    Route Phase 1: 190 unrouted; REAL time: 0.084 secs
     Route Phase 2: 0  unrouted; REAL time: 0.049 secs
-  Total REAL time to Router completion: 0.129 secs.
+  Total REAL time to Router completion: 0.133 secs.
 
 
 6. Global Clock Usage Summary
@@ -131,8 +131,8 @@ oled_dc    | 131/0      | out   | IOT14[B] | LVCMOS33   | 8          | UP       
 oled_res   | 132/0      | out   | IOT14[A] | LVCMOS33   | 8          | UP         | FAST       | NA         | OFF        | NA         | 3.3       
 oled_sclk  | 133/0      | out   | IOT12[B] | LVCMOS33   | 8          | UP         | FAST       | NA         | OFF        | NA         | 3.3       
 oled_sdin  | 134/0      | out   | IOT12[A] | LVCMOS33   | 8          | UP         | FAST       | NA         | OFF        | NA         | 3.3       
-oled_vbat  | 136/0      | out   | IOT9[A]  | LVCMOS33   | 8          | UP         | FAST       | NA         | OFF        | NA         | 3.3       
-oled_vdd   | 137/0      | out   | IOT7[B]  | LVCMOS33   | 8          | UP         | FAST       | NA         | OFF        | NA         | 3.3       
+oled_vbat  | 136/0      | out   | IOT9[A]  | LVCMOS33   | 24         | UP         | FAST       | NA         | ON         | NA         | 3.3       
+oled_vdd   | 137/0      | out   | IOT7[B]  | LVCMOS33   | 24         | UP         | FAST       | NA         | ON         | NA         | 3.3       
 ss         | 135/0      | out   | IOT9[B]  | LVCMOS33   | 8          | UP         | FAST       | NA         | OFF        | NA         | 3.3       
 led[0]     | 47/2       | out   | IOB11[B] | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       
 led[1]     | 57/2       | out   | IOB19[B] | LVCMOS18   | 8          | UP         | FAST       | NA         | OFF        | NA         | 1.8       

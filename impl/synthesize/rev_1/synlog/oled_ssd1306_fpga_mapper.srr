@@ -1,4 +1,4 @@
-# Tue Oct  9 09:17:35 2018
+# Tue Oct  9 11:02:26 2018
 
 
 Copyright (C) 1994-2018 Synopsys, Inc.
@@ -49,7 +49,6 @@ Available hyper_sources - for debug and ip models
 @N: FX493 |Applying initial value "0000000000000000000000000" on instance cnt[24:0].
 @N: FX493 |Applying initial value "0" on instance repeat_count[0].
 @N: FX493 |Applying initial value "0000000000000000000000000000" on instance saved_elapsed_time[27:0].
-@N: FX493 |Applying initial value "0" on instance rst_ssd1306.
 @N: FX493 |Applying initial value "0" on instance clk_ssd1306.
 @N: FX493 |Applying initial value "0" on instance internal_state_machine.
 @N: FX493 |Applying initial value "0000000000000000000000000000" on instance elapsed_time[27:0].
@@ -78,10 +77,10 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CP
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 192MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 191MB peak: 192MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 191MB peak: 192MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 190MB peak: 192MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 190MB peak: 192MB)
 
 @N: MO106 :"c:\fpga_oled_ssd1306\src\ssd1306_rom_cfg_mod.v":32:14:32:23|Found ROM oled_rom_init.dout_1[47:0] (in view: work.SSD1306(verilog)) with 128 words by 48 bits.
 
@@ -121,7 +120,7 @@ Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		     2.54ns		 247 /       103
+   1		0h:00m:01s		     2.54ns		 244 /       102
 
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 198MB peak: 200MB)
 
@@ -130,7 +129,7 @@ Finished technology timing optimizations and critical path resynthesis (Real Tim
 Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 198MB peak: 200MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 126MB peak: 200MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 125MB peak: 200MB)
 
 Writing Analyst data base C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\oled_ssd1306_m.srm
 
@@ -138,7 +137,7 @@ Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elaps
 
 Writing Verilog Simulation files
 
-Writing scf file... (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 198MB peak: 200MB)
+Writing scf file... (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 197MB peak: 200MB)
 
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
@@ -156,7 +155,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Oct  9 09:17:39 2018
+# Timing Report written on Tue Oct  9 11:02:30 2018
 #
 
 
@@ -175,13 +174,13 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -1.999
+Worst slack in design: 1.459
 
                                       Requested     Estimated     Requested     Estimated               Clock                                                Clock                
 Starting Clock                        Frequency     Frequency     Period        Period        Slack     Type                                                 Group                
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 SSD1306|clk_50M                       100.0 MHz     121.2 MHz     10.000        8.253         1.747     inferred                                             Autoconstr_clkgroup_0
-SSD1306|clk_ssd1306_derived_clock     100.0 MHz     117.1 MHz     10.000        8.541         3.111     derived (from SSD1306|clk_50M)                       Autoconstr_clkgroup_0
+SSD1306|clk_ssd1306_derived_clock     100.0 MHz     108.9 MHz     10.000        9.185         1.630     derived (from SSD1306|clk_50M)                       Autoconstr_clkgroup_0
 SSD1306|rd_spi_derived_clock          100.0 MHz     117.1 MHz     10.000        8.541         1.459     derived (from SSD1306|clk_ssd1306_derived_clock)     Autoconstr_clkgroup_0
 SSD1306|wr_spi_derived_clock          100.0 MHz     173.6 MHz     10.000        5.761         4.239     derived (from SSD1306|clk_ssd1306_derived_clock)     Autoconstr_clkgroup_0
 System                                100.0 MHz     866.6 MHz     10.000        1.154         8.846     system                                               system_clkgroup      
@@ -204,8 +203,8 @@ System                             SSD1306|rd_spi_derived_clock       |  10.000 
 System                             SSD1306|wr_spi_derived_clock       |  10.000      8.846   |  No paths    -      |  No paths    -      |  No paths    -    
 SSD1306|clk_50M                    System                             |  10.000      8.246   |  No paths    -      |  No paths    -      |  No paths    -    
 SSD1306|clk_50M                    SSD1306|clk_50M                    |  10.000      1.747   |  No paths    -      |  No paths    -      |  No paths    -    
-SSD1306|clk_ssd1306_derived_clock  System                             |  10.000      -1.999  |  No paths    -      |  No paths    -      |  No paths    -    
-SSD1306|clk_ssd1306_derived_clock  SSD1306|clk_ssd1306_derived_clock  |  10.000      3.111   |  No paths    -      |  No paths    -      |  No paths    -    
+SSD1306|clk_ssd1306_derived_clock  System                             |  10.000      6.559   |  No paths    -      |  No paths    -      |  No paths    -    
+SSD1306|clk_ssd1306_derived_clock  SSD1306|clk_ssd1306_derived_clock  |  10.000      1.630   |  No paths    -      |  No paths    -      |  No paths    -    
 SSD1306|clk_ssd1306_derived_clock  SSD1306|rd_spi_derived_clock       |  10.000      6.359   |  No paths    -      |  No paths    -      |  No paths    -    
 SSD1306|rd_spi_derived_clock       System                             |  10.000      8.612   |  No paths    -      |  No paths    -      |  No paths    -    
 SSD1306|rd_spi_derived_clock       SSD1306|clk_ssd1306_derived_clock  |  10.000      1.459   |  No paths    -      |  No paths    -      |  No paths    -    
@@ -326,41 +325,41 @@ Detailed Report for Clock: SSD1306|clk_ssd1306_derived_clock
 Starting Points with Worst Slack
 ********************************
 
-                    Starting                                                                    Arrival           
-Instance            Reference                             Type      Pin     Net                 Time        Slack 
-                    Clock                                                                                         
-------------------------------------------------------------------------------------------------------------------
-step_id[1]          SSD1306|clk_ssd1306_derived_clock     DFFR      Q       step_id[1]          0.367       -1.999
-step_id[0]          SSD1306|clk_ssd1306_derived_clock     DFFR      Q       step_id[0]          0.367       -1.932
-step_id[2]          SSD1306|clk_ssd1306_derived_clock     DFFR      Q       step_id[2]          0.367       -1.722
-step_id[3]          SSD1306|clk_ssd1306_derived_clock     DFFR      Q       step_id[3]          0.367       -1.526
-step_id[4]          SSD1306|clk_ssd1306_derived_clock     DFFR      Q       step_id[4]          0.367       0.459 
-step_id[5]          SSD1306|clk_ssd1306_derived_clock     DFFR      Q       step_id[5]          0.367       0.959 
-step_id[6]          SSD1306|clk_ssd1306_derived_clock     DFFR      Q       step_id[6]          0.367       2.858 
-elapsed_time[0]     SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       elapsed_time[0]     0.367       4.479 
-elapsed_time[1]     SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       elapsed_time[1]     0.367       4.536 
-elapsed_time[2]     SSD1306|clk_ssd1306_derived_clock     DFFRE     Q       elapsed_time[2]     0.367       4.593 
-==================================================================================================================
+                       Starting                                                                 Arrival          
+Instance               Reference                             Type     Pin     Net               Time        Slack
+                       Clock                                                                                     
+-----------------------------------------------------------------------------------------------------------------
+step_id[3]             SSD1306|clk_ssd1306_derived_clock     DFFR     Q       step_id[3]        0.367       1.630
+step_id[1]             SSD1306|clk_ssd1306_derived_clock     DFFR     Q       step_id[1]        0.367       1.697
+step_id[0]             SSD1306|clk_ssd1306_derived_clock     DFFR     Q       step_id[0]        0.367       3.366
+step_id[2]             SSD1306|clk_ssd1306_derived_clock     DFFR     Q       step_id[2]        0.367       3.576
+step_id[4]             SSD1306|clk_ssd1306_derived_clock     DFFR     Q       step_id[4]        0.367       5.757
+spi0.charreceivedp     SSD1306|clk_ssd1306_derived_clock     DFFE     Q       charreceivedp     0.367       6.359
+spi0.inbufffulln_0     SSD1306|clk_ssd1306_derived_clock     DFFE     Q       inbufffulln       0.367       6.559
+step_id[5]             SSD1306|clk_ssd1306_derived_clock     DFFR     Q       step_id[5]        0.367       7.622
+step_id[6]             SSD1306|clk_ssd1306_derived_clock     DFFR     Q       step_id[6]        0.367       8.183
+spi0.state             SSD1306|clk_ssd1306_derived_clock     DFFE     Q       state             0.367       8.551
+=================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                      Starting                                                                                Required           
-Instance              Reference                             Type      Pin       Net                           Time         Slack 
-                      Clock                                                                                                      
----------------------------------------------------------------------------------------------------------------------------------
-rst_ssd1306_0_RNO     SSD1306|clk_ssd1306_derived_clock     INV       I         un1_elapsed_time_cry_27       10.000       -1.999
-step_id[6]            SSD1306|clk_ssd1306_derived_clock     DFFR      D         un1_step_id_1_s_6_0_SUM       19.867       3.111 
-step_id[5]            SSD1306|clk_ssd1306_derived_clock     DFFR      D         un1_step_id_1_cry_5_0_SUM     19.867       3.168 
-step_id[4]            SSD1306|clk_ssd1306_derived_clock     DFFR      D         un1_step_id_1_cry_4_0_SUM     19.867       3.225 
-step_id[3]            SSD1306|clk_ssd1306_derived_clock     DFFR      D         un1_step_id_1_cry_3_0_SUM     19.867       3.282 
-step_id[2]            SSD1306|clk_ssd1306_derived_clock     DFFR      D         un1_step_id_1_cry_2_0_SUM     19.867       3.339 
-step_id[1]            SSD1306|clk_ssd1306_derived_clock     DFFR      D         un1_step_id_1_cry_1_0_SUM     19.867       3.396 
-elapsed_time[0]       SSD1306|clk_ssd1306_derived_clock     DFFRE     RESET     N_246_i                       19.867       3.728 
-elapsed_time[1]       SSD1306|clk_ssd1306_derived_clock     DFFRE     RESET     N_246_i                       19.867       3.728 
-elapsed_time[2]       SSD1306|clk_ssd1306_derived_clock     DFFRE     RESET     N_246_i                       19.867       3.728 
-=================================================================================================================================
+                    Starting                                                                                Required          
+Instance            Reference                             Type      Pin       Net                           Time         Slack
+                    Clock                                                                                                     
+------------------------------------------------------------------------------------------------------------------------------
+step_id[6]          SSD1306|clk_ssd1306_derived_clock     DFFR      D         un1_step_id_1_s_6_0_SUM       19.867       1.630
+step_id[5]          SSD1306|clk_ssd1306_derived_clock     DFFR      D         un1_step_id_1_cry_5_0_SUM     19.867       1.687
+step_id[4]          SSD1306|clk_ssd1306_derived_clock     DFFR      D         un1_step_id_1_cry_4_0_SUM     19.867       1.744
+step_id[3]          SSD1306|clk_ssd1306_derived_clock     DFFR      D         un1_step_id_1_cry_3_0_SUM     19.867       1.801
+step_id[2]          SSD1306|clk_ssd1306_derived_clock     DFFR      D         un1_step_id_1_cry_2_0_SUM     19.867       1.858
+step_id[1]          SSD1306|clk_ssd1306_derived_clock     DFFR      D         un1_step_id_1_cry_1_0_SUM     19.867       1.915
+elapsed_time[0]     SSD1306|clk_ssd1306_derived_clock     DFFRE     RESET     N_96_i                        19.867       2.247
+elapsed_time[1]     SSD1306|clk_ssd1306_derived_clock     DFFRE     RESET     N_96_i                        19.867       2.247
+elapsed_time[2]     SSD1306|clk_ssd1306_derived_clock     DFFRE     RESET     N_96_i                        19.867       2.247
+elapsed_time[3]     SSD1306|clk_ssd1306_derived_clock     DFFRE     RESET     N_96_i                        19.867       2.247
+==============================================================================================================================
 
 
 
@@ -369,622 +368,153 @@ Worst Path Information
 
 
 Path information for path number 1: 
-      Requested Period:                      10.000
-    - Setup time:                            0.000
+      Requested Period:                      20.000
+    - Setup time:                            0.133
     + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         10.000
+    = Required time:                         19.867
 
-    - Propagation time:                      11.999
+    - Propagation time:                      18.237
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -1.999
+    = Slack (non-critical) :                 1.630
 
-    Number of logic level(s):                32
-    Starting point:                          step_id[1] / Q
-    Ending point:                            rst_ssd1306_0_RNO / I
+    Number of logic level(s):                41
+    Starting point:                          step_id[3] / Q
+    Ending point:                            step_id[6] / D
     The start point is clocked by            SSD1306|clk_ssd1306_derived_clock [rising] on pin CLK
-    The end   point is clocked by            System [rising]
+    The end   point is clocked by            SSD1306|clk_ssd1306_derived_clock [rising] on pin CLK
+    -Timing constraint applied as multi cycle path with factor 2 (from c:SSD1306|clk_ssd1306_derived_clock to c:SSD1306|clk_ssd1306_derived_clock)
 
 Instance / Net                                       Pin      Pin               Arrival     No. of    
 Name                                   Type          Name     Dir     Delay     Time        Fan Out(s)
 ------------------------------------------------------------------------------------------------------
-step_id[1]                             DFFR          Q        Out     0.367     0.367       -         
-step_id[1]                             Net           -        -       1.143     -           21        
-oled_rom_init.dout_1_47_0_.m146        LUT4          I1       In      -         1.510       -         
-oled_rom_init.dout_1_47_0_.m146        LUT4          F        Out     1.099     2.609       -         
-m146                                   Net           -        -       1.021     -           2         
-oled_rom_init.dout_1_47_0_.m148_bm     LUT3          I1       In      -         3.630       -         
-oled_rom_init.dout_1_47_0_.m148_bm     LUT3          F        Out     1.099     4.729       -         
-m148_bm                                Net           -        -       0.000     -           1         
-oled_rom_init.dout_1_47_0_.m148        MUX2_LUT5     I1       In      -         4.729       -         
-oled_rom_init.dout_1_47_0_.m148        MUX2_LUT5     O        Out     0.150     4.879       -         
-m148                                   Net           -        -       1.021     -           1         
-oled_rom_init.dout_1_47_0_.m153        LUT4          I0       In      -         5.900       -         
-oled_rom_init.dout_1_47_0_.m153        LUT4          F        Out     1.032     6.932       -         
-encoded_step[16]                       Net           -        -       1.021     -           1         
-un1_elapsed_time_cry_0_0               ALU           I0       In      -         7.953       -         
-un1_elapsed_time_cry_0_0               ALU           COUT     Out     0.958     8.911       -         
-un1_elapsed_time_cry_0                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_1_0               ALU           CIN      In      -         8.911       -         
-un1_elapsed_time_cry_1_0               ALU           COUT     Out     0.057     8.968       -         
-un1_elapsed_time_cry_1                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_2_0               ALU           CIN      In      -         8.968       -         
-un1_elapsed_time_cry_2_0               ALU           COUT     Out     0.057     9.025       -         
-un1_elapsed_time_cry_2                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_3_0               ALU           CIN      In      -         9.025       -         
-un1_elapsed_time_cry_3_0               ALU           COUT     Out     0.057     9.082       -         
-un1_elapsed_time_cry_3                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_4_0               ALU           CIN      In      -         9.082       -         
-un1_elapsed_time_cry_4_0               ALU           COUT     Out     0.057     9.139       -         
-un1_elapsed_time_cry_4                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_5_0               ALU           CIN      In      -         9.139       -         
-un1_elapsed_time_cry_5_0               ALU           COUT     Out     0.057     9.196       -         
-un1_elapsed_time_cry_5                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_6_0               ALU           CIN      In      -         9.196       -         
-un1_elapsed_time_cry_6_0               ALU           COUT     Out     0.057     9.253       -         
-un1_elapsed_time_cry_6                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_7_0               ALU           CIN      In      -         9.253       -         
-un1_elapsed_time_cry_7_0               ALU           COUT     Out     0.057     9.310       -         
-un1_elapsed_time_cry_7                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_8_0               ALU           CIN      In      -         9.310       -         
-un1_elapsed_time_cry_8_0               ALU           COUT     Out     0.057     9.367       -         
-un1_elapsed_time_cry_8                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_9_0               ALU           CIN      In      -         9.367       -         
-un1_elapsed_time_cry_9_0               ALU           COUT     Out     0.057     9.424       -         
-un1_elapsed_time_cry_9                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_10_0              ALU           CIN      In      -         9.424       -         
-un1_elapsed_time_cry_10_0              ALU           COUT     Out     0.057     9.481       -         
-un1_elapsed_time_cry_10                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_11_0              ALU           CIN      In      -         9.481       -         
-un1_elapsed_time_cry_11_0              ALU           COUT     Out     0.057     9.538       -         
-un1_elapsed_time_cry_11                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_12_0              ALU           CIN      In      -         9.538       -         
-un1_elapsed_time_cry_12_0              ALU           COUT     Out     0.057     9.595       -         
-un1_elapsed_time_cry_12                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_13_0              ALU           CIN      In      -         9.595       -         
-un1_elapsed_time_cry_13_0              ALU           COUT     Out     0.057     9.652       -         
-un1_elapsed_time_cry_13                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_14_0              ALU           CIN      In      -         9.652       -         
-un1_elapsed_time_cry_14_0              ALU           COUT     Out     0.057     9.709       -         
-un1_elapsed_time_cry_14                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_15_0              ALU           CIN      In      -         9.709       -         
-un1_elapsed_time_cry_15_0              ALU           COUT     Out     0.057     9.766       -         
-un1_elapsed_time_cry_15                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_16_0              ALU           CIN      In      -         9.766       -         
-un1_elapsed_time_cry_16_0              ALU           COUT     Out     0.057     9.823       -         
-un1_elapsed_time_cry_16                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_17_0              ALU           CIN      In      -         9.823       -         
-un1_elapsed_time_cry_17_0              ALU           COUT     Out     0.057     9.880       -         
-un1_elapsed_time_cry_17                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_18_0              ALU           CIN      In      -         9.880       -         
-un1_elapsed_time_cry_18_0              ALU           COUT     Out     0.057     9.937       -         
-un1_elapsed_time_cry_18                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_19_0              ALU           CIN      In      -         9.937       -         
-un1_elapsed_time_cry_19_0              ALU           COUT     Out     0.057     9.994       -         
-un1_elapsed_time_cry_19                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_20_0              ALU           CIN      In      -         9.994       -         
-un1_elapsed_time_cry_20_0              ALU           COUT     Out     0.057     10.051      -         
-un1_elapsed_time_cry_20                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_21_0              ALU           CIN      In      -         10.051      -         
-un1_elapsed_time_cry_21_0              ALU           COUT     Out     0.057     10.108      -         
-un1_elapsed_time_cry_21                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_22_0              ALU           CIN      In      -         10.108      -         
-un1_elapsed_time_cry_22_0              ALU           COUT     Out     0.057     10.165      -         
-un1_elapsed_time_cry_22                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_23_0              ALU           CIN      In      -         10.165      -         
-un1_elapsed_time_cry_23_0              ALU           COUT     Out     0.057     10.222      -         
-un1_elapsed_time_cry_23                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_24_0              ALU           CIN      In      -         10.222      -         
-un1_elapsed_time_cry_24_0              ALU           COUT     Out     0.057     10.279      -         
-un1_elapsed_time_cry_24                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_25_0              ALU           CIN      In      -         10.279      -         
-un1_elapsed_time_cry_25_0              ALU           COUT     Out     0.057     10.336      -         
-un1_elapsed_time_cry_25                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_26_0              ALU           CIN      In      -         10.336      -         
-un1_elapsed_time_cry_26_0              ALU           COUT     Out     0.057     10.393      -         
-un1_elapsed_time_cry_26                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_27_0              ALU           CIN      In      -         10.393      -         
-un1_elapsed_time_cry_27_0              ALU           COUT     Out     0.057     10.450      -         
-un1_elapsed_time_cry_27                Net           -        -       1.549     -           5         
-rst_ssd1306_0_RNO                      INV           I        In      -         11.999      -         
-======================================================================================================
-Total path delay (propagation time + setup) of 11.999 is 6.244(52.0%) logic and 5.755(48.0%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 2: 
-      Requested Period:                      10.000
-    - Setup time:                            0.000
-    + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         10.000
-
-    - Propagation time:                      11.932
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.932
-
-    Number of logic level(s):                32
-    Starting point:                          step_id[0] / Q
-    Ending point:                            rst_ssd1306_0_RNO / I
-    The start point is clocked by            SSD1306|clk_ssd1306_derived_clock [rising] on pin CLK
-    The end   point is clocked by            System [rising]
-
-Instance / Net                                       Pin      Pin               Arrival     No. of    
-Name                                   Type          Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------
-step_id[0]                             DFFR          Q        Out     0.367     0.367       -         
-step_id[0]                             Net           -        -       1.143     -           24        
-oled_rom_init.dout_1_47_0_.m146        LUT4          I0       In      -         1.510       -         
-oled_rom_init.dout_1_47_0_.m146        LUT4          F        Out     1.032     2.542       -         
-m146                                   Net           -        -       1.021     -           2         
-oled_rom_init.dout_1_47_0_.m148_bm     LUT3          I1       In      -         3.563       -         
-oled_rom_init.dout_1_47_0_.m148_bm     LUT3          F        Out     1.099     4.662       -         
-m148_bm                                Net           -        -       0.000     -           1         
-oled_rom_init.dout_1_47_0_.m148        MUX2_LUT5     I1       In      -         4.662       -         
-oled_rom_init.dout_1_47_0_.m148        MUX2_LUT5     O        Out     0.150     4.812       -         
-m148                                   Net           -        -       1.021     -           1         
-oled_rom_init.dout_1_47_0_.m153        LUT4          I0       In      -         5.833       -         
-oled_rom_init.dout_1_47_0_.m153        LUT4          F        Out     1.032     6.865       -         
-encoded_step[16]                       Net           -        -       1.021     -           1         
-un1_elapsed_time_cry_0_0               ALU           I0       In      -         7.886       -         
-un1_elapsed_time_cry_0_0               ALU           COUT     Out     0.958     8.844       -         
-un1_elapsed_time_cry_0                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_1_0               ALU           CIN      In      -         8.844       -         
-un1_elapsed_time_cry_1_0               ALU           COUT     Out     0.057     8.901       -         
-un1_elapsed_time_cry_1                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_2_0               ALU           CIN      In      -         8.901       -         
-un1_elapsed_time_cry_2_0               ALU           COUT     Out     0.057     8.958       -         
-un1_elapsed_time_cry_2                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_3_0               ALU           CIN      In      -         8.958       -         
-un1_elapsed_time_cry_3_0               ALU           COUT     Out     0.057     9.015       -         
-un1_elapsed_time_cry_3                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_4_0               ALU           CIN      In      -         9.015       -         
-un1_elapsed_time_cry_4_0               ALU           COUT     Out     0.057     9.072       -         
-un1_elapsed_time_cry_4                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_5_0               ALU           CIN      In      -         9.072       -         
-un1_elapsed_time_cry_5_0               ALU           COUT     Out     0.057     9.129       -         
-un1_elapsed_time_cry_5                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_6_0               ALU           CIN      In      -         9.129       -         
-un1_elapsed_time_cry_6_0               ALU           COUT     Out     0.057     9.186       -         
-un1_elapsed_time_cry_6                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_7_0               ALU           CIN      In      -         9.186       -         
-un1_elapsed_time_cry_7_0               ALU           COUT     Out     0.057     9.243       -         
-un1_elapsed_time_cry_7                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_8_0               ALU           CIN      In      -         9.243       -         
-un1_elapsed_time_cry_8_0               ALU           COUT     Out     0.057     9.300       -         
-un1_elapsed_time_cry_8                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_9_0               ALU           CIN      In      -         9.300       -         
-un1_elapsed_time_cry_9_0               ALU           COUT     Out     0.057     9.357       -         
-un1_elapsed_time_cry_9                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_10_0              ALU           CIN      In      -         9.357       -         
-un1_elapsed_time_cry_10_0              ALU           COUT     Out     0.057     9.414       -         
-un1_elapsed_time_cry_10                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_11_0              ALU           CIN      In      -         9.414       -         
-un1_elapsed_time_cry_11_0              ALU           COUT     Out     0.057     9.471       -         
-un1_elapsed_time_cry_11                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_12_0              ALU           CIN      In      -         9.471       -         
-un1_elapsed_time_cry_12_0              ALU           COUT     Out     0.057     9.528       -         
-un1_elapsed_time_cry_12                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_13_0              ALU           CIN      In      -         9.528       -         
-un1_elapsed_time_cry_13_0              ALU           COUT     Out     0.057     9.585       -         
-un1_elapsed_time_cry_13                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_14_0              ALU           CIN      In      -         9.585       -         
-un1_elapsed_time_cry_14_0              ALU           COUT     Out     0.057     9.642       -         
-un1_elapsed_time_cry_14                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_15_0              ALU           CIN      In      -         9.642       -         
-un1_elapsed_time_cry_15_0              ALU           COUT     Out     0.057     9.699       -         
-un1_elapsed_time_cry_15                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_16_0              ALU           CIN      In      -         9.699       -         
-un1_elapsed_time_cry_16_0              ALU           COUT     Out     0.057     9.756       -         
-un1_elapsed_time_cry_16                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_17_0              ALU           CIN      In      -         9.756       -         
-un1_elapsed_time_cry_17_0              ALU           COUT     Out     0.057     9.813       -         
-un1_elapsed_time_cry_17                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_18_0              ALU           CIN      In      -         9.813       -         
-un1_elapsed_time_cry_18_0              ALU           COUT     Out     0.057     9.870       -         
-un1_elapsed_time_cry_18                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_19_0              ALU           CIN      In      -         9.870       -         
-un1_elapsed_time_cry_19_0              ALU           COUT     Out     0.057     9.927       -         
-un1_elapsed_time_cry_19                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_20_0              ALU           CIN      In      -         9.927       -         
-un1_elapsed_time_cry_20_0              ALU           COUT     Out     0.057     9.984       -         
-un1_elapsed_time_cry_20                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_21_0              ALU           CIN      In      -         9.984       -         
-un1_elapsed_time_cry_21_0              ALU           COUT     Out     0.057     10.041      -         
-un1_elapsed_time_cry_21                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_22_0              ALU           CIN      In      -         10.041      -         
-un1_elapsed_time_cry_22_0              ALU           COUT     Out     0.057     10.098      -         
-un1_elapsed_time_cry_22                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_23_0              ALU           CIN      In      -         10.098      -         
-un1_elapsed_time_cry_23_0              ALU           COUT     Out     0.057     10.155      -         
-un1_elapsed_time_cry_23                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_24_0              ALU           CIN      In      -         10.155      -         
-un1_elapsed_time_cry_24_0              ALU           COUT     Out     0.057     10.212      -         
-un1_elapsed_time_cry_24                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_25_0              ALU           CIN      In      -         10.212      -         
-un1_elapsed_time_cry_25_0              ALU           COUT     Out     0.057     10.269      -         
-un1_elapsed_time_cry_25                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_26_0              ALU           CIN      In      -         10.269      -         
-un1_elapsed_time_cry_26_0              ALU           COUT     Out     0.057     10.326      -         
-un1_elapsed_time_cry_26                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_27_0              ALU           CIN      In      -         10.326      -         
-un1_elapsed_time_cry_27_0              ALU           COUT     Out     0.057     10.383      -         
-un1_elapsed_time_cry_27                Net           -        -       1.549     -           5         
-rst_ssd1306_0_RNO                      INV           I        In      -         11.932      -         
-======================================================================================================
-Total path delay (propagation time + setup) of 11.932 is 6.177(51.8%) logic and 5.755(48.2%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 3: 
-      Requested Period:                      10.000
-    - Setup time:                            0.000
-    + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         10.000
-
-    - Propagation time:                      11.722
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.722
-
-    Number of logic level(s):                32
-    Starting point:                          step_id[2] / Q
-    Ending point:                            rst_ssd1306_0_RNO / I
-    The start point is clocked by            SSD1306|clk_ssd1306_derived_clock [rising] on pin CLK
-    The end   point is clocked by            System [rising]
-
-Instance / Net                                       Pin      Pin               Arrival     No. of    
-Name                                   Type          Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------
-step_id[2]                             DFFR          Q        Out     0.367     0.367       -         
-step_id[2]                             Net           -        -       1.143     -           25        
-oled_rom_init.dout_1_47_0_.m146        LUT4          I2       In      -         1.510       -         
-oled_rom_init.dout_1_47_0_.m146        LUT4          F        Out     0.822     2.332       -         
-m146                                   Net           -        -       1.021     -           2         
-oled_rom_init.dout_1_47_0_.m148_bm     LUT3          I1       In      -         3.353       -         
-oled_rom_init.dout_1_47_0_.m148_bm     LUT3          F        Out     1.099     4.452       -         
-m148_bm                                Net           -        -       0.000     -           1         
-oled_rom_init.dout_1_47_0_.m148        MUX2_LUT5     I1       In      -         4.452       -         
-oled_rom_init.dout_1_47_0_.m148        MUX2_LUT5     O        Out     0.150     4.602       -         
-m148                                   Net           -        -       1.021     -           1         
-oled_rom_init.dout_1_47_0_.m153        LUT4          I0       In      -         5.623       -         
-oled_rom_init.dout_1_47_0_.m153        LUT4          F        Out     1.032     6.655       -         
-encoded_step[16]                       Net           -        -       1.021     -           1         
-un1_elapsed_time_cry_0_0               ALU           I0       In      -         7.676       -         
-un1_elapsed_time_cry_0_0               ALU           COUT     Out     0.958     8.634       -         
-un1_elapsed_time_cry_0                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_1_0               ALU           CIN      In      -         8.634       -         
-un1_elapsed_time_cry_1_0               ALU           COUT     Out     0.057     8.691       -         
-un1_elapsed_time_cry_1                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_2_0               ALU           CIN      In      -         8.691       -         
-un1_elapsed_time_cry_2_0               ALU           COUT     Out     0.057     8.748       -         
-un1_elapsed_time_cry_2                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_3_0               ALU           CIN      In      -         8.748       -         
-un1_elapsed_time_cry_3_0               ALU           COUT     Out     0.057     8.805       -         
-un1_elapsed_time_cry_3                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_4_0               ALU           CIN      In      -         8.805       -         
-un1_elapsed_time_cry_4_0               ALU           COUT     Out     0.057     8.862       -         
-un1_elapsed_time_cry_4                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_5_0               ALU           CIN      In      -         8.862       -         
-un1_elapsed_time_cry_5_0               ALU           COUT     Out     0.057     8.919       -         
-un1_elapsed_time_cry_5                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_6_0               ALU           CIN      In      -         8.919       -         
-un1_elapsed_time_cry_6_0               ALU           COUT     Out     0.057     8.976       -         
-un1_elapsed_time_cry_6                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_7_0               ALU           CIN      In      -         8.976       -         
-un1_elapsed_time_cry_7_0               ALU           COUT     Out     0.057     9.033       -         
-un1_elapsed_time_cry_7                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_8_0               ALU           CIN      In      -         9.033       -         
-un1_elapsed_time_cry_8_0               ALU           COUT     Out     0.057     9.090       -         
-un1_elapsed_time_cry_8                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_9_0               ALU           CIN      In      -         9.090       -         
-un1_elapsed_time_cry_9_0               ALU           COUT     Out     0.057     9.147       -         
-un1_elapsed_time_cry_9                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_10_0              ALU           CIN      In      -         9.147       -         
-un1_elapsed_time_cry_10_0              ALU           COUT     Out     0.057     9.204       -         
-un1_elapsed_time_cry_10                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_11_0              ALU           CIN      In      -         9.204       -         
-un1_elapsed_time_cry_11_0              ALU           COUT     Out     0.057     9.261       -         
-un1_elapsed_time_cry_11                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_12_0              ALU           CIN      In      -         9.261       -         
-un1_elapsed_time_cry_12_0              ALU           COUT     Out     0.057     9.318       -         
-un1_elapsed_time_cry_12                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_13_0              ALU           CIN      In      -         9.318       -         
-un1_elapsed_time_cry_13_0              ALU           COUT     Out     0.057     9.375       -         
-un1_elapsed_time_cry_13                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_14_0              ALU           CIN      In      -         9.375       -         
-un1_elapsed_time_cry_14_0              ALU           COUT     Out     0.057     9.432       -         
-un1_elapsed_time_cry_14                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_15_0              ALU           CIN      In      -         9.432       -         
-un1_elapsed_time_cry_15_0              ALU           COUT     Out     0.057     9.489       -         
-un1_elapsed_time_cry_15                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_16_0              ALU           CIN      In      -         9.489       -         
-un1_elapsed_time_cry_16_0              ALU           COUT     Out     0.057     9.546       -         
-un1_elapsed_time_cry_16                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_17_0              ALU           CIN      In      -         9.546       -         
-un1_elapsed_time_cry_17_0              ALU           COUT     Out     0.057     9.603       -         
-un1_elapsed_time_cry_17                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_18_0              ALU           CIN      In      -         9.603       -         
-un1_elapsed_time_cry_18_0              ALU           COUT     Out     0.057     9.660       -         
-un1_elapsed_time_cry_18                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_19_0              ALU           CIN      In      -         9.660       -         
-un1_elapsed_time_cry_19_0              ALU           COUT     Out     0.057     9.717       -         
-un1_elapsed_time_cry_19                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_20_0              ALU           CIN      In      -         9.717       -         
-un1_elapsed_time_cry_20_0              ALU           COUT     Out     0.057     9.774       -         
-un1_elapsed_time_cry_20                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_21_0              ALU           CIN      In      -         9.774       -         
-un1_elapsed_time_cry_21_0              ALU           COUT     Out     0.057     9.831       -         
-un1_elapsed_time_cry_21                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_22_0              ALU           CIN      In      -         9.831       -         
-un1_elapsed_time_cry_22_0              ALU           COUT     Out     0.057     9.888       -         
-un1_elapsed_time_cry_22                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_23_0              ALU           CIN      In      -         9.888       -         
-un1_elapsed_time_cry_23_0              ALU           COUT     Out     0.057     9.945       -         
-un1_elapsed_time_cry_23                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_24_0              ALU           CIN      In      -         9.945       -         
-un1_elapsed_time_cry_24_0              ALU           COUT     Out     0.057     10.002      -         
-un1_elapsed_time_cry_24                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_25_0              ALU           CIN      In      -         10.002      -         
-un1_elapsed_time_cry_25_0              ALU           COUT     Out     0.057     10.059      -         
-un1_elapsed_time_cry_25                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_26_0              ALU           CIN      In      -         10.059      -         
-un1_elapsed_time_cry_26_0              ALU           COUT     Out     0.057     10.116      -         
-un1_elapsed_time_cry_26                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_27_0              ALU           CIN      In      -         10.116      -         
-un1_elapsed_time_cry_27_0              ALU           COUT     Out     0.057     10.173      -         
-un1_elapsed_time_cry_27                Net           -        -       1.549     -           5         
-rst_ssd1306_0_RNO                      INV           I        In      -         11.722      -         
-======================================================================================================
-Total path delay (propagation time + setup) of 11.722 is 5.967(50.9%) logic and 5.755(49.1%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 4: 
-      Requested Period:                      10.000
-    - Setup time:                            0.000
-    + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         10.000
-
-    - Propagation time:                      11.677
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.677
-
-    Number of logic level(s):                32
-    Starting point:                          step_id[1] / Q
-    Ending point:                            rst_ssd1306_0_RNO / I
-    The start point is clocked by            SSD1306|clk_ssd1306_derived_clock [rising] on pin CLK
-    The end   point is clocked by            System [rising]
-
-Instance / Net                                         Pin      Pin               Arrival     No. of    
-Name                                     Type          Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------
-step_id[1]                               DFFR          Q        Out     0.367     0.367       -         
-step_id[1]                               Net           -        -       1.143     -           21        
-oled_rom_init.dout_1_47_0_.m148_am_1     LUT4          I1       In      -         1.510       -         
-oled_rom_init.dout_1_47_0_.m148_am_1     LUT4          F        Out     1.099     2.609       -         
-m148_am_1                                Net           -        -       0.766     -           1         
-oled_rom_init.dout_1_47_0_.m148_am       LUT4          I0       In      -         3.375       -         
-oled_rom_init.dout_1_47_0_.m148_am       LUT4          F        Out     1.032     4.407       -         
-m148_am                                  Net           -        -       0.000     -           1         
-oled_rom_init.dout_1_47_0_.m148          MUX2_LUT5     I0       In      -         4.407       -         
-oled_rom_init.dout_1_47_0_.m148          MUX2_LUT5     O        Out     0.150     4.557       -         
-m148                                     Net           -        -       1.021     -           1         
-oled_rom_init.dout_1_47_0_.m153          LUT4          I0       In      -         5.578       -         
-oled_rom_init.dout_1_47_0_.m153          LUT4          F        Out     1.032     6.609       -         
-encoded_step[16]                         Net           -        -       1.021     -           1         
-un1_elapsed_time_cry_0_0                 ALU           I0       In      -         7.630       -         
-un1_elapsed_time_cry_0_0                 ALU           COUT     Out     0.958     8.588       -         
-un1_elapsed_time_cry_0                   Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_1_0                 ALU           CIN      In      -         8.588       -         
-un1_elapsed_time_cry_1_0                 ALU           COUT     Out     0.057     8.646       -         
-un1_elapsed_time_cry_1                   Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_2_0                 ALU           CIN      In      -         8.646       -         
-un1_elapsed_time_cry_2_0                 ALU           COUT     Out     0.057     8.703       -         
-un1_elapsed_time_cry_2                   Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_3_0                 ALU           CIN      In      -         8.703       -         
-un1_elapsed_time_cry_3_0                 ALU           COUT     Out     0.057     8.759       -         
-un1_elapsed_time_cry_3                   Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_4_0                 ALU           CIN      In      -         8.759       -         
-un1_elapsed_time_cry_4_0                 ALU           COUT     Out     0.057     8.816       -         
-un1_elapsed_time_cry_4                   Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_5_0                 ALU           CIN      In      -         8.816       -         
-un1_elapsed_time_cry_5_0                 ALU           COUT     Out     0.057     8.873       -         
-un1_elapsed_time_cry_5                   Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_6_0                 ALU           CIN      In      -         8.873       -         
-un1_elapsed_time_cry_6_0                 ALU           COUT     Out     0.057     8.931       -         
-un1_elapsed_time_cry_6                   Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_7_0                 ALU           CIN      In      -         8.931       -         
-un1_elapsed_time_cry_7_0                 ALU           COUT     Out     0.057     8.988       -         
-un1_elapsed_time_cry_7                   Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_8_0                 ALU           CIN      In      -         8.988       -         
-un1_elapsed_time_cry_8_0                 ALU           COUT     Out     0.057     9.044       -         
-un1_elapsed_time_cry_8                   Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_9_0                 ALU           CIN      In      -         9.044       -         
-un1_elapsed_time_cry_9_0                 ALU           COUT     Out     0.057     9.101       -         
-un1_elapsed_time_cry_9                   Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_10_0                ALU           CIN      In      -         9.101       -         
-un1_elapsed_time_cry_10_0                ALU           COUT     Out     0.057     9.159       -         
-un1_elapsed_time_cry_10                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_11_0                ALU           CIN      In      -         9.159       -         
-un1_elapsed_time_cry_11_0                ALU           COUT     Out     0.057     9.216       -         
-un1_elapsed_time_cry_11                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_12_0                ALU           CIN      In      -         9.216       -         
-un1_elapsed_time_cry_12_0                ALU           COUT     Out     0.057     9.273       -         
-un1_elapsed_time_cry_12                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_13_0                ALU           CIN      In      -         9.273       -         
-un1_elapsed_time_cry_13_0                ALU           COUT     Out     0.057     9.329       -         
-un1_elapsed_time_cry_13                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_14_0                ALU           CIN      In      -         9.329       -         
-un1_elapsed_time_cry_14_0                ALU           COUT     Out     0.057     9.386       -         
-un1_elapsed_time_cry_14                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_15_0                ALU           CIN      In      -         9.386       -         
-un1_elapsed_time_cry_15_0                ALU           COUT     Out     0.057     9.444       -         
-un1_elapsed_time_cry_15                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_16_0                ALU           CIN      In      -         9.444       -         
-un1_elapsed_time_cry_16_0                ALU           COUT     Out     0.057     9.501       -         
-un1_elapsed_time_cry_16                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_17_0                ALU           CIN      In      -         9.501       -         
-un1_elapsed_time_cry_17_0                ALU           COUT     Out     0.057     9.557       -         
-un1_elapsed_time_cry_17                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_18_0                ALU           CIN      In      -         9.557       -         
-un1_elapsed_time_cry_18_0                ALU           COUT     Out     0.057     9.614       -         
-un1_elapsed_time_cry_18                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_19_0                ALU           CIN      In      -         9.614       -         
-un1_elapsed_time_cry_19_0                ALU           COUT     Out     0.057     9.671       -         
-un1_elapsed_time_cry_19                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_20_0                ALU           CIN      In      -         9.671       -         
-un1_elapsed_time_cry_20_0                ALU           COUT     Out     0.057     9.729       -         
-un1_elapsed_time_cry_20                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_21_0                ALU           CIN      In      -         9.729       -         
-un1_elapsed_time_cry_21_0                ALU           COUT     Out     0.057     9.786       -         
-un1_elapsed_time_cry_21                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_22_0                ALU           CIN      In      -         9.786       -         
-un1_elapsed_time_cry_22_0                ALU           COUT     Out     0.057     9.842       -         
-un1_elapsed_time_cry_22                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_23_0                ALU           CIN      In      -         9.842       -         
-un1_elapsed_time_cry_23_0                ALU           COUT     Out     0.057     9.899       -         
-un1_elapsed_time_cry_23                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_24_0                ALU           CIN      In      -         9.899       -         
-un1_elapsed_time_cry_24_0                ALU           COUT     Out     0.057     9.957       -         
-un1_elapsed_time_cry_24                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_25_0                ALU           CIN      In      -         9.957       -         
-un1_elapsed_time_cry_25_0                ALU           COUT     Out     0.057     10.014      -         
-un1_elapsed_time_cry_25                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_26_0                ALU           CIN      In      -         10.014      -         
-un1_elapsed_time_cry_26_0                ALU           COUT     Out     0.057     10.070      -         
-un1_elapsed_time_cry_26                  Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_27_0                ALU           CIN      In      -         10.070      -         
-un1_elapsed_time_cry_27_0                ALU           COUT     Out     0.057     10.127      -         
-un1_elapsed_time_cry_27                  Net           -        -       1.549     -           5         
-rst_ssd1306_0_RNO                        INV           I        In      -         11.677      -         
-========================================================================================================
-Total path delay (propagation time + setup) of 11.677 is 6.177(52.9%) logic and 5.500(47.1%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 5: 
-      Requested Period:                      10.000
-    - Setup time:                            0.000
-    + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         10.000
-
-    - Propagation time:                      11.677
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.677
-
-    Number of logic level(s):                32
-    Starting point:                          step_id[1] / Q
-    Ending point:                            rst_ssd1306_0_RNO / I
-    The start point is clocked by            SSD1306|clk_ssd1306_derived_clock [rising] on pin CLK
-    The end   point is clocked by            System [rising]
-
-Instance / Net                                       Pin      Pin               Arrival     No. of    
-Name                                   Type          Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------
-step_id[1]                             DFFR          Q        Out     0.367     0.367       -         
-step_id[1]                             Net           -        -       1.143     -           21        
-oled_rom_init.dout_1_47_0_.m143        LUT4          I1       In      -         1.510       -         
-oled_rom_init.dout_1_47_0_.m143        LUT4          F        Out     1.099     2.609       -         
+step_id[3]                             DFFR          Q        Out     0.367     0.367       -         
+step_id[3]                             Net           -        -       1.082     -           16        
+oled_rom_init.dout_1_47_0_.m3          LUT2          I1       In      -         1.449       -         
+oled_rom_init.dout_1_47_0_.m3          LUT2          F        Out     1.099     2.548       -         
+m3                                     Net           -        -       1.021     -           8         
+oled_rom_init.dout_1_47_0_.m143        LUT3          I0       In      -         3.569       -         
+oled_rom_init.dout_1_47_0_.m143        LUT3          F        Out     1.032     4.601       -         
 m143                                   Net           -        -       0.766     -           1         
-oled_rom_init.dout_1_47_0_.m148_bm     LUT3          I0       In      -         3.375       -         
-oled_rom_init.dout_1_47_0_.m148_bm     LUT3          F        Out     1.032     4.407       -         
-m148_bm                                Net           -        -       0.000     -           1         
-oled_rom_init.dout_1_47_0_.m148        MUX2_LUT5     I1       In      -         4.407       -         
-oled_rom_init.dout_1_47_0_.m148        MUX2_LUT5     O        Out     0.150     4.557       -         
-m148                                   Net           -        -       1.021     -           1         
-oled_rom_init.dout_1_47_0_.m153        LUT4          I0       In      -         5.578       -         
-oled_rom_init.dout_1_47_0_.m153        LUT4          F        Out     1.032     6.609       -         
+oled_rom_init.dout_1_47_0_.m147        LUT3          I0       In      -         5.367       -         
+oled_rom_init.dout_1_47_0_.m147        LUT3          F        Out     1.032     6.399       -         
+m147                                   Net           -        -       0.766     -           1         
+oled_rom_init.dout_1_47_0_.m153_am     LUT3          I1       In      -         7.164       -         
+oled_rom_init.dout_1_47_0_.m153_am     LUT3          F        Out     1.099     8.263       -         
+m153_am                                Net           -        -       0.000     -           1         
+oled_rom_init.dout_1_47_0_.m153        MUX2_LUT5     I0       In      -         8.263       -         
+oled_rom_init.dout_1_47_0_.m153        MUX2_LUT5     O        Out     0.150     8.413       -         
 encoded_step[16]                       Net           -        -       1.021     -           1         
-un1_elapsed_time_cry_0_0               ALU           I0       In      -         7.630       -         
-un1_elapsed_time_cry_0_0               ALU           COUT     Out     0.958     8.588       -         
+un1_elapsed_time_cry_0_0               ALU           I0       In      -         9.434       -         
+un1_elapsed_time_cry_0_0               ALU           COUT     Out     0.958     10.392      -         
 un1_elapsed_time_cry_0                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_1_0               ALU           CIN      In      -         8.588       -         
-un1_elapsed_time_cry_1_0               ALU           COUT     Out     0.057     8.646       -         
+un1_elapsed_time_cry_1_0               ALU           CIN      In      -         10.392      -         
+un1_elapsed_time_cry_1_0               ALU           COUT     Out     0.057     10.449      -         
 un1_elapsed_time_cry_1                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_2_0               ALU           CIN      In      -         8.646       -         
-un1_elapsed_time_cry_2_0               ALU           COUT     Out     0.057     8.703       -         
+un1_elapsed_time_cry_2_0               ALU           CIN      In      -         10.449      -         
+un1_elapsed_time_cry_2_0               ALU           COUT     Out     0.057     10.506      -         
 un1_elapsed_time_cry_2                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_3_0               ALU           CIN      In      -         8.703       -         
-un1_elapsed_time_cry_3_0               ALU           COUT     Out     0.057     8.759       -         
+un1_elapsed_time_cry_3_0               ALU           CIN      In      -         10.506      -         
+un1_elapsed_time_cry_3_0               ALU           COUT     Out     0.057     10.563      -         
 un1_elapsed_time_cry_3                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_4_0               ALU           CIN      In      -         8.759       -         
-un1_elapsed_time_cry_4_0               ALU           COUT     Out     0.057     8.816       -         
+un1_elapsed_time_cry_4_0               ALU           CIN      In      -         10.563      -         
+un1_elapsed_time_cry_4_0               ALU           COUT     Out     0.057     10.620      -         
 un1_elapsed_time_cry_4                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_5_0               ALU           CIN      In      -         8.816       -         
-un1_elapsed_time_cry_5_0               ALU           COUT     Out     0.057     8.873       -         
+un1_elapsed_time_cry_5_0               ALU           CIN      In      -         10.620      -         
+un1_elapsed_time_cry_5_0               ALU           COUT     Out     0.057     10.677      -         
 un1_elapsed_time_cry_5                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_6_0               ALU           CIN      In      -         8.873       -         
-un1_elapsed_time_cry_6_0               ALU           COUT     Out     0.057     8.931       -         
+un1_elapsed_time_cry_6_0               ALU           CIN      In      -         10.677      -         
+un1_elapsed_time_cry_6_0               ALU           COUT     Out     0.057     10.734      -         
 un1_elapsed_time_cry_6                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_7_0               ALU           CIN      In      -         8.931       -         
-un1_elapsed_time_cry_7_0               ALU           COUT     Out     0.057     8.988       -         
+un1_elapsed_time_cry_7_0               ALU           CIN      In      -         10.734      -         
+un1_elapsed_time_cry_7_0               ALU           COUT     Out     0.057     10.791      -         
 un1_elapsed_time_cry_7                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_8_0               ALU           CIN      In      -         8.988       -         
-un1_elapsed_time_cry_8_0               ALU           COUT     Out     0.057     9.044       -         
+un1_elapsed_time_cry_8_0               ALU           CIN      In      -         10.791      -         
+un1_elapsed_time_cry_8_0               ALU           COUT     Out     0.057     10.848      -         
 un1_elapsed_time_cry_8                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_9_0               ALU           CIN      In      -         9.044       -         
-un1_elapsed_time_cry_9_0               ALU           COUT     Out     0.057     9.101       -         
+un1_elapsed_time_cry_9_0               ALU           CIN      In      -         10.848      -         
+un1_elapsed_time_cry_9_0               ALU           COUT     Out     0.057     10.905      -         
 un1_elapsed_time_cry_9                 Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_10_0              ALU           CIN      In      -         9.101       -         
-un1_elapsed_time_cry_10_0              ALU           COUT     Out     0.057     9.159       -         
+un1_elapsed_time_cry_10_0              ALU           CIN      In      -         10.905      -         
+un1_elapsed_time_cry_10_0              ALU           COUT     Out     0.057     10.962      -         
 un1_elapsed_time_cry_10                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_11_0              ALU           CIN      In      -         9.159       -         
-un1_elapsed_time_cry_11_0              ALU           COUT     Out     0.057     9.216       -         
+un1_elapsed_time_cry_11_0              ALU           CIN      In      -         10.962      -         
+un1_elapsed_time_cry_11_0              ALU           COUT     Out     0.057     11.019      -         
 un1_elapsed_time_cry_11                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_12_0              ALU           CIN      In      -         9.216       -         
-un1_elapsed_time_cry_12_0              ALU           COUT     Out     0.057     9.273       -         
+un1_elapsed_time_cry_12_0              ALU           CIN      In      -         11.019      -         
+un1_elapsed_time_cry_12_0              ALU           COUT     Out     0.057     11.076      -         
 un1_elapsed_time_cry_12                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_13_0              ALU           CIN      In      -         9.273       -         
-un1_elapsed_time_cry_13_0              ALU           COUT     Out     0.057     9.329       -         
+un1_elapsed_time_cry_13_0              ALU           CIN      In      -         11.076      -         
+un1_elapsed_time_cry_13_0              ALU           COUT     Out     0.057     11.133      -         
 un1_elapsed_time_cry_13                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_14_0              ALU           CIN      In      -         9.329       -         
-un1_elapsed_time_cry_14_0              ALU           COUT     Out     0.057     9.386       -         
+un1_elapsed_time_cry_14_0              ALU           CIN      In      -         11.133      -         
+un1_elapsed_time_cry_14_0              ALU           COUT     Out     0.057     11.190      -         
 un1_elapsed_time_cry_14                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_15_0              ALU           CIN      In      -         9.386       -         
-un1_elapsed_time_cry_15_0              ALU           COUT     Out     0.057     9.444       -         
+un1_elapsed_time_cry_15_0              ALU           CIN      In      -         11.190      -         
+un1_elapsed_time_cry_15_0              ALU           COUT     Out     0.057     11.247      -         
 un1_elapsed_time_cry_15                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_16_0              ALU           CIN      In      -         9.444       -         
-un1_elapsed_time_cry_16_0              ALU           COUT     Out     0.057     9.501       -         
+un1_elapsed_time_cry_16_0              ALU           CIN      In      -         11.247      -         
+un1_elapsed_time_cry_16_0              ALU           COUT     Out     0.057     11.304      -         
 un1_elapsed_time_cry_16                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_17_0              ALU           CIN      In      -         9.501       -         
-un1_elapsed_time_cry_17_0              ALU           COUT     Out     0.057     9.557       -         
+un1_elapsed_time_cry_17_0              ALU           CIN      In      -         11.304      -         
+un1_elapsed_time_cry_17_0              ALU           COUT     Out     0.057     11.361      -         
 un1_elapsed_time_cry_17                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_18_0              ALU           CIN      In      -         9.557       -         
-un1_elapsed_time_cry_18_0              ALU           COUT     Out     0.057     9.614       -         
+un1_elapsed_time_cry_18_0              ALU           CIN      In      -         11.361      -         
+un1_elapsed_time_cry_18_0              ALU           COUT     Out     0.057     11.418      -         
 un1_elapsed_time_cry_18                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_19_0              ALU           CIN      In      -         9.614       -         
-un1_elapsed_time_cry_19_0              ALU           COUT     Out     0.057     9.671       -         
+un1_elapsed_time_cry_19_0              ALU           CIN      In      -         11.418      -         
+un1_elapsed_time_cry_19_0              ALU           COUT     Out     0.057     11.475      -         
 un1_elapsed_time_cry_19                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_20_0              ALU           CIN      In      -         9.671       -         
-un1_elapsed_time_cry_20_0              ALU           COUT     Out     0.057     9.729       -         
+un1_elapsed_time_cry_20_0              ALU           CIN      In      -         11.475      -         
+un1_elapsed_time_cry_20_0              ALU           COUT     Out     0.057     11.532      -         
 un1_elapsed_time_cry_20                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_21_0              ALU           CIN      In      -         9.729       -         
-un1_elapsed_time_cry_21_0              ALU           COUT     Out     0.057     9.786       -         
+un1_elapsed_time_cry_21_0              ALU           CIN      In      -         11.532      -         
+un1_elapsed_time_cry_21_0              ALU           COUT     Out     0.057     11.589      -         
 un1_elapsed_time_cry_21                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_22_0              ALU           CIN      In      -         9.786       -         
-un1_elapsed_time_cry_22_0              ALU           COUT     Out     0.057     9.842       -         
+un1_elapsed_time_cry_22_0              ALU           CIN      In      -         11.589      -         
+un1_elapsed_time_cry_22_0              ALU           COUT     Out     0.057     11.646      -         
 un1_elapsed_time_cry_22                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_23_0              ALU           CIN      In      -         9.842       -         
-un1_elapsed_time_cry_23_0              ALU           COUT     Out     0.057     9.899       -         
+un1_elapsed_time_cry_23_0              ALU           CIN      In      -         11.646      -         
+un1_elapsed_time_cry_23_0              ALU           COUT     Out     0.057     11.703      -         
 un1_elapsed_time_cry_23                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_24_0              ALU           CIN      In      -         9.899       -         
-un1_elapsed_time_cry_24_0              ALU           COUT     Out     0.057     9.957       -         
+un1_elapsed_time_cry_24_0              ALU           CIN      In      -         11.703      -         
+un1_elapsed_time_cry_24_0              ALU           COUT     Out     0.057     11.760      -         
 un1_elapsed_time_cry_24                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_25_0              ALU           CIN      In      -         9.957       -         
-un1_elapsed_time_cry_25_0              ALU           COUT     Out     0.057     10.014      -         
+un1_elapsed_time_cry_25_0              ALU           CIN      In      -         11.760      -         
+un1_elapsed_time_cry_25_0              ALU           COUT     Out     0.057     11.817      -         
 un1_elapsed_time_cry_25                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_26_0              ALU           CIN      In      -         10.014      -         
-un1_elapsed_time_cry_26_0              ALU           COUT     Out     0.057     10.070      -         
+un1_elapsed_time_cry_26_0              ALU           CIN      In      -         11.817      -         
+un1_elapsed_time_cry_26_0              ALU           COUT     Out     0.057     11.874      -         
 un1_elapsed_time_cry_26                Net           -        -       0.000     -           1         
-un1_elapsed_time_cry_27_0              ALU           CIN      In      -         10.070      -         
-un1_elapsed_time_cry_27_0              ALU           COUT     Out     0.057     10.127      -         
-un1_elapsed_time_cry_27                Net           -        -       1.549     -           5         
-rst_ssd1306_0_RNO                      INV           I        In      -         11.677      -         
+un1_elapsed_time_cry_27_0              ALU           CIN      In      -         11.874      -         
+un1_elapsed_time_cry_27_0              ALU           COUT     Out     0.057     11.931      -         
+un1_elapsed_time_cry_27                Net           -        -       1.549     -           4         
+step_id_0_sqmuxa_2_i_o3                LUT4          I2       In      -         13.480      -         
+step_id_0_sqmuxa_2_i_o3                LUT4          F        Out     0.822     14.302      -         
+N_106                                  Net           -        -       1.021     -           2         
+un1_step_id_1_cry_0_0                  ALU           I1       In      -         15.323      -         
+un1_step_id_1_cry_0_0                  ALU           COUT     Out     1.045     16.368      -         
+un1_step_id_1_cry_0                    Net           -        -       0.000     -           1         
+un1_step_id_1_cry_1_0                  ALU           CIN      In      -         16.368      -         
+un1_step_id_1_cry_1_0                  ALU           COUT     Out     0.057     16.425      -         
+un1_step_id_1_cry_1                    Net           -        -       0.000     -           1         
+un1_step_id_1_cry_2_0                  ALU           CIN      In      -         16.425      -         
+un1_step_id_1_cry_2_0                  ALU           COUT     Out     0.057     16.482      -         
+un1_step_id_1_cry_2                    Net           -        -       0.000     -           1         
+un1_step_id_1_cry_3_0                  ALU           CIN      In      -         16.482      -         
+un1_step_id_1_cry_3_0                  ALU           COUT     Out     0.057     16.539      -         
+un1_step_id_1_cry_3                    Net           -        -       0.000     -           1         
+un1_step_id_1_cry_4_0                  ALU           CIN      In      -         16.539      -         
+un1_step_id_1_cry_4_0                  ALU           COUT     Out     0.057     16.596      -         
+un1_step_id_1_cry_4                    Net           -        -       0.000     -           1         
+un1_step_id_1_cry_5_0                  ALU           CIN      In      -         16.596      -         
+un1_step_id_1_cry_5_0                  ALU           COUT     Out     0.057     16.653      -         
+un1_step_id_1_cry_5                    Net           -        -       0.000     -           1         
+un1_step_id_1_s_6_0                    ALU           CIN      In      -         16.653      -         
+un1_step_id_1_s_6_0                    ALU           SUM      Out     0.563     17.216      -         
+un1_step_id_1_s_6_0_SUM                Net           -        -       1.021     -           1         
+step_id[6]                             DFFR          D        In      -         18.237      -         
 ======================================================================================================
-Total path delay (propagation time + setup) of 11.677 is 6.177(52.9%) logic and 5.500(47.1%) route.
+Total path delay (propagation time + setup) of 18.370 is 10.124(55.1%) logic and 8.246(44.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -999,12 +529,12 @@ Detailed Report for Clock: SSD1306|rd_spi_derived_clock
 Starting Points with Worst Slack
 ********************************
 
-                       Starting                                                             Arrival          
-Instance               Reference                        Type      Pin     Net               Time        Slack
-                       Clock                                                                                 
--------------------------------------------------------------------------------------------------------------
-spi0.charreceivedn     SSD1306|rd_spi_derived_clock     DFFCE     Q       charreceivedn     0.367       1.459
-=============================================================================================================
+                       Starting                                                            Arrival          
+Instance               Reference                        Type     Pin     Net               Time        Slack
+                       Clock                                                                                
+------------------------------------------------------------------------------------------------------------
+spi0.charreceivedn     SSD1306|rd_spi_derived_clock     DFFE     Q       charreceivedn     0.367       1.459
+============================================================================================================
 
 
 Ending Points with Worst Slack
@@ -1020,10 +550,10 @@ step_id[4]          SSD1306|rd_spi_derived_clock     DFFR      D         un1_ste
 step_id[3]          SSD1306|rd_spi_derived_clock     DFFR      D         un1_step_id_1_cry_3_0_SUM     9.867        1.630
 step_id[2]          SSD1306|rd_spi_derived_clock     DFFR      D         un1_step_id_1_cry_2_0_SUM     9.867        1.687
 step_id[1]          SSD1306|rd_spi_derived_clock     DFFR      D         un1_step_id_1_cry_1_0_SUM     9.867        1.744
-elapsed_time[0]     SSD1306|rd_spi_derived_clock     DFFRE     RESET     N_246_i                       9.867        2.076
-elapsed_time[1]     SSD1306|rd_spi_derived_clock     DFFRE     RESET     N_246_i                       9.867        2.076
-elapsed_time[2]     SSD1306|rd_spi_derived_clock     DFFRE     RESET     N_246_i                       9.867        2.076
-elapsed_time[3]     SSD1306|rd_spi_derived_clock     DFFRE     RESET     N_246_i                       9.867        2.076
+elapsed_time[0]     SSD1306|rd_spi_derived_clock     DFFRE     RESET     N_96_i                        9.867        2.076
+elapsed_time[1]     SSD1306|rd_spi_derived_clock     DFFRE     RESET     N_96_i                        9.867        2.076
+elapsed_time[2]     SSD1306|rd_spi_derived_clock     DFFRE     RESET     N_96_i                        9.867        2.076
+elapsed_time[3]     SSD1306|rd_spi_derived_clock     DFFRE     RESET     N_96_i                        9.867        2.076
 =========================================================================================================================
 
 
@@ -1040,7 +570,7 @@ Path information for path number 1:
 
     - Propagation time:                      8.408
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 1.459
+    = Slack (critical) :                     1.459
 
     Number of logic level(s):                9
     Starting point:                          spi0.charreceivedn / Q
@@ -1048,40 +578,40 @@ Path information for path number 1:
     The start point is clocked by            SSD1306|rd_spi_derived_clock [rising] on pin CLK
     The end   point is clocked by            SSD1306|clk_ssd1306_derived_clock [rising] on pin CLK
 
-Instance / Net                        Pin      Pin               Arrival     No. of    
-Name                        Type      Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------
-spi0.charreceivedn          DFFCE     Q        Out     0.367     0.367       -         
-charreceivedn               Net       -        -       1.021     -           2         
-spi0.charreceived           LUT2      I0       In      -         1.388       -         
-spi0.charreceived           LUT2      F        Out     1.032     2.420       -         
-charreceived                Net       -        -       1.021     -           5         
-step_id_0_sqmuxa_2_i_o3     LUT4      I0       In      -         3.441       -         
-step_id_0_sqmuxa_2_i_o3     LUT4      F        Out     1.032     4.473       -         
-N_250                       Net       -        -       1.021     -           2         
-un1_step_id_1_cry_0_0       ALU       I1       In      -         5.494       -         
-un1_step_id_1_cry_0_0       ALU       COUT     Out     1.045     6.539       -         
-un1_step_id_1_cry_0         Net       -        -       0.000     -           1         
-un1_step_id_1_cry_1_0       ALU       CIN      In      -         6.539       -         
-un1_step_id_1_cry_1_0       ALU       COUT     Out     0.057     6.596       -         
-un1_step_id_1_cry_1         Net       -        -       0.000     -           1         
-un1_step_id_1_cry_2_0       ALU       CIN      In      -         6.596       -         
-un1_step_id_1_cry_2_0       ALU       COUT     Out     0.057     6.653       -         
-un1_step_id_1_cry_2         Net       -        -       0.000     -           1         
-un1_step_id_1_cry_3_0       ALU       CIN      In      -         6.653       -         
-un1_step_id_1_cry_3_0       ALU       COUT     Out     0.057     6.710       -         
-un1_step_id_1_cry_3         Net       -        -       0.000     -           1         
-un1_step_id_1_cry_4_0       ALU       CIN      In      -         6.710       -         
-un1_step_id_1_cry_4_0       ALU       COUT     Out     0.057     6.767       -         
-un1_step_id_1_cry_4         Net       -        -       0.000     -           1         
-un1_step_id_1_cry_5_0       ALU       CIN      In      -         6.767       -         
-un1_step_id_1_cry_5_0       ALU       COUT     Out     0.057     6.824       -         
-un1_step_id_1_cry_5         Net       -        -       0.000     -           1         
-un1_step_id_1_s_6_0         ALU       CIN      In      -         6.824       -         
-un1_step_id_1_s_6_0         ALU       SUM      Out     0.563     7.387       -         
-un1_step_id_1_s_6_0_SUM     Net       -        -       1.021     -           1         
-step_id[6]                  DFFR      D        In      -         8.408       -         
-=======================================================================================
+Instance / Net                       Pin      Pin               Arrival     No. of    
+Name                        Type     Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------
+spi0.charreceivedn          DFFE     Q        Out     0.367     0.367       -         
+charreceivedn               Net      -        -       1.021     -           2         
+spi0.charreceived           LUT2     I0       In      -         1.388       -         
+spi0.charreceived           LUT2     F        Out     1.032     2.420       -         
+charreceived                Net      -        -       1.021     -           5         
+step_id_0_sqmuxa_2_i_o3     LUT4     I0       In      -         3.441       -         
+step_id_0_sqmuxa_2_i_o3     LUT4     F        Out     1.032     4.473       -         
+N_106                       Net      -        -       1.021     -           2         
+un1_step_id_1_cry_0_0       ALU      I1       In      -         5.494       -         
+un1_step_id_1_cry_0_0       ALU      COUT     Out     1.045     6.539       -         
+un1_step_id_1_cry_0         Net      -        -       0.000     -           1         
+un1_step_id_1_cry_1_0       ALU      CIN      In      -         6.539       -         
+un1_step_id_1_cry_1_0       ALU      COUT     Out     0.057     6.596       -         
+un1_step_id_1_cry_1         Net      -        -       0.000     -           1         
+un1_step_id_1_cry_2_0       ALU      CIN      In      -         6.596       -         
+un1_step_id_1_cry_2_0       ALU      COUT     Out     0.057     6.653       -         
+un1_step_id_1_cry_2         Net      -        -       0.000     -           1         
+un1_step_id_1_cry_3_0       ALU      CIN      In      -         6.653       -         
+un1_step_id_1_cry_3_0       ALU      COUT     Out     0.057     6.710       -         
+un1_step_id_1_cry_3         Net      -        -       0.000     -           1         
+un1_step_id_1_cry_4_0       ALU      CIN      In      -         6.710       -         
+un1_step_id_1_cry_4_0       ALU      COUT     Out     0.057     6.767       -         
+un1_step_id_1_cry_4         Net      -        -       0.000     -           1         
+un1_step_id_1_cry_5_0       ALU      CIN      In      -         6.767       -         
+un1_step_id_1_cry_5_0       ALU      COUT     Out     0.057     6.824       -         
+un1_step_id_1_cry_5         Net      -        -       0.000     -           1         
+un1_step_id_1_s_6_0         ALU      CIN      In      -         6.824       -         
+un1_step_id_1_s_6_0         ALU      SUM      Out     0.563     7.387       -         
+un1_step_id_1_s_6_0_SUM     Net      -        -       1.021     -           1         
+step_id[6]                  DFFR     D        In      -         8.408       -         
+======================================================================================
 Total path delay (propagation time + setup) of 8.541 is 4.457(52.2%) logic and 4.084(47.8%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
@@ -1097,33 +627,33 @@ Detailed Report for Clock: SSD1306|wr_spi_derived_clock
 Starting Points with Worst Slack
 ********************************
 
-                         Starting                                                               Arrival          
-Instance                 Reference                        Type      Pin     Net                 Time        Slack
-                         Clock                                                                                   
------------------------------------------------------------------------------------------------------------------
-spi0.inbufffullp_0       SSD1306|wr_spi_derived_clock     DFFCE     Q       inbufffullp         0.367       4.239
-spi0.input_buffer[0]     SSD1306|wr_spi_derived_clock     DFFE      Q       input_buffer[0]     0.367       7.447
-=================================================================================================================
+                         Starting                                                              Arrival          
+Instance                 Reference                        Type     Pin     Net                 Time        Slack
+                         Clock                                                                                  
+----------------------------------------------------------------------------------------------------------------
+spi0.inbufffullp_0       SSD1306|wr_spi_derived_clock     DFFE     Q       inbufffullp         0.367       4.239
+spi0.input_buffer[0]     SSD1306|wr_spi_derived_clock     DFFE     Q       input_buffer[0]     0.367       7.447
+================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                           Starting                                                       Required          
-Instance                   Reference                        Type      Pin     Net         Time         Slack
-                           Clock                                                                            
-------------------------------------------------------------------------------------------------------------
-spi0.shift_reg_out[0]      SSD1306|wr_spi_derived_clock     DFFCE     CE      N_36        9.867        4.239
-spi0.shift_reg_out[1]      SSD1306|wr_spi_derived_clock     DFFCE     CE      N_36        9.867        4.239
-spi0.shift_reg_out[2]      SSD1306|wr_spi_derived_clock     DFFCE     CE      N_36        9.867        4.239
-spi0.shift_reg_out[3]      SSD1306|wr_spi_derived_clock     DFFCE     CE      N_36        9.867        4.239
-spi0.shift_reg_out[4]      SSD1306|wr_spi_derived_clock     DFFCE     CE      N_36        9.867        4.239
-spi0.shift_reg_out[5]      SSD1306|wr_spi_derived_clock     DFFCE     CE      N_36        9.867        4.239
-spi0.shift_reg_out[6]      SSD1306|wr_spi_derived_clock     DFFCE     CE      N_36        9.867        4.239
-spi0.shift_reg_out[7]      SSD1306|wr_spi_derived_clock     DFFCE     CE      N_36        9.867        4.239
-spi0.prescaller_cnt[0]     SSD1306|wr_spi_derived_clock     DFFCE     CE      N_291_i     9.867        4.306
-spi0.prescaller_cnt[1]     SSD1306|wr_spi_derived_clock     DFFCE     CE      N_291_i     9.867        4.306
-============================================================================================================
+                           Starting                                                      Required          
+Instance                   Reference                        Type     Pin     Net         Time         Slack
+                           Clock                                                                           
+-----------------------------------------------------------------------------------------------------------
+spi0.shift_reg_out[0]      SSD1306|wr_spi_derived_clock     DFFE     CE      N_34        9.867        4.239
+spi0.shift_reg_out[1]      SSD1306|wr_spi_derived_clock     DFFE     CE      N_34        9.867        4.239
+spi0.shift_reg_out[2]      SSD1306|wr_spi_derived_clock     DFFE     CE      N_34        9.867        4.239
+spi0.shift_reg_out[3]      SSD1306|wr_spi_derived_clock     DFFE     CE      N_34        9.867        4.239
+spi0.shift_reg_out[4]      SSD1306|wr_spi_derived_clock     DFFE     CE      N_34        9.867        4.239
+spi0.shift_reg_out[5]      SSD1306|wr_spi_derived_clock     DFFE     CE      N_34        9.867        4.239
+spi0.shift_reg_out[6]      SSD1306|wr_spi_derived_clock     DFFE     CE      N_34        9.867        4.239
+spi0.shift_reg_out[7]      SSD1306|wr_spi_derived_clock     DFFE     CE      N_34        9.867        4.239
+spi0.prescaller_cnt[0]     SSD1306|wr_spi_derived_clock     DFFE     CE      N_283_i     9.867        4.306
+spi0.prescaller_cnt[1]     SSD1306|wr_spi_derived_clock     DFFE     CE      N_283_i     9.867        4.306
+===========================================================================================================
 
 
 
@@ -1147,19 +677,19 @@ Path information for path number 1:
     The start point is clocked by            SSD1306|wr_spi_derived_clock [rising] on pin CLK
     The end   point is clocked by            SSD1306|clk_ssd1306_derived_clock [rising] on pin CLK
 
-Instance / Net                         Pin      Pin               Arrival     No. of    
-Name                         Type      Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------
-spi0.inbufffullp_0           DFFCE     Q        Out     0.367     0.367       -         
-inbufffullp                  Net       -        -       1.021     -           3         
-spi0._mosi_0_sqmuxa_0_a3     LUT3      I1       In      -         1.388       -         
-spi0._mosi_0_sqmuxa_0_a3     LUT3      F        Out     1.099     2.487       -         
-_mosi_0_sqmuxa               Net       -        -       1.021     -           5         
-spi0.un1_ss7_2_i_0[0]        LUT3      I1       In      -         3.508       -         
-spi0.un1_ss7_2_i_0[0]        LUT3      F        Out     1.099     4.607       -         
-N_36                         Net       -        -       1.021     -           8         
-spi0.shift_reg_out[0]        DFFCE     CE       In      -         5.628       -         
-========================================================================================
+Instance / Net                        Pin      Pin               Arrival     No. of    
+Name                         Type     Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------
+spi0.inbufffullp_0           DFFE     Q        Out     0.367     0.367       -         
+inbufffullp                  Net      -        -       1.021     -           3         
+spi0._mosi_0_sqmuxa_0_a3     LUT3     I1       In      -         1.388       -         
+spi0._mosi_0_sqmuxa_0_a3     LUT3     F        Out     1.099     2.487       -         
+_mosi_0_sqmuxa               Net      -        -       1.021     -           5         
+spi0.un1_ss7_2_i_0[0]        LUT3     I1       In      -         3.508       -         
+spi0.un1_ss7_2_i_0[0]        LUT3     F        Out     1.099     4.607       -         
+N_34                         Net      -        -       1.021     -           8         
+spi0.shift_reg_out[0]        DFFE     CE       In      -         5.628       -         
+=======================================================================================
 Total path delay (propagation time + setup) of 5.761 is 2.698(46.8%) logic and 3.063(53.2%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
@@ -1199,12 +729,12 @@ Ending Points with Worst Slack
 Instance                 Reference     Type      Pin     Net                 Time         Slack
                          Clock                                                                 
 -----------------------------------------------------------------------------------------------
-spi0.charreceivedn       System        DFFCE     D       charreceivedn_i     9.867        8.846
-spi0.charreceivedp       System        DFFCE     D       charreceivedp_i     9.867        8.846
+spi0.charreceivedn       System        DFFE      D       charreceivedn_i     9.867        8.846
+spi0.charreceivedp       System        DFFE      D       charreceivedp_i     9.867        8.846
 clk_ssd1306_0            System        DFFCE     D       clk_ssd1306_i_i     9.867        8.846
-spi0.inbufffulln_0       System        DFFCE     D       inbufffulln_i       9.867        8.846
-spi0.inbufffullp_0       System        DFFCE     CE      ss7_i               9.867        8.846
-spi0.inbufffullp_0       System        DFFCE     D       inbufffullp_i       9.867        8.846
+spi0.inbufffulln_0       System        DFFE      D       inbufffulln_i       9.867        8.846
+spi0.inbufffullp_0       System        DFFE      CE      ss7_i               9.867        8.846
+spi0.inbufffullp_0       System        DFFE      D       inbufffullp_i       9.867        8.846
 spi0.input_buffer[0]     System        DFFE      CE      ss7_i               9.867        8.846
 led[0]                   System        DFF       D       step_id_i[3]        9.867        8.846
 led[1]                   System        DFF       D       step_id_i[2]        9.867        8.846
@@ -1234,13 +764,13 @@ Path information for path number 1:
     The start point is clocked by            System [rising]
     The end   point is clocked by            SSD1306|rd_spi_derived_clock [rising] on pin CLK
 
-Instance / Net                     Pin      Pin               Arrival     No. of    
-Name                     Type      Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------
-spi0.charreceivedn_i     INV       O        Out     0.000     0.000       -         
-charreceivedn_i          Net       -        -       1.021     -           1         
-spi0.charreceivedn       DFFCE     D        In      -         1.021       -         
-====================================================================================
+Instance / Net                    Pin      Pin               Arrival     No. of    
+Name                     Type     Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------
+spi0.charreceivedn_i     INV      O        Out     0.000     0.000       -         
+charreceivedn_i          Net      -        -       1.021     -           1         
+spi0.charreceivedn       DFFE     D        In      -         1.021       -         
+===================================================================================
 Total path delay (propagation time + setup) of 1.154 is 0.133(11.5%) logic and 1.021(88.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
@@ -1264,18 +794,18 @@ Cell usage:
 ALU             101 uses
 DFF             8 uses
 DFFC            25 uses
-DFFCE           27 uses
-DFFE            2 uses
-DFFPE           2 uses
+DFFCE           1 use
+DFFE            29 uses
 DFFR            7 uses
 DFFRE           30 uses
 DFFSE           2 uses
 GSR             1 use
-INV             13 uses
-MUX2_LUT5       5 uses
-LUT2            37 uses
-LUT3            31 uses
-LUT4            47 uses
+INV             12 uses
+MUX2_LUT5       10 uses
+MUX2_LUT6       3 uses
+LUT2            40 uses
+LUT3            27 uses
+LUT4            48 uses
 
 I/O ports: 13
 I/O primitives: 13
@@ -1283,10 +813,10 @@ IBUF           2 uses
 OBUF           11 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   103 of 3456 (2%)
+Register bits not including I/Os:   102 of 3456 (2%)
 Total load per clock:
    SSD1306|clk_50M: 26
-   SSD1306|clk_ssd1306_derived_clock: 74
+   SSD1306|clk_ssd1306_derived_clock: 73
    SSD1306|rd_spi_derived_clock: 1
    SSD1306|wr_spi_derived_clock: 2
 
@@ -1295,9 +825,9 @@ Total  LUTs: 115 (2%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 40MB peak: 200MB)
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 39MB peak: 200MB)
 
 Process took 0h:00m:04s realtime, 0h:00m:03s cputime
-# Tue Oct  9 09:17:40 2018
+# Tue Oct  9 11:02:30 2018
 
 ###########################################################]

@@ -7,7 +7,7 @@ e ckid0_0 {t:spi0.input_buffer[7].C} dffe
 d ckid0_1 {t:wr_spi_0.Q[0]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
 i clk_ssd1306_i
 m 0 0
-u 76 103
+u 75 102
 n ckid0_2 {t:spi0.inbufffulln_0.C} Derived clock on input (not legal for GCC)
 p {t:clk_ssd1306_0.Q[0]}{t:clk_ssd1306_derived_clock.I[0]}{t:clk_ssd1306_derived_clock.OUT[0]}{t:repeat_count_0[0].C}
 e ckid0_3 {t:repeat_count_0[0].C} dffre

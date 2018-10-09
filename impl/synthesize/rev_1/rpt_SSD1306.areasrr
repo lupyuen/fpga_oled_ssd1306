@@ -24,19 +24,20 @@ Part:			GW1N_4LQFP144-6 (GoWin)
 SEQUENTIAL ELEMENTS
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-REGISTERS     103                100 %                
+REGISTERS     102                100 %                
 ======================================================
-Total SEQUENTIAL ELEMENTS in the block SSD1306:	103 (28.61 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block SSD1306:	102 (27.87 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
 LUTS          115                100 %                
-MUX2_LUT5     5                  100 %                
+MUX2_LUT5     10                 100 %                
+MUX2_LUT6     3                  100 %                
 ALU           101                100 %                
 ======================================================
-Total COMBINATIONAL LOGIC in the block SSD1306:	221 (61.39 % Utilization)
+Total COMBINATIONAL LOGIC in the block SSD1306:	229 (62.57 % Utilization)
 
 -------------------------------------------------------------------------
 ########   Utilization report for  cell:   SSD1306_ROM_cfg_mod   ########
@@ -46,10 +47,11 @@ Instance path:   SSD1306.SSD1306_ROM_cfg_mod
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-LUTS          47                 40.9 %               
-MUX2_LUT5     5                  100 %                
+LUTS          48                 41.7 %               
+MUX2_LUT5     10                 100 %                
+MUX2_LUT6     3                  100 %                
 ======================================================
-Total COMBINATIONAL LOGIC in the block SSD1306.SSD1306_ROM_cfg_mod:	52 (14.44 % Utilization)
+Total COMBINATIONAL LOGIC in the block SSD1306.SSD1306_ROM_cfg_mod:	61 (16.67 % Utilization)
 
 --------------------------------------------------------------------------
 ########   Utilization report for  cell:   spi_master_8s_8s_0_1   ########
@@ -59,18 +61,18 @@ Instance path:   SSD1306.spi_master_8s_8s_0_1
 SEQUENTIAL ELEMENTS
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-REGISTERS     29                 28.2 %               
+REGISTERS     29                 28.4 %               
 ======================================================
-Total SEQUENTIAL ELEMENTS in the block SSD1306.spi_master_8s_8s_0_1:	29 (8.06 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block SSD1306.spi_master_8s_8s_0_1:	29 (7.92 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-LUTS     38                 33 %                 
+LUTS     37                 32.2 %               
 ALU      13                 12.9 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block SSD1306.spi_master_8s_8s_0_1:	51 (14.17 % Utilization)
+Total COMBINATIONAL LOGIC in the block SSD1306.spi_master_8s_8s_0_1:	50 (13.66 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

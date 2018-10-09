@@ -7,7 +7,6 @@
 @N: FX493 |Applying initial value "0000000000000000000000000" on instance cnt[24:0].
 @N: FX493 |Applying initial value "0" on instance repeat_count[0].
 @N: FX493 |Applying initial value "0000000000000000000000000000" on instance saved_elapsed_time[27:0].
-@N: FX493 |Applying initial value "0" on instance rst_ssd1306.
 @N: FX493 |Applying initial value "0" on instance clk_ssd1306.
 @N: FX493 |Applying initial value "0" on instance internal_state_machine.
 @N: FX493 |Applying initial value "0000000000000000000000000000" on instance elapsed_time[27:0].

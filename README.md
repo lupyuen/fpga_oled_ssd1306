@@ -23,13 +23,13 @@ Excerpt From: Warren Gay. “Beginning STM32.” iBooks.
   
 ## VDD, VCC, VBAT
 
->>>VDD is the 3.3V logic power. This must be 3 or 3.3V
+>VDD is the 3.3V logic power. This must be 3 or 3.3V
 
->>>VBAT is the input to the charge pump. If you use the charge pump, this must be 3.3V to 4.2V
+>VBAT is the input to the charge pump. If you use the charge pump, this must be 3.3V to 4.2V
 
->>>VCC is the high voltage OLED pin. If you're using the internal charge pump, this must be left unconnected. 
+>VCC is the high voltage OLED pin. If you're using the internal charge pump, this must be left unconnected. 
 
->>>If you're not using the charge pump, connect this to a 7-9V DC power supply.
+>If you're not using the charge pump, connect this to a 7-9V DC power supply.
 For most users, we suggest connecting VDD and VBAT together to 3.3V and then leaving VCC unconnected.
 
 https://learn.adafruit.com/monochrome-oled-breakouts?view=all
@@ -38,18 +38,18 @@ Display needs 20 mA, hence VBAT and VDD have been configured to output 24 mA
 
 ## FPGA Power
 
->>>Input DC5V power supply via USB port or socket. Input via socket if the
+>Input DC5V power supply via USB port or socket. Input via socket if the
 SW1 switch is pressed; input via USB port if the SW1 switch pops up.
 
 ## Internal Flash
 
->>>1. SRAM:
+>1. SRAM:
 Scan the device and download the bit file after powering the device on.
 The Done indicator lights up to denote that the download has been
 successful.
 Note!
 The mode is independent of the values of MODE0 and MODE1.
->>>2. Internal Flash:
+>2. Internal Flash:
 Power on to download. After downloading the data stream file
 successfully, power down to reset and load the bit file from the internal
 Flash, and when the Done indicator lights up to denote that the download
