@@ -12,7 +12,7 @@ The file contains the area information from mapper to be displayed as part of th
 <data>13</data>
 </parameter>
 <parameter tcl_name="non_io_reg" tooltip="Total Non I/O Register bits used" name="Non I/O Register bits">
-<data>102 (2%)</data>
+<data>103 (2%)</data>
 </parameter>
 <parameter tcl_name="total_io_reg" tooltip="Total I/O Register bits used" name="I/O Register bits">
 <data>0</data>
@@ -24,6 +24,6 @@ The file contains the area information from mapper to be displayed as part of th
 <data>0 (8)</data>
 </parameter>
 <parameter tcl_name="total_luts" tooltip="Total LUTs used" name="LUTs">
-<data>114 (2%)</data>
+<data>116 (2%)</data>
 </parameter>
 </report_table>

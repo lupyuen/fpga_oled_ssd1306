@@ -1,10 +1,10 @@
 C:\Gowin\1.8\SynplifyPro\bin64\c_hdl.exe  -osyn  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synwork\oled_ssd1306_comp.srs  -hdllog  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\synlog\oled_ssd1306_compiler.srr  -encrypt  -mp  4  -verification_mode 0  -verilog  -prodtype  synplify_pro  -primux -fixsmult -sdff_counter -nram -divnmod -nostructver -infer_seqShift   -I C:\fpga_oled_ssd1306\src  -I C:\fpga_oled_ssd1306\impl\synthesize\  -I C:\Gowin\1.8\SynplifyPro\lib   -sysv  -devicelib  C:\Gowin\1.8\SynplifyPro\lib\generic\gw1n.v  -encrypt  -pro  -dmgen  C:\fpga_oled_ssd1306\impl\synthesize\rev_1\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -D_MULTIPLE_FILE_COMPILATION_UNIT_  -lib work C:\fpga_oled_ssd1306\src\SSD1306.v -lib work C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod.v -lib work C:\fpga_oled_ssd1306\src\SSD1306_ROM_cfg_mod_header.v -lib work C:\fpga_oled_ssd1306\src\spi_master.v  -jobname  "compiler" 
 relcom:..\..\..\..\..\Gowin\1.8\SynplifyPro\bin64\c_hdl.exe -osyn ..\synwork\oled_ssd1306_comp.srs -hdllog ..\synlog\oled_ssd1306_compiler.srr -encrypt -mp 4 -verification_mode 0 -verilog -prodtype synplify_pro -primux -fixsmult -sdff_counter -nram -divnmod -nostructver -infer_seqShift -I ..\..\..\..\src -I ..\..\ -I ..\..\..\..\..\Gowin\1.8\SynplifyPro\lib -sysv -devicelib ..\..\..\..\..\Gowin\1.8\SynplifyPro\lib\generic\gw1n.v -encrypt -pro -dmgen ..\dm -ui -fid2 -ram -sharing on -ll 2000 -autosm -D_MULTIPLE_FILE_COMPILATION_UNIT_ -lib work ..\..\..\..\src\SSD1306.v -lib work ..\..\..\..\src\SSD1306_ROM_cfg_mod.v -lib work ..\..\..\..\src\SSD1306_ROM_cfg_mod_header.v -lib work ..\..\..\..\src\spi_master.v -jobname "compiler"
 rc:0 success:1 runtime:2
-file:..\synwork\oled_ssd1306_comp.srs|io:o|time:1539046796|size:12586|exec:0|csum:
-file:..\synlog\oled_ssd1306_compiler.srr|io:o|time:1539046796|size:7326|exec:0|csum:
+file:..\synwork\oled_ssd1306_comp.srs|io:o|time:1539047198|size:12832|exec:0|csum:
+file:..\synlog\oled_ssd1306_compiler.srr|io:o|time:1539047198|size:7326|exec:0|csum:
 file:..\..\..\..\..\Gowin\1.8\SynplifyPro\lib\generic\gw1n.v|io:i|time:1526403272|size:91162|exec:0|csum:6FE3EB7A2EE8E73111EC688BAE636AC2
-file:..\..\..\..\src\SSD1306.v|io:i|time:1539046760|size:10231|exec:0|csum:3E71D23EA6668CFAD6DEFE045301D9A8
+file:..\..\..\..\src\SSD1306.v|io:i|time:1539047169|size:10631|exec:0|csum:C142899B32FC1951A0AAC2C99BAC02BC
 file:..\..\..\..\src\SSD1306_ROM_cfg_mod.v|io:i|time:1539006425|size:871|exec:0|csum:E1A939B693F69B17C265799377E11B12
 file:..\..\..\..\src\SSD1306_ROM_cfg_mod_header.v|io:i|time:1538712808|size:140|exec:0|csum:B75699240193A4ED07E20C61A8766BB0
 file:..\..\..\..\src\spi_master.v|io:i|time:1538969872|size:9277|exec:0|csum:2B3DB837F49B3E2BA3076B198119D68E

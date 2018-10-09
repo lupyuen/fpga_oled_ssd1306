@@ -23,8 +23,8 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>SSD1306|clk_ssd1306_derived_clock</data>
 <data>100.0 MHz</data>
-<data>109.0 MHz</data>
-<data>1.652</data>
+<data>117.1 MHz</data>
+<data>3.299</data>
 </row>
 <row>
 <data>SSD1306|rd_spi_derived_clock</data>
@@ -36,7 +36,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data>SSD1306|wr_spi_derived_clock</data>
 <data>100.0 MHz</data>
 <data>156.1 MHz</data>
-<data>4.239</data>
+<data>4.306</data>
 </row>
 <row>
 <data>System</data>

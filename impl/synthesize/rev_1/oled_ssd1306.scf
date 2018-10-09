@@ -1,4 +1,4 @@
-# Written by Synplify Pro version mapgw, Build 1086R. Synopsys Run ID: sid1539046801 
+# Written by Synplify Pro version mapgw, Build 1086R. Synopsys Run ID: sid1539047203 
 # Top Level Design Parameters 
 
 # Clocks 
@@ -18,6 +18,8 @@ set_multicycle_path 2 -setup -from [get_clocks {SSD1306|clk_ssd1306_derived_cloc
 set_multicycle_path 1 -hold -from [get_clocks {SSD1306|clk_ssd1306_derived_clock}] -to [get_clocks {SSD1306|clk_ssd1306_derived_clock}] 
 set_multicycle_path 2 -setup -from [get_clocks {SSD1306|rd_spi_derived_clock}] -to [get_clocks {SSD1306|rd_spi_derived_clock}] 
 set_multicycle_path 1 -hold -from [get_clocks {SSD1306|rd_spi_derived_clock}] -to [get_clocks {SSD1306|rd_spi_derived_clock}] 
+set_multicycle_path 2 -setup -from [get_clocks {SSD1306|wr_spi_derived_clock}] -to [get_clocks {SSD1306|wr_spi_derived_clock}] 
+set_multicycle_path 1 -hold -from [get_clocks {SSD1306|wr_spi_derived_clock}] -to [get_clocks {SSD1306|wr_spi_derived_clock}] 
 
 # Point-to-point Delay Constraints 
 

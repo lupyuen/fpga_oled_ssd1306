@@ -6,17 +6,19 @@ Cell usage:
 ALU             101 uses
 DFF             8 uses
 DFFC            25 uses
-DFFCE           1 use
-DFFE            29 uses
+DFFCE           27 uses
+DFFE            2 uses
+DFFPE           2 uses
 DFFR            7 uses
 DFFRE           30 uses
 DFFSE           2 uses
 GSR             1 use
 INV             12 uses
-MUX2_LUT5       5 uses
-LUT2            38 uses
-LUT3            25 uses
-LUT4            51 uses
+MUX2_LUT5       8 uses
+MUX2_LUT6       1 use
+LUT2            40 uses
+LUT3            17 uses
+LUT4            59 uses
 
 I/O ports: 13
 I/O primitives: 13
@@ -24,8 +26,8 @@ IBUF           2 uses
 OBUF           11 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   102 of 3456 (2%)
+Register bits not including I/Os:   103 of 3456 (2%)
 
 @S |Mapping Summary:
-Total  LUTs: 114 (2%)
+Total  LUTs: 116 (2%)
 
