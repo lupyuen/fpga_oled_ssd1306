@@ -110,6 +110,141 @@ __ / \
 __ / __--
 ```
 
+Log for Display On, Data Command, Address Command and Data:
+```
+2WIRE>m6 1 1
+R2W (spd hiz)=( 0 1 )
+Ready
+2WIRE>L
+LSB set: LEAST sig bit first
+2WIRE>e2
+3.3V on-board pullup voltage enabled
+2WIRE>P
+Pull-up resistors ON
+Warning: no voltage on Vpullup pin
+2WIRE>W
+POWER SUPPLIES ON
+Clutch engaged!!!
+2WIRE>i
+Bus Pirate v4
+Community Firmware v7.0 - goo.gl/gCzQnW [HiZ 1-WIRE UART I2C SPI 2WIRE 3WIRE KEYB LCD PIC DIO]
+DEVID:0x1019 REVID:0x0004 (24FJ256GB106 UNK)
+http://dangerousprototypes.com
+CFG0: 0xFFFF CFG1:0xFFFF CFG2:0xFFFF
+*----------*
+Pinstates:
+#12     #11     #10     #09     #08     #07     #06     #05     #04     #03     #02     #01
+GND     5.0V    3.3V    VPU     ADC     AUX2    AUX1    AUX     -       -       SCL     SDA
+P       P       P       I       I       I       I       I       I       I       O       I
+GND     4.97V   3.30V   3.22V   0.00V   L       L       L       H       H       H       H
+POWER SUPPLIES ON, Pull-up resistors ON, Vpu=3V3, Open drain outputs (H=Hi-Z, L=GND)
+LSB set: LEAST sig bit first, Number of bits read/write: 8
+a/A/@ controls CS pin
+R2W (spd hiz)=( 0 1 )
+*----------*
+2WIRE>/ -- --__ \
+CLOCK, 1
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+CLOCK, 0
+2WIRE>0x8f
+WRITE: 0x8F
+2WIRE>__ / \
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+CLOCK, 1
+CLOCK, 0
+2WIRE>__ / __--
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+CLOCK, 1
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+2WIRE>/ -- --__ \
+CLOCK, 1
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+CLOCK, 0
+2WIRE>0x40
+WRITE: 0x40
+2WIRE>__ / \
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+CLOCK, 1
+CLOCK, 0
+2WIRE>__ / __--
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+CLOCK, 1
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+2WIRE>/ -- --__ \
+CLOCK, 1
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+CLOCK, 0
+2WIRE>0xc0
+WRITE: 0xC0
+2WIRE>__ / \
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+CLOCK, 1
+CLOCK, 0
+2WIRE>0b10111111
+WRITE: 0xBF
+2WIRE>__ / \
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+CLOCK, 1
+CLOCK, 0
+2WIRE>0b00000110
+WRITE: 0x06
+2WIRE>__ / \
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+CLOCK, 1
+CLOCK, 0
+2WIRE>0b01011011
+WRITE: 0x5B
+2WIRE>__ / \
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+CLOCK, 1
+CLOCK, 0
+2WIRE>0b01001111
+WRITE: 0x4F
+2WIRE>__ / \
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+CLOCK, 1
+CLOCK, 0
+2WIRE>__ / __--
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+CLOCK, 1
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+2WIRE>
+```
+
 Send 0x8f:
 ```
 / -- --__ \
