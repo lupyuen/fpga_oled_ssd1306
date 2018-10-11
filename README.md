@@ -63,10 +63,51 @@ Before downloading the bit file, MODE0 and MODE1 need to set to
 Set comms:
 ```
 m6 1 1
+L
 e2
 P
 W
 i
+```
+
+Display On - Send `0x8f`:
+```
+/ -- --__ \
+0x8f
+__ / \
+__ / __--
+```
+
+Data Command - Send `0x40`:
+```
+/ -- --__ \
+0x40
+__ / \
+__ / __--
+```
+
+Address Command and Data - Send `0xc0` and data (first data byte must have high bit set):
+```
+/ -- --__ \
+0xc0
+__ / \
+0b10111111
+__ / \
+0b00000110
+__ / \
+0b01011011
+__ / \
+0b01001111
+__ / \
+__ / __--
+```
+
+Display Off - Send `0x80`:
+```
+/ -- --__ \
+0x80
+__ / \
+__ / __--
 ```
 
 Send 0x8f:
