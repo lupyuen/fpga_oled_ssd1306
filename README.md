@@ -60,22 +60,312 @@ Before downloading the bit file, MODE0 and MODE1 need to set to
 
 ## TM1637 LED With Bus Pirate
 
+Set comms:
 ```
-HiZ>m
-1. HiZ
-2. 1-WIRE
-3. UART
-4. I2C
-5. SPI
-6. 2WIRE
-7. 3WIRE
-8. KEYB
-9. LCD
-10. PIC
-11. DIO
-x. exit(without change)
+m6 1 1
+e2
+P
+W
+i
+```
 
-(1)>5
+Send 0x8f:
+```
+/% --% -_% \%
+--% /% \% --% /% \% --% /% \% --% /% \% __% /% \% __% /% \% __% /% \% --% /% \%
+__% /% \%
+__% /% _-%
+```
+
+Send 0x80:
+```
+/% --% -_% \%
+__% /% \% __% /% \% __% /% \% __% /% \% __% /% \% __% /% \% __% /% \% --% /% \%
+__% /% \%
+__% /% _-%
+```
+
+Switch LED on and off:
+```
+HiZ>m6 1 1
+R2W (spd hiz)=( 0 1 )
+Ready
+2WIRE>e2
+3.3V on-board pullup voltage enabled
+2WIRE>P
+Pull-up resistors ON
+Warning: no voltage on Vpullup pin
+2WIRE>W
+POWER SUPPLIES ON
+Clutch engaged!!!
+2WIRE>i
+Bus Pirate v4
+Community Firmware v7.0 - goo.gl/gCzQnW [HiZ 1-WIRE UART I2C SPI 2WIRE 3WIRE KEYB LCD PIC DIO]
+DEVID:0x1019 REVID:0x0004 (24FJ256GB106 UNK)
+http://dangerousprototypes.com
+CFG0: 0xFFFF CFG1:0xFFFF CFG2:0xFFFF
+*----------*
+Pinstates:
+#12     #11     #10     #09     #08     #07     #06     #05     #04     #03     #02     #01
+GND     5.0V    3.3V    VPU     ADC     AUX2    AUX1    AUX     -       -       SCL     SDA
+P       P       P       I       I       I       I       I       I       I       O       I
+GND     4.96V   3.30V   3.22V   0.00V   L       L       L       H       H       H       H
+POWER SUPPLIES ON, Pull-up resistors ON, Vpu=3V3, Open drain outputs (H=Hi-Z, L=GND)
+MSB set: MOST sig bit first, Number of bits read/write: 8
+a/A/@ controls CS pin
+R2W (spd hiz)=( 0 1 )
+*----------*
+2WIRE>/% --% -_% \%
+CLOCK, 1
+DELAY 1ms
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DELAY 1ms
+DATA OUTPUT, 1
+DATA OUTPUT, 0
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+2WIRE>--% /% \% --% /% \% --% /% \% --% /% \% __% /% \% __% /% \% __% /% \% --% /% \%
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+2WIRE>__% /% \%
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+2WIRE>__% /% _-%
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+DATA OUTPUT, 0
+DATA OUTPUT, 1
+DELAY 1ms
+2WIRE>/% --% -_% \%
+CLOCK, 1
+DELAY 1ms
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DELAY 1ms
+DATA OUTPUT, 1
+DATA OUTPUT, 0
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+2WIRE>__% /% \% __% /% \% __% /% \% __% /% \% __% /% \% __% /% \% __% /% \% --% /% \%
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+DATA OUTPUT, 1
+DATA OUTPUT, 1
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+2WIRE>__% /% \%
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+CLOCK, 0
+DELAY 1ms
+2WIRE>__% /% _-%
+DATA OUTPUT, 0
+DATA OUTPUT, 0
+DELAY 1ms
+CLOCK, 1
+DELAY 1ms
+DATA OUTPUT, 0
+DATA OUTPUT, 1
+DELAY 1ms
+2WIRE>
+```
+
+Init:
+```
+/%
+--%
+```
+
+Start:
+```
+-_%
+\%
+```
+
+Send 0x8f, LSB:
+
+Send binary value 1:
+```
+--%
+/%\%
+```
+
+Send binary value 1:
+```
+--%
+/%\%
+```
+
+Send binary value 1:
+```
+--%
+/%\%
+```
+
+Send binary value 1:
+```
+--%
+/%\%
+```
+
+Send binary value 0:
+```
+__%
+/%\%
+```
+
+Send binary value 0:
+```
+__%
+/%\%
+```
+
+Send binary value 0:
+```
+__%
+/%\%
+```
+
+Send binary value 1:
+```
+--%
+/%\%
+```
+
+One clock tick for ack:
+```
+__%
+/%\%
+```
+
+End:
+```
+__%
+/%
+_-%
+```
+
+
+```
+HiZ>m5
 Set speed:
  1. 30KHz
  2. 125KHz
@@ -108,39 +398,7 @@ Select output type:
  2. Normal (H=3.3V, L=GND)
 
 (1)>
-Clutch disengaged!!!
-To finish setup, start up the power supplies with command 'W'
-
 Ready
-SPI>?
-General                                 Protocol interaction
----------------------------------------------------------------------------
-?       This help                       (0)     List current macros
-=X/|X   Converts X/reverse X            (x)     Macro x
-~       Selftest                        [       Start
-o       Set output type                 ]       Stop
-$       Jump to bootloader              {       Start with read
-&/%     Delay 1 us/ms                   }       Stop
-a/A/@   AUXPIN (low/HI/READ)            "abc"   Send string
-b       Set baudrate                    123     Send integer value
-c/C/k/K AUX assignment (A0/CS/A1/A2)    0x123   Send hex value
-d/D     Measure ADC (once/CONT.)        0b110   Send binary value
-f       Measure frequency               r       Read
-g/S     Generate PWM/Servo              /       CLK hi
-h       Commandhistory                  \       CLK lo
-i       Versioninfo/statusinfo          ^       CLK tick
-l/L     Bitorder (msb/LSB)              -       DAT hi
-m       Change mode                     _       DAT lo
-e       Set Pullup Method               .       DAT read
-p/P     Pullup resistors (off/ON)       !       Bit read
-s       Script engine                   :       Repeat e.g. r:10
-v       Show volts/states               ;       Bits to read/write e.g. 0x55;2
-w/W     PSU (off/ON)            <x>/<x= >/<0>   Usermacro x/assign x/list all
-SPI>L
-LSB set: LEAST sig bit first
-SPI>W
-POWER SUPPLIES ON
-Clutch engaged!!!
 SPI>i
 Bus Pirate v4
 Community Firmware v7.0 - goo.gl/gCzQnW [HiZ 1-WIRE UART I2C SPI 2WIRE 3WIRE KEYB LCD PIC DIO]
@@ -151,17 +409,76 @@ CFG0: 0xFFFF CFG1:0xFFFF CFG2:0xFFFF
 Pinstates:
 #12     #11     #10     #09     #08     #07     #06     #05     #04     #03     #02     #01
 GND     5.0V    3.3V    VPU     ADC     AUX2    AUX1    AUX     CS      MISO    CLK     MOSI
-P       P       P       I       I       I       I       I       O       I       O       O
-GND     4.96V   3.29V   0.00V   0.00V   L       L       L       L       L       L       L
-POWER SUPPLIES ON, Pull-up resistors OFF, Open drain outputs (H=Hi-Z, L=GND)
+P       P       P       I       I       I       I       I       I       I       I       I
+GND     0.00V   0.00V   0.00V   0.00V   L       L       L       L       L       L       L
+POWER SUPPLIES OFF, Pull-up resistors OFF, Open drain outputs (H=Hi-Z, L=GND)
+MSB set: MOST sig bit first, Number of bits read/write: 8
+a/A/@ controls CS pin
+SPI (spd ckp ske smp csl hiz)=( 1 0 1 0 1 1 )
+*----------*
+SPI>P
+Pull-up resistors ON
+Warning: no voltage on Vpullup pin
+SPI>e
+Select Vpu (Pullup) Source:
+ 1) External (or None)
+ 2) Onboard 3.3v
+ 3) Onboard 5.0v
+
+(1)>2
+3.3V on-board pullup voltage enabled
+SPI>L
+LSB set: LEAST sig bit first
+SPI>i
+Bus Pirate v4
+Community Firmware v7.0 - goo.gl/gCzQnW [HiZ 1-WIRE UART I2C SPI 2WIRE 3WIRE KEYB LCD PIC DIO]
+DEVID:0x1019 REVID:0x0004 (24FJ256GB106 UNK)
+http://dangerousprototypes.com
+CFG0: 0xFFFF CFG1:0xFFFF CFG2:0xFFFF
+*----------*
+Pinstates:
+#12     #11     #10     #09     #08     #07     #06     #05     #04     #03     #02     #01
+GND     5.0V    3.3V    VPU     ADC     AUX2    AUX1    AUX     CS      MISO    CLK     MOSI
+P       P       P       I       I       I       I       I       I       I       I       I
+GND     0.00V   0.00V   0.00V   0.00V   L       L       L       L       L       L       L
+POWER SUPPLIES OFF, Pull-up resistors ON, Vpu=3V3, Open drain outputs (H=Hi-Z, L=GND)
 LSB set: LEAST sig bit first, Number of bits read/write: 8
 a/A/@ controls CS pin
 SPI (spd ckp ske smp csl hiz)=( 1 0 1 0 1 1 )
 *----------*
+SPI>W
+POWER SUPPLIES ON
+Clutch engaged!!!
 SPI>[0x8f]
 /CS ENABLED
 WRITE: 0x8F
 /CS DISABLED
+SPI>p
+Pull-up resistors OFF
+SPI>[0x80]
+/CS ENABLED
+WRITE: 0x80
+/CS DISABLED
+SPI>P
+Pull-up resistors ON
+SPI>[0x80]
+/CS ENABLED
+WRITE: 0x80
+/CS DISABLED
+SPI>p
+Pull-up resistors OFF
+SPI>P 0x80 p
+Pull-up resistors ON
+WRITE: 0x80
+Pull-up resistors OFF
+SPI>P 0x8f p
+Pull-up resistors ON
+WRITE: 0x8F
+Pull-up resistors OFF
+SPI>P 0x80 p
+Pull-up resistors ON
+WRITE: 0x80
+Pull-up resistors OFF
 SPI>
 ```
 
